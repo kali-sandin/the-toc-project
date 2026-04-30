@@ -1,0 +1,148 @@
+:root {
+  --bg-1: #f1ff31;
+  --bg-2: #00b7ff;
+  --ink: #171717;
+  --pink: #ff2bb5;
+  --green: #0cf574;
+  --orange: #ff7a00;
+  --paper: #fff8eb;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    linear-gradient(113deg, var(--bg-1) 0%, #ffee00 23%, #8bff00 24%, #8bff00 26%, var(--bg-2) 27%, var(--bg-2) 57%, #ff7a00 58%, #ff7a00 67%, var(--pink) 68%, #ffefe3 100%);
+  color: var(--ink);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  width: min(1120px, calc(100vw - 44px));
+  margin: 3.4rem auto 5.7rem 5.8vw;
+  position: relative;
+}
+
+.page-a {
+  transform: rotate(-0.4deg);
+}
+
+.hero {
+  width: 78%;
+  margin: 0 0 1.7rem 2.3rem;
+  padding: 1.4rem 1.1rem 2.1rem 1.9rem;
+  background: rgba(255, 248, 235, 0.81);
+  border: 4px solid #111;
+  box-shadow: 17px 12px 0 rgba(0,0,0,.12);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin: 0 0 0.9rem 0.3rem;
+  font: 900 0.88rem/1.2 "Courier New", monospace;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+  background: #111;
+  color: #fff;
+  padding: 0.3rem 0.55rem;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 8vw, 6.2rem);
+  line-height: 0.92;
+  color: #111;
+  text-shadow: 3px 3px 0 #fff, 9px -4px 0 rgba(255,43,181,.35);
+}
+
+.lede {
+  width: 83%;
+  margin: 1.2rem 0 0 2.6rem;
+  font: 700 1.18rem/1.45 Verdana, sans-serif;
+  color: #1f1f1f;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 1.7rem;
+  align-items: start;
+  margin: 2.4rem 3.1rem 1.2rem 0.9rem;
+}
+
+.card,
+.manifesto,
+.footer {
+  border: 4px solid #151515;
+  padding: 1.1rem 1rem 1rem;
+  box-shadow: 11px 12px 0 rgba(0,0,0,.18);
+}
+
+.card h2,
+.manifesto h2 {
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+.card p,
+.manifesto li,
+.footer p {
+  font-size: 1.06rem;
+  line-height: 1.45;
+}
+
+.acid {
+  background: rgba(12, 245, 116, 0.78);
+  margin-top: 1.6rem;
+}
+
+.bruise {
+  background: rgba(255, 43, 181, 0.8);
+  color: #180311;
+  margin-top: 0.2rem;
+}
+
+.chalk {
+  background: rgba(255, 248, 235, 0.93);
+  margin-top: 2.6rem;
+}
+
+.manifesto {
+  width: 64%;
+  margin: 1.9rem 0 0 18vw;
+  background: rgba(0, 0, 0, 0.87);
+  color: #f7f2d0;
+}
+
+.manifesto ul {
+  margin: 1rem 0 0 1.1rem;
+  padding: 0;
+}
+
+.footer {
+  width: 56%;
+  margin: 2.8rem 0 0 7.5vw;
+  background: rgba(255, 122, 0, 0.78);
+}
+
+.tilt-a { transform: rotate(-1.7deg); }
+.tilt-b { transform: rotate(2.8deg); }
+.tilt-c { transform: rotate(-3.6deg); }
+.tilt-d { transform: rotate(1.5deg); }
+.tilt-e { transform: rotate(-2.4deg); }
+.tilt-f { transform: rotate(1.1deg); }
+
+@media (max-width: 860px) {
+  .page { width: calc(100vw - 24px); margin: 1.4rem auto 3rem 10px; }
+  .hero, .manifesto, .footer { width: auto; margin-left: 0; margin-right: 12px; }
+  .cards { grid-template-columns: 1fr; margin-right: 12px; }
+  .lede { width: auto; margin-left: 0; }
+}
