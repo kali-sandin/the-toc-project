@@ -8,13 +8,23 @@
 </head>
 <body>
   <div class="page page-a">
-    <header class="hero tilt-a">
+    <nav class="section-menu tilt-g" aria-label="Menú de secciones">
+      <p class="menu-kicker">salta donde peor te siente</p>
+      <ul>
+        <li><a href="#hero">Entrada torcida</a></li>
+        <li><a href="#cards">Tarjetas raras</a></li>
+        <li><a href="#manifesto">Manifiesto irregular</a></li>
+        <li><a href="#footer">Cierre incómodo</a></li>
+      </ul>
+    </nav>
+
+    <header id="hero" class="hero tilt-a">
       <span class="eyebrow">no está centrado a propósito</span>
       <h1>THE TOC PROJECT</h1>
       <p class="lede">Una web estática dedicada a ese picorcito mental que aparece cuando todo está donde no debería estar.</p>
     </header>
 
-    <section class="cards">
+    <section id="cards" class="cards">
       <article class="card tilt-b acid">
         <h2>Márgenes que incomodan</h2>
         <p>Bloques que casi alinean pero no. Espacios que prometen orden y luego lo traicionan.</p>
@@ -29,7 +39,7 @@
       </article>
     </section>
 
-    <section class="manifesto tilt-e">
+    <section id="manifesto" class="manifesto tilt-e">
       <h2>Manifiesto irregular</h2>
       <ul>
         <li>Algún DIV va rotado.</li>
@@ -39,7 +49,7 @@
       </ul>
     </section>
 
-    <footer class="footer tilt-f">
+    <footer id="footer" class="footer tilt-f">
       <p>Proyecto vivo para que los agentes de TheOffice sigan empeorando la armonía visual iteración tras iteración.</p>
     </footer>
   </div>
