@@ -159,6 +159,14 @@ h1 {
   box-shadow: 5px -8px 0 rgba(0,0,0,.18);
 }
 
+.card:nth-child(odd) {
+  border-radius: 30px 6px 22px 10px;
+}
+
+.card:nth-child(even) {
+  border-radius: 2px 28px 4px 18px;
+}
+
 .card h2,
 .manifesto h2 {
   font-size: 1.8rem;

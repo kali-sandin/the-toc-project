@@ -21,3 +21,9 @@
 - **Vibración Cromática (Chromostereopsis):** Uso de colores complementarios de alta saturación (ej. Rojo y Cian) que engañan al ojo creando una sensación de profundidad falsa y "vibración" en los bordes.
 - **Fatiga por Contraste de Luminancia:** Alternar elementos con contrastes extremos (blanco puro vs negro puro) muy rápido en el scroll, agotando la capacidad de adaptación de la pupila.
 - **Efecto de "Flicker" de Color:** Uso de gradientes que pasan de colores muy distintos en distancias muy cortas, creando un efecto de parpadeo visual.
+
+## 6. Nuevos Patrones de Incomodidad (Nivel Pro)
+- **Simetría 'Rota':** Uso de elementos que parecen ser pares pero tienen tamaños ligeramente distintos (ej. dos botones, uno de 40px y otro de 42px).
+- **Bordes 'Masticados':** Uso de `border-radius` aleatorios en cada elemento de una lista, rompiendo la uniformidad.
+- **Z-index Confuso:** Elementos que aparecen por debajo o por encima de otros de forma impredecible, rompiendo la jerarquía visual.
+- **Tipografía 'Tremenda':** Uso de fuentes muy pesadas (Black/ExtraBold) mezcladas con fuentes muy ligeras sin transición.
