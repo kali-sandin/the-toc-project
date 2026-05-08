@@ -160,6 +160,14 @@ h1 {
 }
 
 .card:nth-child(odd) {
+  border-radius: 30px;
+}
+
+.card:nth-child(even) {
+  border-radius: 2px;
+}
+
+.card:nth-child(odd) {
   border-radius: 30px 6px 22px 10px;
 }
 
