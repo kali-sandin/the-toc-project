@@ -27,3 +27,53 @@
 - **Bordes 'Masticados':** Uso de `border-radius` aleatorios en cada elemento de una lista, rompiendo la uniformidad.
 - **Z-index Confuso:** Elementos que aparecen por debajo o por encima de otros de forma impredecible, rompiendo la jerarquía visual.
 - **Tipografía 'Tremenda':** Uso de fuentes muy pesadas (Black/ExtraBold) mezcladas con fuentes muy ligeras sin transición.
+
+## 7. Principios UX útiles para empeorar una web sin romperla del todo
+
+### 7.1 Von Restorff Effect (aislamiento visual)
+Cuando casi todos los elementos siguen una familia visual y uno rompe el patrón, ese elemento se recuerda más. En una web normal esto se usa para resaltar CTAs; en The TOC Project sirve para crear "falsos protagonistas" que roban atención aunque no deberían.
+
+**Aplicación práctica al proyecto:**
+- crear uno o dos elementos demasiado distintos dentro de grupos casi homogéneos
+- usar color, peso tipográfico o espaciado como anomalía local
+- evitar que todo compita a la vez: si todo grita, nada destaca
+
+**Riesgo:** si se abusa, el caos deja de tener picos memorables y se vuelve una sopa uniforme.
+
+### 7.2 Aesthetic-Usability Effect invertido
+Los usuarios toleran pequeños problemas cuando algo "parece" agradable. En nuestro caso interesa hacer lo contrario: mantener suficiente claridad estructural para que siga usándose, pero introducir fricción visual suficiente para que el ojo sienta que algo va mal aunque la página funcione.
+
+**Aplicación práctica al proyecto:**
+- mantener navegación, scroll y lectura base intactos
+- degradar confianza visual con inconsistencias finas en jerarquía, espaciado y ritmo
+- esconder la incomodidad en detalles acumulativos, no solo en golpes grandes de color
+
+**Riesgo:** si la legibilidad cae demasiado, deja de ser incomodidad interesante y pasa a ser simple rotura.
+
+### 7.3 Contraste sobre fondos complejos
+La investigación sobre texto sobre imágenes recuerda algo útil incluso para una web deliberadamente incómoda: el contraste insuficiente destruye lectura antes de generar tensión interesante. La incomodidad más efectiva aparece cuando el contenido todavía se puede procesar, pero cuesta más de lo normal.
+
+**Aplicación práctica al proyecto:**
+- combinar fondos agresivos con overlays o cajas que preserven lectura mínima
+- usar microchoques de color y textura sin anular por completo el texto
+- reservar los peores contrastes para detalles secundarios, no para todo el contenido clave
+
+**Riesgo:** si todo el texto entra en zona de lectura dudosa, el usuario deja de experimentar TOC visual y simplemente abandona.
+
+## 8. Oportunidades concretas detectadas en The TOC Project
+- **Hero con protagonista falso:** introducir un sello, badge o etiqueta visualmente dominante que parezca más importante que el H1.
+- **Ritmo vertical contaminado:** alternar separaciones que casi parecen sistemáticas pero fallan en cada sección.
+- **Énfasis mal repartido:** destacar palabras irrelevantes dentro de frases importantes para sabotear la jerarquía semántica.
+- **Casi-componentes:** repetir bloques parecidos con una sola diferencia molesta de ancho, altura o alineación.
+- **Interferencia local:** meter pequeños adornos, tags o pseudo-elementos que parezcan accidentales pero no rompan interacción.
+
+## 9. Criterio de calidad para próximas tasks
+Una buena task TOC no debe limitarse a "hacerlo feo". Debe cumplir estas tres condiciones:
+1. **Se nota al instante**: el ojo detecta tensión visual real.
+2. **Sigue funcionando**: aún se puede navegar, leer y entender la intención.
+3. **Tiene una lógica concreta**: ataca jerarquía, ritmo, contraste, simetría o memoria visual, no caos aleatorio.
+
+## 10. Fuentes consultadas
+- Laws of UX — **Von Restorff Effect**: aislamiento visual y memoria de elementos distintivos.
+- Laws of UX — **Aesthetic-Usability Effect**: relación entre percepción estética y tolerancia a fricciones de uso.
+- Nielsen Norman Group — **Ensure High Contrast for Text Over Images**: preservar legibilidad mínima incluso sobre fondos agresivos.
