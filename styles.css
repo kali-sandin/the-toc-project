@@ -93,9 +93,197 @@ body::after {
 .menu-kicker {
   margin: 0 0 0.6rem 1.2rem;
   font: 900 0.76rem/1.2 "Courier New", monospace;
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.31rem;
   text-transform: uppercase;
   color: #8bff00;
+  word-spacing: -0.18rem;
+}
+
+.menu-link-a {
+  letter-spacing: 0.24rem;
+}
+
+.menu-link-b {
+  letter-spacing: -0.06rem;
+}
+
+.menu-link-c {
+  letter-spacing: 0.13rem;
+}
+
+.menu-link-d {
+  letter-spacing: 0.34rem;
+}
+
+.menu-link-b,
+.menu-link-d {
+  text-transform: uppercase;
+}
+
+.menu-link-c {
+  text-transform: lowercase;
+}
+
+.menu-link-d {
+  word-spacing: 0.22rem;
+}
+
+.kern-wide {
+  letter-spacing: 0.2rem;
+}
+
+.kern-squeeze {
+  letter-spacing: -0.08rem;
+}
+
+.title-chunk {
+  display: inline-block;
+}
+
+.chunk-tight {
+  letter-spacing: -0.14rem;
+}
+
+.chunk-wide {
+  letter-spacing: 0.36rem;
+}
+
+.chunk-weird {
+  letter-spacing: 0.08rem;
+  word-spacing: 0.2rem;
+}
+
+.card-title,
+.manifesto-title {
+  display: inline-block;
+}
+
+.title-snap {
+  letter-spacing: 0.18rem;
+}
+
+.title-drag {
+  letter-spacing: -0.05rem;
+}
+
+.title-stutter {
+  letter-spacing: 0.28rem;
+}
+
+.manifesto-title {
+  letter-spacing: 0.12rem;
+}
+
+.list-kern {
+  display: inline-block;
+}
+
+.list-kern-a {
+  letter-spacing: 0.22rem;
+}
+
+.list-kern-b {
+  letter-spacing: -0.03rem;
+}
+
+.list-kern-c {
+  letter-spacing: 0.14rem;
+}
+
+.list-kern-d {
+  letter-spacing: 0.3rem;
+}
+
+.list-kern-b,
+.list-kern-d {
+  word-spacing: 0.12rem;
+}
+
+.list-kern-c {
+  text-transform: uppercase;
+}
+
+.list-kern-d {
+  font-weight: 900;
+}
+
+.list-kern-a,
+.list-kern-b,
+.list-kern-c,
+.list-kern-d,
+.menu-link-a,
+.menu-link-b,
+.menu-link-c,
+.menu-link-d,
+.chunk-tight,
+.chunk-wide,
+.chunk-weird,
+.kern-wide,
+.kern-squeeze {
+  transition: letter-spacing 150ms ease, word-spacing 150ms ease;
+}
+
+.treachery-zone:hover .menu-link-a,
+.treachery-zone:hover .chunk-wide,
+.treachery-zone:hover .list-kern-d {
+  letter-spacing: 0.4rem;
+}
+
+.treachery-zone:hover .menu-link-b,
+.treachery-zone:hover .kern-squeeze,
+.treachery-zone:hover .title-drag {
+  letter-spacing: -0.11rem;
+}
+
+.treachery-zone:hover .menu-link-c,
+.treachery-zone:hover .title-stutter,
+.treachery-zone:hover .list-kern-a {
+  letter-spacing: 0.24rem;
+}
+
+.treachery-zone:hover .menu-link-d,
+.treachery-zone:hover .kern-wide,
+.treachery-zone:hover .list-kern-c {
+  letter-spacing: 0.32rem;
+}
+
+.treachery-zone:hover .chunk-tight,
+.treachery-zone:hover .title-snap,
+.treachery-zone:hover .list-kern-b {
+  letter-spacing: -0.08rem;
+}
+
+.treachery-zone:hover .chunk-weird,
+.treachery-zone:hover .manifesto-title {
+  letter-spacing: 0.16rem;
+}
+
+.treachery-zone:hover .menu-link-d,
+.treachery-zone:hover .list-kern-b {
+  word-spacing: 0.2rem;
+}
+
+.treachery-zone:hover .chunk-weird,
+.treachery-zone:hover .list-kern-d {
+  word-spacing: 0.28rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .list-kern-a,
+  .list-kern-b,
+  .list-kern-c,
+  .list-kern-d,
+  .menu-link-a,
+  .menu-link-b,
+  .menu-link-c,
+  .menu-link-d,
+  .chunk-tight,
+  .chunk-wide,
+  .chunk-weird,
+  .kern-wide,
+  .kern-squeeze {
+    transition: none;
+  }
 }
 
 .section-menu ul {
@@ -265,6 +453,7 @@ h1 {
   line-height: 0.7;
   color: #00ff00;
   text-shadow: 5px 5px 0 #ff00ff, -5px -5px 0 #00ffff;
+  word-spacing: 0.16rem;
 }
 
 .lede {
@@ -272,6 +461,7 @@ h1 {
   margin: 1.2rem 0 0 2.6rem;
   font: 700 1.18rem/1.45 Verdana, sans-serif;
   color: #1f1f1f;
+  letter-spacing: 0.01rem;
 }
 
 .cards {
