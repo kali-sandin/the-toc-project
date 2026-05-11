@@ -142,16 +142,28 @@ body::after {
 }
 
 .chunk-tight {
-  letter-spacing: -0.14rem;
+  font-family: "Arial Narrow", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  letter-spacing: -0.22rem;
+  text-transform: lowercase;
+  transform: translateY(-0.14rem) scaleY(1.12);
 }
 
 .chunk-wide {
-  letter-spacing: 0.36rem;
+  font-family: "Impact", "Arial Black", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.52rem;
+  text-transform: uppercase;
+  transform: translateY(0.08rem) scaleX(1.1);
 }
 
 .chunk-weird {
-  letter-spacing: 0.08rem;
-  word-spacing: 0.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.12rem;
+  word-spacing: 0.34rem;
+  transform: translateY(0.28rem) scale(0.95, 1.14);
 }
 
 .card-title,
@@ -160,19 +172,33 @@ body::after {
 }
 
 .title-snap {
-  letter-spacing: 0.18rem;
+  font-family: "Arial Black", "Impact", sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.08rem;
+  text-transform: uppercase;
+  transform: scaleX(1.06);
 }
 
 .title-drag {
-  letter-spacing: -0.05rem;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
 }
 
 .title-stutter {
-  letter-spacing: 0.28rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.42rem;
+  text-transform: lowercase;
 }
 
 .manifesto-title {
-  letter-spacing: 0.12rem;
+  font-family: "Arial Black", "Impact", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.22rem;
+  text-transform: uppercase;
 }
 
 .list-kern {
@@ -269,6 +295,89 @@ body::after {
   word-spacing: 0.28rem;
 }
 
+.footer p {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.footer .kern-squeeze {
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer .kern-wide {
+  font-size: 0.88em;
+}
+
+.list-tail-a,
+.list-tail-c {
+  font-size: 0.76rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+.list-tail-b,
+.list-tail-d {
+  font-size: 1.08rem;
+  font-weight: 900;
+}
+
+.hero-tag-b,
+.card-badge,
+.card-pill,
+.list-tail,
+.menu-nudge,
+.menu-label,
+.card-title,
+.manifesto-title,
+.title-chunk,
+.kern-wide,
+.kern-squeeze,
+.eyebrow {
+  transition: letter-spacing 150ms ease, transform 150ms ease, font-size 150ms ease;
+}
+
+.treachery-zone:hover .title-snap,
+.treachery-zone:hover .menu-label-a,
+.treachery-zone:hover .card-badge-a,
+.treachery-zone:hover .hero-tag-a {
+  letter-spacing: -0.12rem;
+}
+
+.treachery-zone:hover .title-drag,
+.treachery-zone:hover .menu-label-b,
+.treachery-zone:hover .hero-tag-b,
+.treachery-zone:hover .list-kern-d {
+  letter-spacing: 0.3rem;
+}
+
+.treachery-zone:hover .title-stutter,
+.treachery-zone:hover .menu-label-c,
+.treachery-zone:hover .card-pill,
+.treachery-zone:hover .kern-wide {
+  letter-spacing: 0.5rem;
+}
+
+.treachery-zone:hover .chunk-tight,
+.treachery-zone:hover .kern-squeeze,
+.treachery-zone:hover .menu-nudge-d,
+.treachery-zone:hover .list-kern-b {
+  letter-spacing: -0.14rem;
+}
+
+.treachery-zone:hover .chunk-weird,
+.treachery-zone:hover .manifesto-title,
+.treachery-zone:hover .menu-label-d,
+.treachery-zone:hover .card-badge-b {
+  transform: translateY(0.12rem) scale(1.03, 1.08);
+}
+
+.treachery-zone:hover .eyebrow,
+.treachery-zone:hover .card-title,
+.treachery-zone:hover .list-tail {
+  transform: scaleX(1.06) translateY(-0.06rem);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .list-kern-a,
   .list-kern-b,
@@ -282,7 +391,17 @@ body::after {
   .chunk-wide,
   .chunk-weird,
   .kern-wide,
-  .kern-squeeze {
+  .kern-squeeze,
+  .hero-tag-b,
+  .card-badge,
+  .card-pill,
+  .list-tail,
+  .menu-nudge,
+  .menu-label,
+  .card-title,
+  .manifesto-title,
+  .title-chunk,
+  .eyebrow {
     transition: none;
   }
 }
@@ -371,18 +490,26 @@ body::after {
 }
 
 .menu-nudge-a {
+  font-size: 0.76rem;
+  letter-spacing: 0.06rem;
   transform: translateY(0.55rem) rotate(-8deg);
 }
 
 .menu-nudge-b {
+  font-size: 0.64rem;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
   transform: translateY(-0.08rem) rotate(6deg);
 }
 
 .menu-nudge-c {
+  font-size: 1.16rem;
   transform: translateY(0.38rem) rotate(-11deg);
 }
 
 .menu-nudge-d {
+  font-size: 0.7rem;
+  letter-spacing: -0.05rem;
   transform: translateY(-0.18rem) rotate(9deg);
 }
 
@@ -550,12 +677,16 @@ body::after {
 .eyebrow {
   display: inline-block;
   margin: 0 0 0.9rem 0.3rem;
-  font: 900 0.88rem/1.2 "Courier New", monospace;
-  letter-spacing: 0.16rem;
+  font-family: "Arial Black", "Impact", sans-serif;
+  font-size: 0.76rem;
+  line-height: 1.2;
+  font-weight: 900;
+  letter-spacing: 0.34rem;
   text-transform: uppercase;
   background: #111;
   color: #fff;
-  padding: 0.3rem 0.55rem;
+  padding: 0.24rem 0.7rem 0.34rem 0.46rem;
+  transform: scaleX(1.08);
 }
 
 h1, h2 {
@@ -569,6 +700,7 @@ h1 {
   color: #00ff00;
   text-shadow: 5px 5px 0 #ff00ff, -5px -5px 0 #00ffff;
   word-spacing: 0.16rem;
+  font-weight: 900;
 }
 
 .lede {
@@ -659,7 +791,11 @@ h1 {
   border: 2px solid #111;
   background: rgba(255, 248, 235, 0.86);
   color: #111;
-  font: 900 0.7rem/1 "Courier New", monospace;
+  font-family: "Arial Black", "Impact", sans-serif;
+  font-size: 0.7rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 0.08rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -713,6 +849,8 @@ h1 {
   right: 18%;
   z-index: 5;
   background: rgba(255, 122, 0, 0.88);
+  font-family: "Arial Black", sans-serif;
+  letter-spacing: 0.16rem;
   transform: rotate(9deg);
 }
 
@@ -721,6 +859,9 @@ h1 {
   bottom: 1.2rem;
   z-index: 1;
   background: rgba(0, 183, 255, 0.88);
+  font-family: Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.08rem;
   transform: rotate(-11deg);
 }
 
