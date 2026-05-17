@@ -109,6 +109,8 @@ Se añade sección `#evidence` con cuatro notas:
 
 La sección está deliberadamente desalineada, pero mantiene párrafos breves y encabezados claros para que funcione como fuente de información real.
 
+Para la capa más profunda de percepción, agrupación visual y carga cognitiva, ver `research/perception_deep_dive.md`.
+
 ## 11. Fuentes consultadas
 - Laws of UX — **Von Restorff Effect**: aislamiento visual y memoria de elementos distintivos.
 - Laws of UX — **Aesthetic-Usability Effect**: relación entre percepción estética y tolerancia a fricciones de uso.

@@ -35,7 +35,8 @@ La página incluye varias líneas de sabotaje visual ya activas:
 ├── styles.css            # caos visual centralizado
 ├── README.md             # este documento, por fin útil
 └── research/
-    └── toc_patterns.md   # hallazgos, principios UX invertidos y oportunidades
+    ├── toc_patterns.md          # hallazgos, principios UX invertidos y oportunidades
+    └── perception_deep_dive.md  # Gestalt, carga cognitiva, chunking y escaneo web aplicados al caos
 ```
 
 ## Cómo verlo en local
@@ -81,6 +82,14 @@ Documenta patrones útiles para empeorar la web sin destruirla:
 - contraste mínimo como frontera antes del ruido inútil
 - criterio para futuras tasks
 
+### `research/perception_deep_dive.md`
+Profundiza en la base perceptiva del proyecto:
+- Gestalt aplicada al mal: proximidad, similitud, continuidad, figura/fondo
+- carga cognitiva extrínseca como fricción visual controlada
+- chunking para mantener información útil aunque el layout moleste
+- patrón F y escaneo web como material para sabotaje de recorrido
+- modelo de cuatro perillas: agrupación, recorrido, jerarquía y carga
+
 ## Criterio de diseño
 
 Una intervención buena en este proyecto debería cumplir tres cosas:
@@ -110,6 +119,8 @@ No hay gloria en mover una tarjeta y desaparecer.
 Basadas en `research/toc_patterns.md`:
 
 - ampliar `#evidence` con una mini bibliografía visible y enlaces externos
+- convertir el deep dive en una matriz visual dentro de la página
+- sabotear proximidad y agrupación sin romper clics
 - falsos protagonistas visuales en zonas secundarias
 - más información real sobre TOC visual, fatiga y percepción
 - contrastes agresivos con legibilidad mínima preservada
