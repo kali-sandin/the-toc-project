@@ -35,8 +35,9 @@ La página incluye varias líneas de sabotaje visual ya activas:
 ├── styles.css            # caos visual centralizado
 ├── README.md             # este documento, por fin útil
 └── research/
-    ├── toc_patterns.md          # hallazgos, principios UX invertidos y oportunidades
-    └── perception_deep_dive.md  # Gestalt, carga cognitiva, chunking y escaneo web aplicados al caos
+    ├── toc_patterns.md                 # hallazgos, principios UX invertidos y oportunidades
+    ├── perception_deep_dive.md         # Gestalt, carga cognitiva, chunking y escaneo web aplicados al caos
+    └── interaction_memory_research.md  # movimiento, reconocimiento, memoria e iconos ambiguos
 ```
 
 ## Cómo verlo en local
@@ -90,6 +91,13 @@ Profundiza en la base perceptiva del proyecto:
 - patrón F y escaneo web como material para sabotaje de recorrido
 - modelo de cuatro perillas: agrupación, recorrido, jerarquía y carga
 
+### `research/interaction_memory_research.md`
+Abre dos líneas nuevas de evolución:
+- movimiento como secuestro controlado de atención
+- microfeedback falso pero reversible
+- reconocimiento vs recuerdo aplicado a labels casi familiares
+- iconos ambiguos siempre acompañados de texto para no romper uso
+
 ## Criterio de diseño
 
 Una intervención buena en este proyecto debería cumplir tres cosas:
@@ -120,6 +128,8 @@ Basadas en `research/toc_patterns.md`:
 
 - ampliar `#evidence` con una mini bibliografía visible y enlaces externos
 - convertir el deep dive en una matriz visual dentro de la página
+- crear microanimaciones accesibles y deliberadamente desacompasadas
+- añadir iconos/labels ambiguos que obliguen a reconocer dos veces
 - sabotear proximidad y agrupación sin romper clics
 - falsos protagonistas visuales en zonas secundarias
 - más información real sobre TOC visual, fatiga y percepción

@@ -111,6 +111,8 @@ La sección está deliberadamente desalineada, pero mantiene párrafos breves y 
 
 Para la capa más profunda de percepción, agrupación visual y carga cognitiva, ver `research/perception_deep_dive.md`.
 
+Para líneas nuevas sobre movimiento, reconocimiento, memoria e iconos ambiguos, ver `research/interaction_memory_research.md`.
+
 ## 11. Fuentes consultadas
 - Laws of UX — **Von Restorff Effect**: aislamiento visual y memoria de elementos distintivos.
 - Laws of UX — **Aesthetic-Usability Effect**: relación entre percepción estética y tolerancia a fricciones de uso.
