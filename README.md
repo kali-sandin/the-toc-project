@@ -23,6 +23,7 @@ La página incluye varias líneas de sabotaje visual ya activas:
 - hero con capas, badges y marcas que roban foco
 - cards con simetrías casi gemelas pero defectuosas
 - manifiesto con listas torcidas y bullets desplazados
+- sección `#evidence` con explicación real sobre percepción visual, memoria y contraste
 - ritmo vertical contaminado entre secciones
 - tipografía y kerning deliberadamente inconsistentes
 
@@ -57,6 +58,7 @@ Contiene la estructura semántica principal:
 - hero
 - tarjetas
 - manifiesto
+- bloque informativo de evidencias/referencias
 - footer
 
 ### `styles.css`
@@ -75,6 +77,8 @@ Documenta patrones útiles para empeorar la web sin destruirla:
 - asimetría violenta
 - hovers traicioneros
 - efecto Von Restorff aplicado al mal
+- aesthetic-usability invertido
+- contraste mínimo como frontera antes del ruido inútil
 - criterio para futuras tasks
 
 ## Criterio de diseño
@@ -105,6 +109,7 @@ No hay gloria en mover una tarjeta y desaparecer.
 
 Basadas en `research/toc_patterns.md`:
 
+- ampliar `#evidence` con una mini bibliografía visible y enlaces externos
 - falsos protagonistas visuales en zonas secundarias
 - más información real sobre TOC visual, fatiga y percepción
 - contrastes agresivos con legibilidad mínima preservada

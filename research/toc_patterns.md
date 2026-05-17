@@ -73,7 +73,45 @@ Una buena task TOC no debe limitarse a "hacerlo feo". Debe cumplir estas tres co
 2. **Sigue funcionando**: aún se puede navegar, leer y entender la intención.
 3. **Tiene una lógica concreta**: ataca jerarquía, ritmo, contraste, simetría o memoria visual, no caos aleatorio.
 
-## 10. Fuentes consultadas
+## 10. Nueva capa informativa para la web
+
+La task_022 cambia el proyecto de "landing caótica" a "landing caótica + mini explicación real". La web debe poder informar sin curarse del todo: contenido verificable, pero colocado con la misma mala intención visual.
+
+### Ideas científicas/UX que conviene mostrar en pantalla
+
+1. **Predicción visual y patrón casi roto**
+   - Las interfaces ordenadas permiten anticipar alineación, ritmo y jerarquía.
+   - La incomodidad aparece mejor cuando hay un patrón reconocible que falla por poco, no cuando todo es ruido.
+   - Aplicación: cards repetidas con una sola desviación de ancho, listados con bullets casi alineados, bloques que parecen seguir una grid pero se salen.
+
+2. **Efecto Von Restorff / aislamiento**
+   - Entre elementos parecidos, el elemento distinto tiende a recordarse más.
+   - Aplicación TOC: crear falsos protagonistas que no son la acción principal: badges, números, etiquetas o notas demasiado visibles.
+   - Riesgo: si cada cosa es distinta, desaparece el aislamiento y solo queda saturación.
+
+3. **Aesthetic-usability effect invertido**
+   - La investigación de HCI muestra que las interfaces estéticamente agradables suelen percibirse como más usables.
+   - Aplicación TOC: preservar navegación y lectura, pero quitarle a la página la confianza estética que normalmente suaviza problemas menores.
+   - Riesgo: si se rompe la funcionalidad, ya no es tensión perceptiva; es fallo.
+
+4. **Contraste mínimo como frontera de diseño**
+   - WCAG usa 4.5:1 como referencia de contraste para texto normal y 3:1 para texto grande.
+   - NNGroup recuerda que texto sobre fondos complejos necesita ayuda de contraste para seguir siendo legible.
+   - Aplicación TOC: usar fondos agresivos y vibración cromática en entorno, pero mantener cajas/overlays donde haya información útil.
+
+### Estructura aplicada
+
+Se añade sección `#evidence` con cuatro notas:
+- orden visual y expectativas
+- Von Restorff aplicado como falso foco
+- aesthetic-usability invertido
+- contraste mínimo como límite antes del ruido inútil
+
+La sección está deliberadamente desalineada, pero mantiene párrafos breves y encabezados claros para que funcione como fuente de información real.
+
+## 11. Fuentes consultadas
 - Laws of UX — **Von Restorff Effect**: aislamiento visual y memoria de elementos distintivos.
 - Laws of UX — **Aesthetic-Usability Effect**: relación entre percepción estética y tolerancia a fricciones de uso.
+- Nielsen Norman Group — **The Aesthetic-Usability Effect**: lo atractivo puede hacer que usuarios toleren problemas menores.
 - Nielsen Norman Group — **Ensure High Contrast for Text Over Images**: preservar legibilidad mínima incluso sobre fondos agresivos.
+- W3C/WCAG 2.2 — **Contrast Minimum**: referencia 4.5:1 para texto normal y 3:1 para texto grande.

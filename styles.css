@@ -116,6 +116,10 @@ body::after {
   letter-spacing: 0.34rem;
 }
 
+.menu-link-e {
+  letter-spacing: 0.03rem;
+}
+
 .menu-link-b,
 .menu-link-d {
   text-transform: uppercase;
@@ -127,6 +131,11 @@ body::after {
 
 .menu-link-d {
   word-spacing: 0.22rem;
+}
+
+.menu-link-e {
+  word-spacing: -0.14rem;
+  text-transform: uppercase;
 }
 
 .kern-wide {
@@ -242,6 +251,7 @@ body::after {
 .menu-link-b,
 .menu-link-c,
 .menu-link-d,
+.menu-link-e,
 .chunk-tight,
 .chunk-wide,
 .chunk-weird,
@@ -642,6 +652,7 @@ body::after {
 .hero,
 .cards,
 .manifesto,
+.evidence,
 .footer {
   scroll-margin-top: 6.8rem;
 }
@@ -660,6 +671,10 @@ body::after {
 
 .footer {
   scroll-margin-top: 10.7rem;
+}
+
+.evidence {
+  scroll-margin-top: 7.6rem;
 }
 
 .hero {
@@ -726,6 +741,7 @@ h1 {
 
 .card,
 .manifesto,
+.evidence,
 .footer {
   border: 4px solid #151515;
   padding: 0.3rem 3.5rem 2.2rem 0.8rem;
@@ -892,7 +908,8 @@ h1 {
 }
 
 .card h2,
-.manifesto h2 {
+.manifesto h2,
+.evidence h2 {
   font-size: 1.8rem;
   line-height: 1;
   margin-bottom: 0.8rem;
@@ -900,6 +917,7 @@ h1 {
 
 .card p,
 .manifesto li,
+.evidence p,
 .footer p {
   font-size: 1.06rem;
   line-height: 1.45;
@@ -1013,6 +1031,104 @@ h1 {
   transform: translateY(-0.16rem) rotate(9deg);
 }
 
+.evidence {
+  width: 72%;
+  margin: 3.9rem 3vw 1.1rem 14vw;
+  padding: 2.1rem 1.3rem 2.8rem 2.6rem;
+  background: rgba(255, 248, 235, 0.9);
+  color: #111;
+  transform: rotate(-1.2deg) skewX(1deg);
+  position: relative;
+  z-index: 6;
+  box-shadow: -13px 17px 0 rgba(0, 183, 255, 0.35), 18px -9px 0 rgba(255, 43, 181, 0.22);
+}
+
+.evidence::before {
+  content: "fuente?";
+  position: absolute;
+  top: -1.2rem;
+  left: 63%;
+  padding: 0.25rem 0.7rem;
+  border: 3px solid #111;
+  background: #8bff00;
+  font: 900 0.78rem/1 "Arial Black", sans-serif;
+  letter-spacing: 0.16rem;
+  text-transform: uppercase;
+  transform: rotate(8deg);
+}
+
+.evidence-kicker {
+  display: inline-block;
+  margin: 0 0 0.5rem -1.1rem;
+  padding: 0.24rem 0.5rem;
+  background: #111;
+  color: #ffee00;
+  font: 900 0.72rem/1.1 "Courier New", monospace;
+  letter-spacing: 0.21rem;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+}
+
+.evidence-title {
+  max-width: 780px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  letter-spacing: -0.04rem;
+  text-shadow: 3px -2px 0 rgba(255, 43, 181, 0.32);
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.9fr) minmax(180px, 1.1fr);
+  gap: 1.1rem 1.7rem;
+  margin: 1.5rem 0 1.2rem;
+}
+
+.evidence-note {
+  position: relative;
+  padding: 1.5rem 0.9rem 1rem 1.1rem;
+  border: 3px solid #111;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.evidence-note-a { transform: translateX(-0.8rem) rotate(1deg); }
+.evidence-note-b { transform: translateY(0.55rem) rotate(-1.6deg); }
+.evidence-note-c { transform: translate(0.35rem, -0.25rem) rotate(1.8deg); }
+.evidence-note-d { transform: translateX(-0.35rem) rotate(-0.8deg); }
+
+.evidence-number {
+  position: absolute;
+  top: -0.72rem;
+  left: 0.55rem;
+  padding: 0.1rem 0.35rem;
+  background: #ff2bb5;
+  color: #111;
+  border: 2px solid #111;
+  font: 900 0.76rem/1 "Arial Black", sans-serif;
+  transform: rotate(-9deg);
+}
+
+.evidence-note h3 {
+  margin: 0 0 0.55rem;
+  font: 900 1.05rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+
+.evidence-note p {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+}
+
+.evidence-links {
+  max-width: 86%;
+  margin: 0.2rem 0 0 1.6rem;
+  font-family: "Courier New", monospace;
+  font-weight: 900;
+  letter-spacing: -0.03rem;
+  transform: rotate(0.6deg);
+}
+
 .footer {
   width: 45%;
   margin: -0.8rem 9vw 12.4rem 22vw;
@@ -1031,6 +1147,7 @@ h1 {
 .tilt-e { transform: rotate(-2.4deg); }
 .tilt-f { transform: rotate(1.1deg); }
 .tilt-g { transform: rotate(-3.1deg); }
+.tilt-h { transform: rotate(-1.2deg); }
 
 @keyframes chromatic-vibration {
   0% { filter: hue-rotate(0deg) saturate(1); }
@@ -1047,6 +1164,7 @@ h1 {
   .section-menu,
   .hero,
   .manifesto,
+  .evidence,
   .footer {
     width: auto;
     margin-left: 0;
@@ -1067,6 +1185,20 @@ h1 {
   .manifesto {
     margin: 2.7rem 12px 1rem 0;
     padding: 2rem 0.8rem 3.5rem 1.4rem;
+  }
+
+  .evidence {
+    margin: 2.1rem 12px 1rem 0;
+    padding: 1.7rem 0.8rem 2.2rem 1.1rem;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-links {
+    max-width: none;
+    margin-left: 0;
   }
 
   .footer {
