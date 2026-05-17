@@ -1322,6 +1322,16 @@ h1 {
   transform: rotate(0.6deg);
 }
 
+.evidence-docs {
+  max-width: 86%;
+  margin: 0.2rem 0 0 1.6rem;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  transform: rotate(-0.4deg);
+  color: #555;
+}
+
 .evidence-legend {
   list-style: none;
   display: grid;
