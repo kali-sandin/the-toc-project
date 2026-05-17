@@ -471,6 +471,41 @@ body::after {
   transition: transform 120ms ease, box-shadow 120ms ease, background-color 120ms ease, color 120ms ease, filter 120ms ease;
 }
 
+.menu-icon {
+  display: inline-block;
+  min-width: 0.95rem;
+  margin-right: 0.08rem;
+  font-size: 0.92rem;
+  line-height: 1;
+  border: 2px solid #111;
+  padding: 0.08rem 0.12rem 0.02rem;
+  background: rgba(255, 122, 0, 0.22);
+}
+
+.menu-icon-a {
+  transform: translateY(0.08rem) rotate(-7deg);
+}
+
+.menu-icon-b {
+  transform: translateY(-0.12rem) rotate(6deg);
+  background: rgba(12, 245, 116, 0.28);
+}
+
+.menu-icon-c {
+  transform: translateY(0.18rem) rotate(-11deg);
+  background: rgba(255, 43, 181, 0.23);
+}
+
+.menu-icon-d {
+  transform: translateY(-0.06rem) rotate(9deg);
+  background: rgba(0, 183, 255, 0.24);
+}
+
+.menu-icon-e {
+  transform: translateY(0.14rem) rotate(-4deg);
+  background: rgba(241, 255, 49, 0.34);
+}
+
 .menu-label {
   display: inline-block;
 }
@@ -1065,6 +1100,17 @@ h1 {
   text-transform: uppercase;
 }
 
+.evidence-sticker-icon {
+  display: inline-block;
+  width: fit-content;
+  margin: -0.15rem 0 0.05rem;
+  padding: 0.04rem 0.18rem;
+  border: 2px solid #111;
+  font-size: 0.88rem;
+  line-height: 1;
+  background: rgba(255, 248, 235, 0.45);
+}
+
 .evidence-sticker strong {
   font-size: 0.74rem;
 }
@@ -1185,6 +1231,59 @@ h1 {
   transform: rotate(0.6deg);
 }
 
+.evidence-legend {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0 0.2rem;
+  padding: 0;
+}
+
+.evidence-legend-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.12rem 0.55rem;
+  align-items: start;
+  padding: 0.55rem 0.65rem 0.6rem;
+  border: 3px solid #111;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.evidence-legend-item-a {
+  transform: rotate(-2deg) translateX(-0.45rem);
+}
+
+.evidence-legend-item-b {
+  transform: rotate(1.5deg) translateY(0.3rem);
+}
+
+.evidence-legend-item-c {
+  transform: rotate(-3deg) translateX(0.25rem);
+}
+
+.legend-icon {
+  grid-row: span 2;
+  display: inline-block;
+  padding: 0.1rem 0.28rem;
+  border: 2px solid #111;
+  font-size: 1rem;
+  line-height: 1;
+  background: #ffee00;
+}
+
+.legend-label {
+  font: 900 0.78rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+}
+
+.legend-note {
+  font-family: "Courier New", monospace;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}
+
 .evidence-aside {
   max-width: 72%;
   margin: 1rem 0 0 auto;
@@ -1278,6 +1377,16 @@ h1 {
   .evidence-sticker-a,
   .evidence-sticker-b,
   .evidence-sticker-c {
+    transform: rotate(0deg);
+  }
+
+  .evidence-legend {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-legend-item-a,
+  .evidence-legend-item-b,
+  .evidence-legend-item-c {
     transform: rotate(0deg);
   }
 
