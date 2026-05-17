@@ -929,11 +929,13 @@ h1 {
   top: -1rem;
   right: 18%;
   z-index: 5;
-  background: rgba(255, 122, 0, 0.88);
+  background: rgba(255, 0, 0, 0.9);
   font-family: "Arial Black", sans-serif;
-  letter-spacing: 0.16rem;
+  letter-spacing: 0.2rem;
   transform: rotate(9deg);
-  font-size: 1.2rem;
+  font-size: 2.5rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.3rem;
 }
 
 .hero-tag-b {
