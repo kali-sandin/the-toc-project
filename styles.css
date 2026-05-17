@@ -774,6 +774,33 @@ h1 {
   z-index: 5;
 }
 
+.gestalt-trap::before {
+  content: "subgrupo?";
+  position: absolute;
+  top: -1.2rem;
+  left: 29%;
+  padding: 0.16rem 0.42rem;
+  border: 2px solid #111;
+  background: rgba(255, 248, 235, 0.88);
+  font: 900 0.64rem/1 "Courier New", monospace;
+  letter-spacing: 0.08rem;
+  transform: rotate(-8deg);
+}
+
+.gestalt-kicker {
+  position: absolute;
+  left: 63%;
+  top: 5.6rem;
+  z-index: 12;
+  margin: 0;
+  padding: 0.18rem 0.4rem;
+  border: 2px solid #111;
+  background: rgba(241, 255, 49, 0.78);
+  font: 900 0.66rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  transform: rotate(7deg);
+}
+
 .card,
 .manifesto,
 .evidence,
@@ -789,20 +816,21 @@ h1 {
 
 .card-layer-top {
   z-index: 8;
-  margin-right: -2.8rem;
+  margin-right: -4.6rem;
+  margin-bottom: 1.1rem;
 }
 
 .card-layer-under {
   z-index: 1;
-  margin-left: -3.2rem;
-  margin-right: 2.4rem;
-  margin-top: 3.4rem;
+  margin-left: -4.9rem;
+  margin-right: 3.1rem;
+  margin-top: 4.8rem;
 }
 
 .card-layer-middle {
   z-index: 6;
-  margin-left: -4.6rem;
-  margin-top: -1.1rem;
+  margin-left: -6.2rem;
+  margin-top: -2.4rem;
 }
 
 .card-badge {
@@ -984,6 +1012,33 @@ h1 {
   padding: 2.8rem 0.8rem 5.4rem 2.1rem;
   position: relative;
   z-index: 3;
+}
+
+.manifesto-rail {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.manifesto-rail-line {
+  position: absolute;
+  display: block;
+  height: 2px;
+  background: rgba(241, 255, 49, 0.6);
+}
+
+.manifesto-rail-line-a {
+  top: 6.4rem;
+  left: 1.8rem;
+  width: 68%;
+  transform: rotate(-2deg);
+}
+
+.manifesto-rail-line-b {
+  top: 9.7rem;
+  left: 3.4rem;
+  width: 53%;
+  transform: rotate(3deg);
 }
 
 .manifesto ul {
@@ -1179,10 +1234,43 @@ h1 {
   text-shadow: 3px -2px 0 rgba(255, 43, 181, 0.32);
 }
 
+.evidence-connectors {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.evidence-connector {
+  position: absolute;
+  display: block;
+  border-top: 2px dashed rgba(17, 17, 17, 0.68);
+}
+
+.evidence-connector-a {
+  top: 10.8rem;
+  left: 46%;
+  width: 21%;
+  transform: rotate(14deg);
+}
+
+.evidence-connector-b {
+  top: 18.3rem;
+  left: 18%;
+  width: 25%;
+  transform: rotate(-9deg);
+}
+
+.evidence-connector-c {
+  top: 24.5rem;
+  left: 52%;
+  width: 18%;
+  transform: rotate(6deg);
+}
+
 .evidence-grid {
   display: grid;
   grid-template-columns: minmax(160px, 0.9fr) minmax(180px, 1.1fr);
-  gap: 1.1rem 1.7rem;
+  gap: 1.6rem 0.9rem;
   margin: 1.5rem 0 1.2rem;
 }
 
@@ -1193,10 +1281,10 @@ h1 {
   background: rgba(255, 255, 255, 0.72);
 }
 
-.evidence-note-a { transform: translateX(-0.8rem) rotate(1deg); }
-.evidence-note-b { transform: translateY(0.55rem) rotate(-1.6deg); }
-.evidence-note-c { transform: translate(0.35rem, -0.25rem) rotate(1.8deg); }
-.evidence-note-d { transform: translateX(-0.35rem) rotate(-0.8deg); }
+.evidence-note-a { transform: translate(0.9rem, 0.15rem) rotate(1deg); }
+.evidence-note-b { transform: translate(-1.6rem, 1rem) rotate(-1.6deg); }
+.evidence-note-c { transform: translate(1.8rem, -0.7rem) rotate(1.8deg); }
+.evidence-note-d { transform: translate(-0.9rem, 0.55rem) rotate(-0.8deg); }
 
 .evidence-number {
   position: absolute;
@@ -1348,6 +1436,12 @@ h1 {
     gap: 1.6rem;
   }
 
+  .gestalt-kicker {
+    position: static;
+    width: fit-content;
+    margin: 0 0 0.8rem auto;
+  }
+
   .manifesto {
     margin: 2.7rem 12px 1rem 0;
     padding: 2rem 0.8rem 3.5rem 1.4rem;
@@ -1378,6 +1472,11 @@ h1 {
   .evidence-sticker-b,
   .evidence-sticker-c {
     transform: rotate(0deg);
+  }
+
+  .evidence-connectors,
+  .manifesto-rail {
+    display: none;
   }
 
   .evidence-legend {
