@@ -580,6 +580,21 @@ body::after {
   animation: safety-row-nudge 164ms 18ms both;
 }
 
+.temporal-mischief-safety:hover .motion-proof-state-a,
+.temporal-mischief-safety:focus-within .motion-proof-state-a {
+  animation: proof-state-late 152ms 62ms both;
+}
+
+.temporal-mischief-safety:hover .motion-proof-state-b,
+.temporal-mischief-safety:focus-within .motion-proof-state-b {
+  animation: proof-state-still 126ms 0ms both;
+}
+
+.temporal-mischief-safety:hover .motion-proof-divider,
+.temporal-mischief-safety:focus-within .motion-proof-divider {
+  animation: proof-divider-shift 181ms 14ms both;
+}
+
 @keyframes drift-late-a {
   0% { transform: rotate(9deg) translate(0, 0) scale(1); }
   62% { transform: rotate(9deg) translate(0, 0) scale(1); }
@@ -790,6 +805,23 @@ body::after {
   100% { transform: translate(4px, 0); }
 }
 
+@keyframes proof-state-late {
+  0% { transform: rotate(-4deg) translate(0, 0); }
+  61% { transform: rotate(-4deg) translate(0, 0); }
+  100% { transform: rotate(-8deg) translate(6px, -2px); }
+}
+
+@keyframes proof-state-still {
+  0% { transform: rotate(3deg) translate(0, 0); }
+  100% { transform: rotate(1deg) translate(0, 0); }
+}
+
+@keyframes proof-divider-shift {
+  0% { transform: translate(0, 0); letter-spacing: 0.18rem; }
+  46% { transform: translate(0, 0); letter-spacing: 0.18rem; }
+  100% { transform: translate(3px, 0); letter-spacing: 0.28rem; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-tag,
   .card-badge,
@@ -808,7 +840,9 @@ body::after {
   .evidence-connector,
   .motion-safety-chip,
   .motion-safety-copy,
-  .motion-safety-list li {
+  .motion-safety-list li,
+  .motion-proof-state,
+  .motion-proof-divider {
     animation: none !important;
     transition: none;
   }
@@ -850,7 +884,11 @@ body::after {
   .temporal-mischief:hover .motion-safety-copy,
   .temporal-mischief:focus-within .motion-safety-copy,
   .temporal-mischief:hover .motion-safety-list li,
-  .temporal-mischief:focus-within .motion-safety-list li {
+  .temporal-mischief:focus-within .motion-safety-list li,
+  .temporal-mischief:hover .motion-proof-state,
+  .temporal-mischief:focus-within .motion-proof-state,
+  .temporal-mischief:hover .motion-proof-divider,
+  .temporal-mischief:focus-within .motion-proof-divider {
     will-change: transform, letter-spacing, box-shadow, opacity;
   }
 }
@@ -1821,23 +1859,96 @@ h1 {
   font-family: Verdana, sans-serif;
 }
 
-.evidence-links {
-  max-width: 86%;
-  margin: 0.2rem 0 0 1.6rem;
-  font-family: "Courier New", monospace;
-  font-weight: 900;
-  letter-spacing: -0.03rem;
-  transform: rotate(0.6deg);
+.evidence-biblio {
+  position: relative;
+  max-width: 91%;
+  margin: 0.45rem 0 1.35rem 1.35rem;
+  padding: 0.65rem 1rem 0.9rem 0.72rem;
+  border: 3px dashed #111;
+  background: linear-gradient(103deg, rgba(255, 252, 196, 0.9), rgba(206, 255, 250, 0.74) 47%, rgba(255, 214, 241, 0.84));
+  box-shadow: -7px 5px 0 rgba(0, 0, 0, 0.16);
+  transform: rotate(-0.7deg) translateX(0.35rem);
+}
+
+.evidence-biblio::before {
+  content: "refs / refs / ref?";
+  position: absolute;
+  top: -1.1rem;
+  right: 1.15rem;
+  padding: 0.12rem 0.45rem;
+  border: 2px solid #111;
+  background: #ff4fd8;
+  color: #111;
+  font: 900 0.68rem/1 "Arial Black", sans-serif;
+  letter-spacing: 0.05rem;
+  transform: rotate(5deg);
+}
+
+.evidence-biblio-kicker {
+  margin: 0 0 0.1rem 0.35rem;
+  font: 900 0.66rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  color: #111;
+  transform: translateX(-0.5rem) rotate(1.2deg);
+}
+
+.evidence-biblio h3 {
+  margin: 0 0 0.5rem;
+  font: 900 1rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02rem;
+}
+
+.evidence-biblio-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 0.48rem 0.62rem;
+  margin: 0;
+  padding: 0;
+}
+
+.evidence-biblio-item {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.45rem 0.58rem 0.52rem;
+  border: 2px solid #111;
+  background: rgba(255, 255, 255, 0.72);
+  font-family: Verdana, sans-serif;
+  box-shadow: 3px -2px 0 rgba(0, 0, 0, 0.11);
+}
+
+.evidence-biblio-item-a { transform: rotate(1.1deg) translateX(-0.25rem); }
+.evidence-biblio-item-b { transform: rotate(-1.4deg) translateY(0.22rem); }
+.evidence-biblio-item-c { transform: rotate(0.4deg) translate(0.35rem, -0.08rem); }
+.evidence-biblio-item-d { transform: rotate(-0.8deg) translateX(-0.1rem); }
+
+.evidence-biblio a,
+.evidence-docs a {
+  color: #111;
+  text-decoration-thickness: 0.19rem;
+  text-underline-offset: 0.12rem;
+}
+
+.evidence-biblio-item a {
+  font: 900 0.82rem/1.05 "Courier New", monospace;
+  text-transform: uppercase;
+}
+
+.evidence-biblio-item span {
+  font-size: 0.78rem;
+  line-height: 1.28;
 }
 
 .evidence-docs {
-  max-width: 86%;
-  margin: 0.2rem 0 0 1.6rem;
+  max-width: 94%;
+  margin: 0.62rem 0 0 1.05rem;
   font-family: "Courier New", monospace;
   font-weight: 700;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.03rem;
   transform: rotate(-0.4deg);
-  color: #555;
+  color: #333;
 }
 
 .evidence-legend {
@@ -1925,6 +2036,43 @@ h1 {
 .motion-safety-copy {
   margin: 0;
   font: 700 0.92rem/1.45 "Trebuchet MS", Arial, sans-serif;
+}
+
+.motion-safety-proof {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.7rem 0 0.2rem;
+  padding: 0.28rem 0.4rem 0.34rem;
+  border: 2px solid #111;
+  background: rgba(17, 17, 17, 0.08);
+}
+
+.motion-proof-state,
+.motion-proof-divider {
+  display: inline-block;
+  font: 900 0.7rem/1.1 "Courier New", monospace;
+  text-transform: uppercase;
+}
+
+.motion-proof-state {
+  padding: 0.16rem 0.34rem 0.22rem;
+  border: 2px solid #111;
+}
+
+.motion-proof-state-a {
+  background: rgba(255, 122, 0, 0.34);
+  transform: rotate(-4deg);
+}
+
+.motion-proof-state-b {
+  background: rgba(12, 245, 116, 0.28);
+  transform: rotate(3deg);
+}
+
+.motion-proof-divider {
+  letter-spacing: 0.18rem;
 }
 
 .motion-safety-list {
@@ -2084,9 +2232,21 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .evidence-links {
+  .evidence-biblio {
     max-width: none;
     margin-left: 0;
+    transform: rotate(0deg);
+  }
+
+  .evidence-biblio-list {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-biblio-item-a,
+  .evidence-biblio-item-b,
+  .evidence-biblio-item-c,
+  .evidence-biblio-item-d {
+    transform: rotate(0deg);
   }
 
   .motion-safety-note {
@@ -2097,6 +2257,11 @@ h1 {
 
   .motion-safety-list li {
     grid-template-columns: 1fr;
+  }
+
+  .motion-safety-proof {
+    display: grid;
+    justify-items: start;
   }
 
   .footer {
