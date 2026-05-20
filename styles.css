@@ -347,6 +347,414 @@ body::after {
   transition: letter-spacing 150ms ease, transform 150ms ease, font-size 150ms ease;
 }
 
+.hero-tag,
+.card-badge,
+.card-pill,
+.evidence-sticker,
+.evidence-number,
+.legend-icon,
+.menu-icon,
+.menu-nudge,
+.evidence-note,
+.evidence-legend-item,
+.evidence-aside,
+.list-tail,
+.hero-extra span,
+.hero-noise .hero-tag {
+  transition-property: transform, box-shadow, filter, background-color, border-color, letter-spacing;
+  transition-timing-function: cubic-bezier(.22,.9,.31,1.24);
+}
+
+.temporal-mischief:hover .hero-tag,
+.temporal-mischief:focus-within .hero-tag,
+.temporal-mischief:hover .card-badge,
+.temporal-mischief:focus-within .card-badge,
+.temporal-mischief:hover .card-pill,
+.temporal-mischief:focus-within .card-pill,
+.temporal-mischief:hover .evidence-sticker,
+.temporal-mischief:focus-within .evidence-sticker,
+.temporal-mischief:hover .evidence-number,
+.temporal-mischief:focus-within .evidence-number,
+.temporal-mischief:hover .legend-icon,
+.temporal-mischief:focus-within .legend-icon,
+.temporal-mischief:hover .menu-icon,
+.temporal-mischief:focus-within .menu-icon,
+.temporal-mischief:hover .menu-nudge,
+.temporal-mischief:focus-within .menu-nudge,
+.temporal-mischief:hover .evidence-note,
+.temporal-mischief:focus-within .evidence-note,
+.temporal-mischief:hover .evidence-legend-item,
+.temporal-mischief:focus-within .evidence-legend-item,
+.temporal-mischief:hover .evidence-aside,
+.temporal-mischief:focus-within .evidence-aside,
+.temporal-mischief:hover .list-tail,
+.temporal-mischief:focus-within .list-tail,
+.temporal-mischief:hover .hero-extra span,
+.temporal-mischief:focus-within .hero-extra span,
+.temporal-mischief:hover .hero-noise .hero-tag,
+.temporal-mischief:focus-within .hero-noise .hero-tag {
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.temporal-mischief-hero:hover .hero-tag-a,
+.temporal-mischief-hero:focus-within .hero-tag-a {
+  animation: drift-late-a 182ms 44ms both;
+}
+
+.temporal-mischief-hero:hover .hero-tag-b,
+.temporal-mischief-hero:focus-within .hero-tag-b {
+  animation: drift-late-b 226ms 0ms both;
+}
+
+.temporal-mischief-hero:hover .hero-mark-a,
+.temporal-mischief-hero:focus-within .hero-mark-a {
+  animation: nudge-mark 144ms 96ms both;
+}
+
+.temporal-mischief-hero:hover .hero-mark-b,
+.temporal-mischief-hero:focus-within .hero-mark-b {
+  animation: nudge-mark-b 208ms 18ms both;
+}
+
+.temporal-mischief-hero:hover .hero-extra span,
+.temporal-mischief-hero:focus-within .hero-extra span {
+  animation: wobble-copy 168ms 72ms both;
+}
+
+.temporal-mischief-card-a:hover .card-badge,
+.temporal-mischief-card-a:focus-within .card-badge,
+.temporal-mischief-card-b:hover .card-badge,
+.temporal-mischief-card-b:focus-within .card-badge,
+.temporal-mischief-card-c:hover .card-badge,
+.temporal-mischief-card-c:focus-within .card-badge {
+  animation: badge-jerk 154ms 22ms both;
+}
+
+.temporal-mischief-card-a:hover .card-pill,
+.temporal-mischief-card-a:focus-within .card-pill {
+  animation: pill-glitch-a 212ms 0ms both;
+}
+
+.temporal-mischief-card-b:hover .card-pill,
+.temporal-mischief-card-b:focus-within .card-pill {
+  animation: pill-glitch-b 132ms 88ms both;
+}
+
+.temporal-mischief-card-c:hover .card-pill,
+.temporal-mischief-card-c:focus-within .card-pill {
+  animation: pill-glitch-c 238ms 34ms both;
+}
+
+.temporal-mischief-card-a:hover .card-title,
+.temporal-mischief-card-a:focus-within .card-title {
+  animation: title-shiver-a 164ms 61ms both;
+}
+
+.temporal-mischief-card-b:hover .card-title,
+.temporal-mischief-card-b:focus-within .card-title {
+  animation: title-shiver-b 196ms 13ms both;
+}
+
+.temporal-mischief-card-c:hover .card-title,
+.temporal-mischief-card-c:focus-within .card-title {
+  animation: title-shiver-c 147ms 79ms both;
+}
+
+.temporal-mischief-manifesto:hover .list-tail-a,
+.temporal-mischief-manifesto:focus-within .list-tail-a {
+  animation: tail-flick-a 142ms 0ms both;
+}
+
+.temporal-mischief-manifesto:hover .list-tail-b,
+.temporal-mischief-manifesto:focus-within .list-tail-b {
+  animation: tail-flick-b 219ms 31ms both;
+}
+
+.temporal-mischief-manifesto:hover .list-tail-c,
+.temporal-mischief-manifesto:focus-within .list-tail-c {
+  animation: tail-flick-c 167ms 84ms both;
+}
+
+.temporal-mischief-manifesto:hover .list-tail-d,
+.temporal-mischief-manifesto:focus-within .list-tail-d {
+  animation: tail-flick-d 205ms 17ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-sticker-a,
+.temporal-mischief-evidence:focus-within .evidence-sticker-a {
+  animation: sticker-lurch-a 173ms 0ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-sticker-b,
+.temporal-mischief-evidence:focus-within .evidence-sticker-b {
+  animation: sticker-lurch-b 241ms 56ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-sticker-c,
+.temporal-mischief-evidence:focus-within .evidence-sticker-c {
+  animation: sticker-lurch-c 189ms 19ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-note-a,
+.temporal-mischief-evidence:focus-within .evidence-note-a {
+  animation: note-breathe-a 148ms 64ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-note-b,
+.temporal-mischief-evidence:focus-within .evidence-note-b {
+  animation: note-breathe-b 216ms 7ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-note-c,
+.temporal-mischief-evidence:focus-within .evidence-note-c {
+  animation: note-breathe-c 158ms 92ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-note-d,
+.temporal-mischief-evidence:focus-within .evidence-note-d {
+  animation: note-breathe-d 231ms 23ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-legend-item-a,
+.temporal-mischief-evidence:focus-within .evidence-legend-item-a,
+.temporal-mischief-evidence:hover .evidence-legend-item-b,
+.temporal-mischief-evidence:focus-within .evidence-legend-item-b,
+.temporal-mischief-evidence:hover .evidence-legend-item-c,
+.temporal-mischief-evidence:focus-within .evidence-legend-item-c {
+  animation: legend-jolt 177ms 27ms both;
+}
+
+.temporal-mischief-evidence:hover .evidence-aside,
+.temporal-mischief-evidence:focus-within .evidence-aside {
+  animation: aside-drag 203ms 48ms both;
+}
+
+.temporal-mischief-footer:hover .kern-squeeze,
+.temporal-mischief-footer:focus-within .kern-squeeze {
+  animation: footer-clench 159ms 18ms both;
+}
+
+.temporal-mischief-footer:hover .kern-wide,
+.temporal-mischief-footer:focus-within .kern-wide {
+  animation: footer-stretch 228ms 0ms both;
+}
+
+@keyframes drift-late-a {
+  0% { transform: rotate(9deg) translate(0, 0) scale(1); }
+  62% { transform: rotate(9deg) translate(0, 0) scale(1); }
+  100% { transform: rotate(11deg) translate(10px, -6px) scale(1.03); }
+}
+
+@keyframes drift-late-b {
+  0% { transform: rotate(-11deg) translate(0, 0); }
+  38% { transform: rotate(-11deg) translate(0, 0); }
+  100% { transform: rotate(-14deg) translate(-8px, 5px); }
+}
+
+@keyframes nudge-mark {
+  0% { transform: rotate(8deg) translate(0, 0); }
+  56% { transform: rotate(8deg) translate(0, 0); }
+  100% { transform: rotate(11deg) translate(6px, -2px); }
+}
+
+@keyframes nudge-mark-b {
+  0% { transform: rotate(-6deg) translate(0, 0); }
+  30% { transform: rotate(-6deg) translate(0, 0); }
+  100% { transform: rotate(-10deg) translate(-7px, 3px); }
+}
+
+@keyframes wobble-copy {
+  0% { transform: rotate(2deg) translateX(0); letter-spacing: 0; }
+  58% { transform: rotate(2deg) translateX(0); letter-spacing: 0; }
+  100% { transform: rotate(-1deg) translateX(7px); letter-spacing: 0.06rem; }
+}
+
+@keyframes badge-jerk {
+  0% { transform: rotate(-7deg) translate(0, 0); }
+  44% { transform: rotate(-7deg) translate(0, 0); }
+  100% { transform: rotate(-11deg) translate(5px, -4px); }
+}
+
+@keyframes pill-glitch-a {
+  0% { transform: rotate(-11deg) translate(0, 0); }
+  71% { transform: rotate(-11deg) translate(0, 0); }
+  100% { transform: rotate(-14deg) translate(-5px, 4px); }
+}
+
+@keyframes pill-glitch-b {
+  0% { transform: rotate(7deg) translate(0, 0); }
+  36% { transform: rotate(7deg) translate(0, 0); }
+  100% { transform: rotate(11deg) translate(7px, -2px); }
+}
+
+@keyframes pill-glitch-c {
+  0% { transform: rotate(-4deg) translate(0, 0); }
+  63% { transform: rotate(-4deg) translate(0, 0); }
+  100% { transform: rotate(-9deg) translate(-6px, 5px); }
+}
+
+@keyframes title-shiver-a {
+  0% { transform: scaleX(1.06) translate(0, 0); }
+  49% { transform: scaleX(1.06) translate(0, 0); }
+  100% { transform: scaleX(1.08) translate(4px, -2px); }
+}
+
+@keyframes title-shiver-b {
+  0% { transform: translate(0, 0); }
+  41% { transform: translate(0, 0); }
+  100% { transform: translate(-5px, 2px) rotate(-1deg); }
+}
+
+@keyframes title-shiver-c {
+  0% { transform: translate(0, 0); }
+  67% { transform: translate(0, 0); }
+  100% { transform: translate(6px, -3px) rotate(0.5deg); }
+}
+
+@keyframes tail-flick-a {
+  0% { transform: translateY(0.45rem) rotate(-8deg); }
+  54% { transform: translateY(0.45rem) rotate(-8deg); }
+  100% { transform: translateY(0.15rem) rotate(-14deg); }
+}
+
+@keyframes tail-flick-b {
+  0% { transform: translateY(-0.05rem) rotate(4deg); }
+  31% { transform: translateY(-0.05rem) rotate(4deg); }
+  100% { transform: translateY(-0.22rem) rotate(10deg); }
+}
+
+@keyframes tail-flick-c {
+  0% { transform: translateY(0.2rem) rotate(-12deg); }
+  69% { transform: translateY(0.2rem) rotate(-12deg); }
+  100% { transform: translateY(0.42rem) rotate(-18deg); }
+}
+
+@keyframes tail-flick-d {
+  0% { transform: translateY(-0.16rem) rotate(9deg); }
+  46% { transform: translateY(-0.16rem) rotate(9deg); }
+  100% { transform: translateY(-0.38rem) rotate(15deg); }
+}
+
+@keyframes sticker-lurch-a {
+  0% { transform: rotate(8deg) translate(0, 0); box-shadow: 4px 6px 0 rgba(17, 17, 17, 0.18); }
+  47% { transform: rotate(8deg) translate(0, 0); box-shadow: 4px 6px 0 rgba(17, 17, 17, 0.18); }
+  100% { transform: rotate(12deg) translate(9px, -7px); box-shadow: 8px 12px 0 rgba(17, 17, 17, 0.24); }
+}
+
+@keyframes sticker-lurch-b {
+  0% { transform: rotate(-11deg) translate(0, 0); box-shadow: 4px 6px 0 rgba(17, 17, 17, 0.18); }
+  58% { transform: rotate(-11deg) translate(0, 0); box-shadow: 4px 6px 0 rgba(17, 17, 17, 0.18); }
+  100% { transform: rotate(-15deg) translate(-7px, 6px); box-shadow: 7px 10px 0 rgba(17, 17, 17, 0.24); }
+}
+
+@keyframes sticker-lurch-c {
+  0% { transform: rotate(6deg) translate(0, 0); box-shadow: 4px 6px 0 rgba(17, 17, 17, 0.18); }
+  33% { transform: rotate(6deg) translate(0, 0); box-shadow: 4px 6px 0 rgba(17, 17, 17, 0.18); }
+  100% { transform: rotate(10deg) translate(8px, 4px); box-shadow: 9px 9px 0 rgba(17, 17, 17, 0.24); }
+}
+
+@keyframes note-breathe-a {
+  0% { transform: translate(0.9rem, 0.15rem) rotate(1deg); }
+  57% { transform: translate(0.9rem, 0.15rem) rotate(1deg); }
+  100% { transform: translate(1.35rem, -0.05rem) rotate(1.9deg); }
+}
+
+@keyframes note-breathe-b {
+  0% { transform: translate(-1.6rem, 1rem) rotate(-1.6deg); }
+  28% { transform: translate(-1.6rem, 1rem) rotate(-1.6deg); }
+  100% { transform: translate(-2.05rem, 1.25rem) rotate(-2.5deg); }
+}
+
+@keyframes note-breathe-c {
+  0% { transform: translate(1.8rem, -0.7rem) rotate(1.8deg); }
+  65% { transform: translate(1.8rem, -0.7rem) rotate(1.8deg); }
+  100% { transform: translate(2.15rem, -1rem) rotate(2.7deg); }
+}
+
+@keyframes note-breathe-d {
+  0% { transform: translate(-0.9rem, 0.55rem) rotate(-0.8deg); }
+  39% { transform: translate(-0.9rem, 0.55rem) rotate(-0.8deg); }
+  100% { transform: translate(-1.3rem, 0.82rem) rotate(-1.6deg); }
+}
+
+@keyframes legend-jolt {
+  0% { transform: translate(0, 0) rotate(0); }
+  51% { transform: translate(0, 0) rotate(0); }
+  100% { transform: translate(4px, -3px) rotate(-1.3deg); }
+}
+
+@keyframes aside-drag {
+  0% { transform: rotate(-1.4deg) translate(0, 0); }
+  43% { transform: rotate(-1.4deg) translate(0, 0); }
+  100% { transform: rotate(-2.3deg) translate(-8px, 4px); }
+}
+
+@keyframes footer-clench {
+  0% { letter-spacing: -0.08rem; transform: translate(0, 0); }
+  62% { letter-spacing: -0.08rem; transform: translate(0, 0); }
+  100% { letter-spacing: -0.14rem; transform: translate(-2px, 0); }
+}
+
+@keyframes footer-stretch {
+  0% { letter-spacing: 0.2rem; transform: translate(0, 0); }
+  34% { letter-spacing: 0.2rem; transform: translate(0, 0); }
+  100% { letter-spacing: 0.33rem; transform: translate(5px, -1px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-tag,
+  .card-badge,
+  .card-pill,
+  .evidence-sticker,
+  .evidence-number,
+  .legend-icon,
+  .menu-icon,
+  .menu-nudge,
+  .evidence-note,
+  .evidence-legend-item,
+  .evidence-aside,
+  .list-tail,
+  .hero-extra span,
+  .hero-noise .hero-tag {
+    animation: none !important;
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .temporal-mischief:hover .hero-tag,
+  .temporal-mischief:focus-within .hero-tag,
+  .temporal-mischief:hover .card-badge,
+  .temporal-mischief:focus-within .card-badge,
+  .temporal-mischief:hover .card-pill,
+  .temporal-mischief:focus-within .card-pill,
+  .temporal-mischief:hover .evidence-sticker,
+  .temporal-mischief:focus-within .evidence-sticker,
+  .temporal-mischief:hover .evidence-number,
+  .temporal-mischief:focus-within .evidence-number,
+  .temporal-mischief:hover .legend-icon,
+  .temporal-mischief:focus-within .legend-icon,
+  .temporal-mischief:hover .menu-icon,
+  .temporal-mischief:focus-within .menu-icon,
+  .temporal-mischief:hover .menu-nudge,
+  .temporal-mischief:focus-within .menu-nudge,
+  .temporal-mischief:hover .evidence-note,
+  .temporal-mischief:focus-within .evidence-note,
+  .temporal-mischief:hover .evidence-legend-item,
+  .temporal-mischief:focus-within .evidence-legend-item,
+  .temporal-mischief:hover .evidence-aside,
+  .temporal-mischief:focus-within .evidence-aside,
+  .temporal-mischief:hover .list-tail,
+  .temporal-mischief:focus-within .list-tail,
+  .temporal-mischief:hover .hero-extra span,
+  .temporal-mischief:focus-within .hero-extra span,
+  .temporal-mischief:hover .hero-noise .hero-tag,
+  .temporal-mischief:focus-within .hero-noise .hero-tag {
+    will-change: transform, letter-spacing, box-shadow;
+  }
+}
+
 .treachery-zone:hover .title-snap,
 .treachery-zone:hover .menu-label-a,
 .treachery-zone:hover .card-badge-a,
