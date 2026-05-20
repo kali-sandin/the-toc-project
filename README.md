@@ -35,6 +35,7 @@ La página incluye varias líneas de sabotaje visual ya activas:
 ├── styles.css            # caos visual centralizado
 ├── README.md             # este documento, por fin útil
 └── research/
+    ├── README.md                       # guía de lectura, mapa por tema y criterio editorial
     ├── toc_patterns.md                 # hallazgos, principios UX invertidos y oportunidades
     ├── perception_deep_dive.md         # Gestalt, carga cognitiva, chunking y escaneo web aplicados al caos
     ├── interaction_memory_research.md  # movimiento, reconocimiento, memoria e iconos ambiguos
@@ -72,6 +73,13 @@ Aquí vive la mayor parte del sabotaje:
 - jerarquías visuales inconsistentes
 - microasimetrías
 - stacking confuso
+
+### `research/README.md`
+Ordena la documentación enlazada:
+- ruta de lectura recomendada
+- mapa por tema y por documento
+- criterio editorial para que cada hallazgo acabe en UI/tarea/decisión
+- fuentes externas principales
 
 ### `research/toc_patterns.md`
 Documenta patrones útiles para empeorar la web sin destruirla:
@@ -132,7 +140,7 @@ No hay gloria en mover una tarjeta y desaparecer.
 
 ## Ideas de trabajo futuras
 
-Basadas en `research/toc_patterns.md`:
+Basadas en `research/README.md` y `research/toc_patterns.md`:
 
 - ampliar `#evidence` con una mini bibliografía visible y enlaces externos
 - convertir el deep dive en una matriz visual dentro de la página
