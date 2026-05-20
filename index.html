@@ -131,10 +131,15 @@
       <div class="motion-safety-note temporal-mischief temporal-mischief-safety" aria-live="polite">
         <p class="motion-safety-kicker">caos, pero con barandilla</p>
         <p class="motion-safety-copy"><strong>Si pides menos movimiento</strong>, esta web apaga los desplazamientos y deja solo cambios estáticos de color, borde y contraste. La molestia sigue siendo perceptiva, no física.</p>
+        <div class="motion-safety-proof" aria-label="Prueba visible de movimiento reducido">
+          <span class="motion-proof-state motion-proof-state-a">modo normal → capas tarde</span>
+          <span class="motion-proof-divider" aria-hidden="true">vs</span>
+          <span class="motion-proof-state motion-proof-state-b">reduce motion → capas quietas</span>
+        </div>
         <ul class="motion-safety-list">
           <li><span class="motion-safety-chip motion-safety-chip-a">delay 80–160ms</span><span>la sombra puede llegar tarde; el enlace no huye</span></li>
           <li><span class="motion-safety-chip motion-safety-chip-b">sin loops largos</span><span>nada se queda vibrando cinco segundos como un mal framework</span></li>
-          <li><span class="motion-safety-chip motion-safety-chip-c">reduce motion</span><span><a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html" target="_blank" rel="noreferrer">WCAG 2.3.3</a> y compañía, por si alguien aún respeta estándares</span></li>
+          <li><span class="motion-safety-chip motion-safety-chip-c">reduce motion</span><span><a href="https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html" target="_blank" rel="noreferrer">WCAG 2.3.3</a>, <a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html" target="_blank" rel="noreferrer">2.2.2</a> y <a href="research/motion_safety_research.md" target="_release">nuestra guía interna</a></span></li>
         </ul>
       </div>
     </section>
