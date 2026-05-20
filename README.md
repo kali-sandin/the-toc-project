@@ -37,7 +37,8 @@ La página incluye varias líneas de sabotaje visual ya activas:
 └── research/
     ├── toc_patterns.md                 # hallazgos, principios UX invertidos y oportunidades
     ├── perception_deep_dive.md         # Gestalt, carga cognitiva, chunking y escaneo web aplicados al caos
-    └── interaction_memory_research.md  # movimiento, reconocimiento, memoria e iconos ambiguos
+    ├── interaction_memory_research.md  # movimiento, reconocimiento, memoria e iconos ambiguos
+    └── motion_safety_research.md       # microanimación incómoda con guardarraíles WCAG
 ```
 
 ## Cómo verlo en local
@@ -98,6 +99,13 @@ Abre dos líneas nuevas de evolución:
 - reconocimiento vs recuerdo aplicado a labels casi familiares
 - iconos ambiguos siempre acompañados de texto para no romper uso
 
+### `research/motion_safety_research.md`
+Define cómo usar incomodidad temporal sin cruzar líneas de accesibilidad:
+- movimiento breve, útil y molesto solo por timing
+- guardarraíles WCAG para pausa, flashes y animación por interacción
+- patrones de latencia falsa y anomalías locales
+- checklist para que futuras microanimaciones respeten `prefers-reduced-motion`
+
 ## Criterio de diseño
 
 Una intervención buena en este proyecto debería cumplir tres cosas:
@@ -128,7 +136,7 @@ Basadas en `research/toc_patterns.md`:
 
 - ampliar `#evidence` con una mini bibliografía visible y enlaces externos
 - convertir el deep dive en una matriz visual dentro de la página
-- crear microanimaciones accesibles y deliberadamente desacompasadas
+- crear microanimaciones accesibles y deliberadamente desacompasadas siguiendo `research/motion_safety_research.md`
 - añadir iconos/labels ambiguos que obliguen a reconocer dos veces
 - sabotear proximidad y agrupación sin romper clics
 - falsos protagonistas visuales en zonas secundarias
