@@ -1922,6 +1922,13 @@ h1 {
   transform: rotate(6deg);
 }
 
+.evidence-sticker-d {
+  right: 20%;
+  bottom: -2.2rem;
+  background: rgba(255, 238, 0, 0.94);
+  transform: rotate(-7deg) translateX(1.1rem);
+}
+
 .evidence::before {
   content: "fuente?";
   position: absolute;
@@ -2007,6 +2014,8 @@ h1 {
 .evidence-note-b { transform: translate(-1.6rem, 1rem) rotate(-1.6deg); }
 .evidence-note-c { transform: translate(1.8rem, -0.7rem) rotate(1.8deg); }
 .evidence-note-d { transform: translate(-0.9rem, 0.55rem) rotate(-0.8deg); }
+.evidence-note-e { transform: translate(1.45rem, -0.2rem) rotate(-1.9deg); }
+.evidence-note-f { transform: translate(-1.25rem, 0.95rem) rotate(1.4deg); }
 
 .evidence-number {
   position: absolute;
@@ -2096,6 +2105,9 @@ h1 {
 .evidence-biblio-item-b { transform: rotate(-1.4deg) translateY(0.22rem); }
 .evidence-biblio-item-c { transform: rotate(0.4deg) translate(0.35rem, -0.08rem); }
 .evidence-biblio-item-d { transform: rotate(-0.8deg) translateX(-0.1rem); }
+.evidence-biblio-item-e { transform: rotate(1.6deg) translate(-0.38rem, 0.18rem); }
+.evidence-biblio-item-f { transform: rotate(-1.1deg) translate(0.55rem, -0.14rem); }
+.evidence-biblio-item-g { transform: rotate(0.7deg) translate(-0.15rem, 0.28rem); }
 
 .evidence-biblio a,
 .evidence-docs a {
@@ -2404,7 +2416,8 @@ h1 {
 
   .evidence-sticker-a,
   .evidence-sticker-b,
-  .evidence-sticker-c {
+  .evidence-sticker-c,
+  .evidence-sticker-d {
     transform: rotate(0deg);
   }
 
@@ -2440,7 +2453,10 @@ h1 {
   .evidence-biblio-item-a,
   .evidence-biblio-item-b,
   .evidence-biblio-item-c,
-  .evidence-biblio-item-d {
+  .evidence-biblio-item-d,
+  .evidence-biblio-item-e,
+  .evidence-biblio-item-f,
+  .evidence-biblio-item-g {
     transform: rotate(0deg);
   }
 
