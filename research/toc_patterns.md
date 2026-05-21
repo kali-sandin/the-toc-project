@@ -1,5 +1,10 @@
 # Hallazgos: Patrones de Diseño TOC Visual
 
+
+> **Rol en la biblioteca:** inventario de patrones TOC y criterios de calidad.
+> **Úsalo para:** crear o evaluar anomalías visuales concretas.
+> **Complementa con:** [`perception_deep_dive.md`](perception_deep_dive.md) para justificar por qué molestan y [`friction_memory_research.md`](friction_memory_research.md) para diseñar picos memorables.
+
 ## 1. Tipografía Agresiva
 - **Kerning errático:** Letras demasiado juntas o separadas de forma impredecible.
 - **Fuentes 'Uncanny':** Fuentes que parecen legibles pero tienen glifos ligeramente deformados.

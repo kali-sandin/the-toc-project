@@ -1,5 +1,10 @@
 # Fricción memorable: carga cognitiva, picos y cierre
 
+
+> **Rol en la biblioteca:** diseño de fricción memorable: carga cognitiva, falsos protagonistas, pico/cierre y orden de foco.
+> **Úsalo para:** evidence, footer, bloque de pico TOC y futuras comparaciones normal/TOC.
+> **Complementa con:** [`README.md`](README.md) para la ruta editorial y [`motion_safety_research.md`](motion_safety_research.md) si añades movimiento.
+
 Este documento añade una línea de investigación para `task_022`: cómo una web incómoda puede dejar recuerdo sin convertirse en una trampa de usabilidad.
 
 ## 1. La carga cognitiva no es una licencia para saturar

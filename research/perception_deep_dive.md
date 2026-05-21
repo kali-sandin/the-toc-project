@@ -1,5 +1,10 @@
 # Deep dive: percepción, orden visual y fricción TOC
 
+
+> **Rol en la biblioteca:** explicación perceptiva de agrupación, jerarquía, recorrido y carga.
+> **Úsalo para:** tocar layout, cards, evidence o ritmo de lectura sin caer en caos aleatorio.
+> **Complementa con:** [`toc_patterns.md`](toc_patterns.md) para patrones concretos y [`interaction_memory_research.md`](interaction_memory_research.md) si el cambio afecta navegación o reconocimiento.
+
 Este documento amplía `toc_patterns.md` con una capa más operativa: no solo qué patrones molestan, sino por qué funcionan y cómo convertirlos en tareas de producto sin destruir la legibilidad.
 
 ## 1. Principio base: el ojo no lee píxeles, infiere estructura

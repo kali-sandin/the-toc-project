@@ -1,5 +1,10 @@
 # Research: movimiento, memoria e iconos ambiguos para TOC visual
 
+
+> **Rol en la biblioteca:** interacción, reconocimiento, memoria, labels e iconos ambiguos.
+> **Úsalo para:** menú, leyendas, microcopy, hover/focus y señales semánticas raras pero comprensibles.
+> **Complementa con:** [`motion_safety_research.md`](motion_safety_research.md) antes de animar y [`friction_memory_research.md`](friction_memory_research.md) si el cambio busca recuerdo.
+
 Este documento abre dos líneas nuevas para The TOC Project: fricción temporal mediante movimiento y fricción semántica mediante reconocimiento/memoria. No sustituye a `perception_deep_dive.md`; lo complementa con patrones que se sienten durante la interacción, no solo al mirar la composición estática.
 
 ## 1. Movimiento como secuestro de atención

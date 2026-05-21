@@ -1,5 +1,10 @@
 # Research: incomodidad temporal segura
 
+
+> **Rol en la biblioteca:** barandillas para movimiento incómodo pero accesible.
+> **Úsalo para:** delays, microanimaciones, estados hover/focus y pruebas de reducción de movimiento.
+> **Complementa con:** [`interaction_memory_research.md`](interaction_memory_research.md) para intención semántica y [`friction_memory_research.md`](friction_memory_research.md) para no convertir el pico en mareo.
+
 Este documento convierte la línea de microanimación de `interaction_memory_research.md` en reglas de producto. La pregunta no es "¿cómo hacemos que se mueva más?", sino "¿cómo usamos el tiempo para molestar sin cruzar la frontera de accesibilidad?".
 
 ## 1. Movimiento útil vs movimiento vampiro
