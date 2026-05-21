@@ -2016,6 +2016,7 @@ h1 {
 .evidence-note-d { transform: translate(-0.9rem, 0.55rem) rotate(-0.8deg); }
 .evidence-note-e { transform: translate(1.45rem, -0.2rem) rotate(-1.9deg); }
 .evidence-note-f { transform: translate(-1.25rem, 0.95rem) rotate(1.4deg); }
+.evidence-note-g { transform: translate(0.5rem, -0.5rem) rotate(2.2deg); }
 
 .evidence-number {
   position: absolute;
@@ -2125,6 +2126,53 @@ h1 {
   font-size: 0.78rem;
   line-height: 1.28;
 }
+
+.research-map {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.44rem;
+  margin: 0.72rem -0.25rem 0 0.45rem;
+  padding: 0.55rem 0.48rem 0.72rem;
+  border: 2px dotted #111;
+  background: rgba(255, 255, 255, 0.52);
+  transform: rotate(0.65deg) translateX(-0.28rem);
+}
+
+.research-map-kicker {
+  grid-column: 1 / -1;
+  margin: 0 0 0.12rem 0.4rem;
+  font: 900 0.62rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
+  transform: rotate(-1.6deg) translateX(0.18rem);
+}
+
+.research-map-card {
+  display: grid;
+  gap: 0.22rem;
+  min-height: 5.2rem;
+  padding: 0.48rem 0.42rem;
+  border: 2px solid #111;
+  color: #111;
+  background: rgba(255, 238, 0, 0.46);
+  box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.16);
+  text-decoration-thickness: 0.16rem;
+  text-underline-offset: 0.11rem;
+}
+
+.research-map-card strong {
+  font: 900 0.76rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.research-map-card span {
+  font: 700 0.72rem/1.25 "Courier New", monospace;
+}
+
+.research-map-card-a { transform: rotate(-1.4deg) translateY(0.2rem); }
+.research-map-card-b { transform: rotate(1.8deg) translate(-0.16rem, -0.08rem); background: rgba(189, 255, 0, 0.45); }
+.research-map-card-c { transform: rotate(-0.7deg) translate(0.08rem, 0.34rem); background: rgba(255, 43, 181, 0.24); }
+.research-map-card-d { transform: rotate(2.1deg) translateX(-0.2rem); background: rgba(0, 220, 255, 0.26); }
 
 .research-map {
   display: grid;
