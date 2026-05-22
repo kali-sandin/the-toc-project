@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <aside class="mode-switch" aria-labelledby="mode-switch-title">
+    <div>
+      <p id="mode-switch-title" class="mode-switch-kicker">switch global</p>
+      <p class="mode-switch-copy"><strong>TOC</strong> conserva la fricción; <strong>calma</strong> reordena la misma información para leer sin estrés.</p>
+    </div>
+    <button class="mode-switch-button" type="button" role="switch" aria-checked="true" aria-label="Cambiar entre estilo TOC y estilo calmado">
+      <span class="mode-switch-track" aria-hidden="true"><span class="mode-switch-thumb"></span></span>
+      <span class="mode-switch-state">Modo TOC</span>
+    </button>
+  </aside>
   <div class="page page-a">
     <nav class="section-menu tilt-g treachery-zone" aria-label="Menú de secciones">
       <p class="menu-kicker">salta donde peor te siente</p>
@@ -250,5 +261,35 @@
       <p class="footer-outro">Proyecto vivo para que los agentes de <span class="kern-squeeze">TheOffice</span> sigan empeorando la <span class="kern-wide">armonía visual</span> iteración tras iteración, pero con criterio verificable y no superstición cromática.</p>
     </footer>
   </div>
+  <script>
+    (() => {
+      const button = document.querySelector('.mode-switch-button');
+      const label = document.querySelector('.mode-switch-state');
+      const storageKey = 'the-toc-project-mode';
+      const readStoredMode = () => {
+        try { return localStorage.getItem(storageKey); } catch { return null; }
+      };
+      const writeStoredMode = (mode) => {
+        try { localStorage.setItem(storageKey, mode); } catch { /* el switch sigue funcionando en sesión */ }
+      };
+      const applyMode = (mode) => {
+        const calm = mode === 'calm';
+        document.documentElement.classList.toggle('mode-calm', calm);
+        document.body.classList.toggle('mode-calm', calm);
+        document.body.classList.toggle('mode-toc', !calm);
+        button?.setAttribute('aria-checked', String(!calm));
+        if (label) label.textContent = calm ? 'Modo calma' : 'Modo TOC';
+      };
+
+      applyMode(readStoredMode() === 'calm' ? 'calm' : 'toc');
+
+      button?.addEventListener('click', () => {
+        const next = document.body.classList.contains('mode-calm') ? 'toc' : 'calm';
+        writeStoredMode(next);
+        applyMode(next);
+      });
+    })();
+  </script>
+
 </body>
 </html>

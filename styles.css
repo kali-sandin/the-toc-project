@@ -2732,3 +2732,333 @@ h1 {
     margin-left: 0;
   }
 }
+
+/* task_042 — primer corte del switch global: misma información, dos estados visuales. */
+.mode-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) auto;
+  gap: 0.75rem;
+  align-items: center;
+  max-width: min(92vw, 30rem);
+  padding: 0.8rem 0.95rem 0.75rem;
+  color: #fff8eb;
+  background: rgba(23, 23, 23, 0.92);
+  border: 3px solid #f1ff31;
+  border-radius: 0.35rem 1.2rem 0.55rem 0.9rem;
+  box-shadow: -8px 10px 0 rgba(255, 43, 181, 0.38);
+  transform: rotate(0.9deg);
+}
+
+.mode-switch-kicker,
+.mode-switch-copy {
+  margin: 0;
+}
+
+.mode-switch-kicker {
+  font: 900 0.7rem/1 "Courier New", monospace;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+  color: #8bff00;
+}
+
+.mode-switch-copy {
+  margin-top: 0.25rem;
+  font: 700 0.78rem/1.25 "Trebuchet MS", Arial, sans-serif;
+}
+
+.mode-switch-button {
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
+  min-width: 6.4rem;
+  padding: 0.45rem 0.55rem;
+  color: #171717;
+  background: #f1ff31;
+  border: 3px solid #00b7ff;
+  border-radius: 999px 0.45rem 999px 0.45rem;
+  font: 900 0.74rem/1 "Arial Black", Impact, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.mode-switch-button:focus-visible {
+  outline: 4px solid #fff8eb;
+  outline-offset: 4px;
+}
+
+.mode-switch-track {
+  position: relative;
+  width: 3.6rem;
+  height: 1.55rem;
+  background: #ff2bb5;
+  border: 2px solid #171717;
+  border-radius: 999px;
+}
+
+.mode-switch-thumb {
+  position: absolute;
+  top: 0.15rem;
+  left: 1.95rem;
+  width: 1rem;
+  height: 1rem;
+  background: #fff8eb;
+  border: 2px solid #171717;
+  border-radius: 50%;
+  transition: transform 160ms ease, left 160ms ease, background-color 160ms ease;
+}
+
+.mode-switch-state {
+  white-space: nowrap;
+}
+
+body.mode-calm,
+body.mode-calm::before,
+body.mode-calm::after,
+body.mode-calm * {
+  animation: none !important;
+  transition: none !important;
+}
+
+html.mode-calm,
+body.mode-calm {
+  background: #f7f3ea !important;
+}
+
+body.mode-calm {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2933;
+  background-color: #f7f3ea;
+}
+
+body.mode-calm::before,
+body.mode-calm::after {
+  opacity: 0;
+}
+
+body.mode-calm .mode-switch {
+  color: #17324d;
+  background: #ffffff;
+  border-color: #d7dde7;
+  border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(31, 41, 51, 0.14);
+  transform: none;
+}
+
+body.mode-calm .mode-switch-kicker {
+  color: #2f6f67;
+  letter-spacing: 0.08rem;
+}
+
+body.mode-calm .mode-switch-button {
+  color: #ffffff;
+  background: #17324d;
+  border-color: #17324d;
+  border-radius: 999px;
+}
+
+body.mode-calm .mode-switch-track {
+  background: #d7dde7;
+  border-color: #17324d;
+}
+
+body.mode-calm .mode-switch-thumb {
+  left: 0.18rem;
+  background: #2f6f67;
+}
+
+body.mode-calm .page {
+  width: min(1080px, calc(100vw - 40px));
+  margin: 7.25rem auto 2.5rem;
+  transform: none;
+}
+
+body.mode-calm .tilt-a,
+body.mode-calm .tilt-b,
+body.mode-calm .tilt-c,
+body.mode-calm .tilt-d,
+body.mode-calm .tilt-e,
+body.mode-calm .tilt-f,
+body.mode-calm .tilt-g,
+body.mode-calm .tilt-h,
+body.mode-calm [class*="temporal-mischief"],
+body.mode-calm .card,
+body.mode-calm .evidence-note,
+body.mode-calm .evidence-biblio,
+body.mode-calm .research-map,
+body.mode-calm .research-map-card,
+body.mode-calm .footer-note,
+body.mode-calm .footer-kicker {
+  transform: none !important;
+}
+
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer,
+body.mode-calm .card,
+body.mode-calm .evidence-note,
+body.mode-calm .evidence-biblio,
+body.mode-calm .motion-safety-note,
+body.mode-calm .footer-note {
+  color: #1f2933;
+  background: #ffffff;
+  border: 1px solid #d7dde7;
+  border-radius: 1.25rem;
+  box-shadow: 0 18px 48px rgba(31, 41, 51, 0.11);
+}
+
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer {
+  margin: 0 0 1.35rem;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+body.mode-calm .section-menu {
+  position: static;
+  width: auto;
+  max-width: none;
+  margin: 0 0 1.35rem;
+  color: #1f2933;
+  background: #ffffff;
+  border: 1px solid #d7dde7;
+  border-radius: 1rem;
+  box-shadow: none;
+  transform: none;
+}
+
+body.mode-calm .section-menu ul,
+body.mode-calm .cards,
+body.mode-calm .toc-dials-grid,
+body.mode-calm .evidence-grid,
+body.mode-calm .footer-summary,
+body.mode-calm .research-map,
+body.mode-calm .evidence-biblio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+}
+
+body.mode-calm .section-menu a,
+body.mode-calm a {
+  color: #174ea6;
+}
+
+body.mode-calm .menu-kicker,
+body.mode-calm .evidence-kicker,
+body.mode-calm .toc-dials-kicker,
+body.mode-calm .footer-kicker,
+body.mode-calm .evidence-biblio-kicker,
+body.mode-calm .research-map-kicker,
+body.mode-calm .motion-safety-kicker,
+body.mode-calm .eyebrow {
+  color: #2f6f67;
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+body.mode-calm h1,
+body.mode-calm h2,
+body.mode-calm h3,
+body.mode-calm .card-title,
+body.mode-calm .manifesto-title,
+body.mode-calm .toc-dials-title,
+body.mode-calm .evidence-title,
+body.mode-calm .footer-title {
+  color: #17324d;
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: normal;
+  text-transform: none;
+  word-spacing: normal;
+}
+
+body.mode-calm h1 {
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  line-height: 0.95;
+}
+
+body.mode-calm .lede,
+body.mode-calm .footer-lede,
+body.mode-calm .footer-outro,
+body.mode-calm .evidence-aside,
+body.mode-calm .toc-dials-intro {
+  width: auto;
+  max-width: 68ch;
+  margin-left: 0;
+  line-height: 1.65;
+}
+
+body.mode-calm .hero-pair,
+body.mode-calm .hero-noise,
+body.mode-calm .hero-extra,
+body.mode-calm .evidence-stickers,
+body.mode-calm .evidence-connectors,
+body.mode-calm .manifesto-rail,
+body.mode-calm .card-pill,
+body.mode-calm .card-badge,
+body.mode-calm .footer::after {
+  display: none !important;
+}
+
+body.mode-calm .kern-wide,
+body.mode-calm .kern-squeeze,
+body.mode-calm .chunk-tight,
+body.mode-calm .chunk-wide,
+body.mode-calm .chunk-weird,
+body.mode-calm .title-snap,
+body.mode-calm .title-drag,
+body.mode-calm .title-stutter,
+body.mode-calm .list-kern {
+  display: inline;
+  letter-spacing: normal;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  transform: none;
+}
+
+body.mode-calm .manifesto-list,
+body.mode-calm .motion-safety-list,
+body.mode-calm .toc-dial ul,
+body.mode-calm .evidence-biblio-list {
+  padding-left: 1.2rem;
+}
+
+body.mode-calm .evidence-legend,
+body.mode-calm .motion-safety-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+body.mode-calm .research-map-card,
+body.mode-calm .evidence-biblio-item,
+body.mode-calm .toc-dial,
+body.mode-calm .evidence-legend-item {
+  color: #1f2933;
+  background: #f8fafc;
+  border: 1px solid #d7dde7;
+  border-radius: 0.9rem;
+  box-shadow: none;
+}
+
+@media (max-width: 720px) {
+  .mode-switch {
+    position: static;
+    grid-template-columns: 1fr;
+    margin: 0.8rem 0.8rem 0;
+  }
+
+  body.mode-calm .page {
+    margin-top: 1rem;
+  }
+}
