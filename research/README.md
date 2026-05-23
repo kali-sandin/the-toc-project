@@ -59,6 +59,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 
 ## Estado de implementación
 
+- `#toc-dials` ya convierte las cuatro perillas TOC en una pieza visible y navegable, con anclas internas y enlaces al visor Markdown existente.
 - `#evidence` ya muestra explicación real, bibliografía visible, leyenda de iconos ambiguos y nota de movimiento reducido.
 - La web principal enlaza esta guía y cada documento temático desde el bloque `#evidence`.
 - `friction_memory_research.md` deja preparada la siguiente capa: pico TOC, cierre memorable y checklist de foco seguro.

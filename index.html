@@ -26,6 +26,7 @@
         <li class="menu-item menu-item-a"><a class="menu-link menu-link-a" href="#hero"><span class="menu-icon menu-icon-a" aria-hidden="true">⌂</span><span class="menu-label menu-label-a">Entrada torcida</span><span class="menu-nudge menu-nudge-a">→</span></a></li>
         <li class="menu-item menu-item-b"><a class="menu-link menu-link-b" href="#cards"><span class="menu-icon menu-icon-b" aria-hidden="true">✓</span><span class="menu-label menu-label-b">Tarjetas raras</span><span class="menu-nudge menu-nudge-b">casi</span></a></li>
         <li class="menu-item menu-item-c"><a class="menu-link menu-link-c" href="#manifesto"><span class="menu-icon menu-icon-c" aria-hidden="true">⚠</span><span class="menu-label menu-label-c">Manifiesto irregular</span><span class="menu-nudge menu-nudge-c">!</span></a></li>
+        <li class="menu-item menu-item-f"><a class="menu-link menu-link-f" href="#toc-dials"><span class="menu-icon menu-icon-f" aria-hidden="true">⌁</span><span class="menu-label menu-label-f">Cuatro perillas</span><span class="menu-nudge menu-nudge-f">↑↓</span></a></li>
         <li class="menu-item menu-item-e"><a class="menu-link menu-link-e" href="#evidence"><span class="menu-icon menu-icon-e" aria-hidden="true">☂</span><span class="menu-label menu-label-e">Pruebas útiles</span><span class="menu-nudge menu-nudge-e">4.5?</span></a></li>
         <li class="menu-item menu-item-d"><a class="menu-link menu-link-d" href="#footer"><span class="menu-icon menu-icon-d" aria-hidden="true">☍</span><span class="menu-label menu-label-d">Cierre incómodo</span><span class="menu-nudge menu-nudge-d">ok</span></a></li>
       </ul>
@@ -92,8 +93,15 @@
       <p class="toc-dials-kicker">las cuatro perillas que sabotean tu paz</p>
       <h2 id="toc-dials-title" class="toc-dials-title">Mapa visual de las cuatro perillas TOC</h2>
       <p class="toc-dials-intro">Cada intervención útil en esta web debería poder describirse sin humo: <strong>subimos una perilla</strong>, usamos una técnica concreta y evitamos romper la lectura básica.</p>
+      <nav class="toc-dials-nav" aria-label="Navegación interna de las cuatro perillas">
+        <a href="#dial-grouping">Agrupación</a>
+        <a href="#dial-path">Recorrido</a>
+        <a href="#dial-hierarchy">Jerarquía</a>
+        <a href="#dial-load">Carga</a>
+        <a href="md-viewer.html?doc=perception_deep_dive.md">Research base</a>
+      </nav>
       <div class="toc-dials-grid">
-        <article class="toc-dial toc-dial-a">
+        <article id="dial-grouping" class="toc-dial toc-dial-a">
           <span class="toc-dial-pin">01</span>
           <h3>Agrupación</h3>
           <p class="toc-dial-subtitle">proximidad, similitud, región común</p>
@@ -103,8 +111,9 @@
             <li>stickers que apuntan al bloque incorrecto</li>
             <li>cards casi hermanas con una anomalía fea</li>
           </ul>
+          <a class="toc-dial-source" href="md-viewer.html?doc=perception_deep_dive.md">leer Gestalt y agrupación</a>
         </article>
-        <article class="toc-dial toc-dial-b">
+        <article id="dial-path" class="toc-dial toc-dial-b">
           <span class="toc-dial-pin">02</span>
           <h3>Recorrido</h3>
           <p class="toc-dial-subtitle">continuidad, patrón F, ritmo de scroll</p>
@@ -114,8 +123,9 @@
             <li>notes laterales fuera de compás</li>
             <li>anclas claras con offsets molestos</li>
           </ul>
+          <a class="toc-dial-source" href="md-viewer.html?doc=toc_patterns.md">leer patrones TOC</a>
         </article>
-        <article class="toc-dial toc-dial-c">
+        <article id="dial-hierarchy" class="toc-dial toc-dial-c">
           <span class="toc-dial-pin">03</span>
           <h3>Jerarquía</h3>
           <p class="toc-dial-subtitle">contraste, tamaño, peso, foco falso</p>
@@ -125,8 +135,9 @@
             <li>subtítulos con actitud de titular</li>
             <li>números que parecen mandar más de la cuenta</li>
           </ul>
+          <a class="toc-dial-source" href="md-viewer.html?doc=interaction_memory_research.md">leer memoria y reconocimiento</a>
         </article>
-        <article class="toc-dial toc-dial-d">
+        <article id="dial-load" class="toc-dial toc-dial-d">
           <span class="toc-dial-pin">04</span>
           <h3>Carga</h3>
           <p class="toc-dial-subtitle">señales simultáneas que exigen revalidar</p>
@@ -136,11 +147,13 @@
             <li>microcopy útil mal aparcado</li>
             <li>competencia controlada entre pistas</li>
           </ul>
+          <a class="toc-dial-source" href="md-viewer.html?doc=friction_memory_research.md">leer carga y pico memorable</a>
         </article>
       </div>
       <aside class="toc-dials-aside" aria-label="Regla operativa del modelo de perillas">
         <p><strong>Regla operativa:</strong> elige una perilla principal y una secundaria.</p>
         <p><strong>Formato decente:</strong> “aumento <em>jerarquía</em> con <em>foco falso</em> sin romper <em>la lectura de evidence</em>”.</p>
+        <p><a href="#evidence">Bajar a fuentes visibles</a> · <a href="md-viewer.html?doc=README.md">Abrir mapa de research</a></p>
       </aside>
     </section>
 
