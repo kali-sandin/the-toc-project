@@ -3109,6 +3109,522 @@ body.mode-calm .evidence-legend-item {
   box-shadow: none;
 }
 
+
+/* task_052 — calm mode is a real design system, not just chaos with fewer rotations. */
+body.mode-calm {
+  --calm-ink: #172033;
+  --calm-muted: #536276;
+  --calm-soft: #eef3f7;
+  --calm-line: #d9e1ea;
+  --calm-card: rgba(255, 255, 255, 0.94);
+  --calm-accent: #2b6f68;
+  --calm-accent-strong: #174ea6;
+  --calm-shadow: 0 18px 50px rgba(23, 32, 51, 0.08);
+  min-height: 100vh;
+  color: var(--calm-ink);
+  background:
+    radial-gradient(circle at top left, rgba(43, 111, 104, 0.10), transparent 34rem),
+    linear-gradient(180deg, #fbfcfd 0%, #f5f7fa 48%, #eef3f7 100%) !important;
+  text-rendering: optimizeLegibility;
+}
+
+body.mode-calm :focus-visible {
+  outline: 3px solid rgba(23, 78, 166, 0.38);
+  outline-offset: 4px;
+  border-radius: 0.55rem;
+}
+
+body.mode-calm .mode-switch {
+  inset: 1rem 1rem auto auto;
+  width: min(34rem, calc(100vw - 2rem));
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(217, 225, 234, 0.95);
+  box-shadow: 0 16px 42px rgba(23, 32, 51, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+body.mode-calm .mode-switch-copy,
+body.mode-calm .mode-switch-compare {
+  color: var(--calm-muted);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+body.mode-calm .mode-switch-compare { margin-top: 0.35rem; }
+
+body.mode-calm .mode-switch-button {
+  padding: 0.68rem 0.85rem;
+  gap: 0.65rem;
+  font-weight: 750;
+  box-shadow: none;
+}
+
+body.mode-calm .page {
+  width: min(1120px, calc(100vw - 48px));
+  margin: clamp(7.4rem, 12vw, 8.8rem) auto 3rem;
+  display: grid;
+  gap: 1.15rem;
+}
+
+body.mode-calm .section-menu,
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer,
+body.mode-calm .card,
+body.mode-calm .evidence-note,
+body.mode-calm .evidence-biblio,
+body.mode-calm .motion-safety-note,
+body.mode-calm .footer-note,
+body.mode-calm .toc-dial,
+body.mode-calm .research-map-card,
+body.mode-calm .evidence-biblio-item,
+body.mode-calm .evidence-legend-item {
+  color: var(--calm-ink);
+  background: var(--calm-card);
+  border: 1px solid var(--calm-line);
+  border-radius: 1.15rem;
+  box-shadow: var(--calm-shadow);
+}
+
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer {
+  margin: 0;
+  padding: clamp(1.6rem, 4vw, 3rem);
+}
+
+body.mode-calm .hero {
+  min-height: auto;
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+  border-radius: 1.6rem;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.98), rgba(242,247,250,0.94));
+}
+
+body.mode-calm h1,
+body.mode-calm h2,
+body.mode-calm h3,
+body.mode-calm .card-title,
+body.mode-calm .manifesto-title,
+body.mode-calm .toc-dials-title,
+body.mode-calm .evidence-title,
+body.mode-calm .footer-title {
+  margin: 0 0 0.65rem;
+  color: var(--calm-ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 780;
+  line-height: 1.08;
+}
+
+body.mode-calm h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 9vw, 6.6rem);
+  letter-spacing: -0.075em;
+  line-height: 0.96;
+}
+
+body.mode-calm h2,
+body.mode-calm .manifesto-title,
+body.mode-calm .toc-dials-title,
+body.mode-calm .evidence-title,
+body.mode-calm .footer-title {
+  font-size: clamp(1.75rem, 3vw, 2.7rem);
+  letter-spacing: -0.035em;
+}
+
+body.mode-calm h3,
+body.mode-calm .card-title {
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  letter-spacing: -0.018em;
+}
+
+body.mode-calm p,
+body.mode-calm li {
+  color: var(--calm-muted);
+  line-height: 1.68;
+}
+
+body.mode-calm .lede {
+  max-width: 54ch;
+  color: #344256;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  line-height: 1.65;
+}
+
+body.mode-calm .menu-kicker,
+body.mode-calm .gestalt-kicker,
+body.mode-calm .evidence-kicker,
+body.mode-calm .toc-dials-kicker,
+body.mode-calm .footer-kicker,
+body.mode-calm .evidence-biblio-kicker,
+body.mode-calm .research-map-kicker,
+body.mode-calm .motion-safety-kicker,
+body.mode-calm .eyebrow {
+  color: var(--calm-accent);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+body.mode-calm .section-menu {
+  padding: 1rem;
+  position: sticky;
+  top: 0.75rem;
+  z-index: 3;
+}
+
+body.mode-calm .section-menu ul {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.55rem;
+  padding: 0;
+  margin: 0.65rem 0 0;
+  list-style: none;
+}
+
+body.mode-calm .section-menu a,
+body.mode-calm .toc-dials-nav a,
+body.mode-calm .toc-dial-source,
+body.mode-calm .research-map-card,
+body.mode-calm .evidence-docs a,
+body.mode-calm .motion-safety-list a {
+  color: var(--calm-accent-strong);
+  text-decoration: none;
+}
+
+body.mode-calm .section-menu a {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.72rem 0.75rem;
+  color: #21324a;
+  background: var(--calm-soft);
+  border: 1px solid transparent;
+  border-radius: 0.85rem;
+  font-weight: 700;
+}
+
+body.mode-calm .section-menu a:hover,
+body.mode-calm .toc-dials-nav a:hover,
+body.mode-calm .toc-dial-source:hover,
+body.mode-calm .research-map-card:hover {
+  border-color: rgba(43, 111, 104, 0.35);
+  background: #ffffff;
+}
+
+body.mode-calm .menu-icon,
+body.mode-calm .menu-nudge,
+body.mode-calm .list-tail,
+body.mode-calm .card-badge,
+body.mode-calm .card-pill,
+body.mode-calm .toc-dial-pin,
+body.mode-calm .evidence-number,
+body.mode-calm .footer-note-tag,
+body.mode-calm .legend-icon,
+body.mode-calm .motion-safety-chip {
+  color: var(--calm-accent);
+  background: #e7f1ef;
+  border: 1px solid #c7ddd8;
+  border-radius: 999px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  padding: 0.18rem 0.5rem;
+}
+
+body.mode-calm .menu-nudge,
+body.mode-calm .list-tail,
+body.mode-calm .card-badge,
+body.mode-calm .card-pill {
+  display: none;
+}
+
+body.mode-calm .cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+body.mode-calm .gestalt-kicker {
+  grid-column: 1 / -1;
+  margin: 0 0 -0.15rem;
+}
+
+body.mode-calm .card,
+body.mode-calm .evidence-note,
+body.mode-calm .footer-note,
+body.mode-calm .toc-dial,
+body.mode-calm .research-map-card,
+body.mode-calm .evidence-biblio-item,
+body.mode-calm .evidence-legend-item {
+  padding: 1.15rem;
+  display: grid;
+  gap: 0.55rem;
+  align-content: start;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(23, 32, 51, 0.055);
+}
+
+body.mode-calm .toc-dials-nav {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+body.mode-calm .toc-dials-nav a,
+body.mode-calm .toc-dial-source {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 0.85rem;
+  background: var(--calm-soft);
+  border: 1px solid transparent;
+  border-radius: 0.85rem;
+  font-weight: 750;
+}
+
+body.mode-calm .toc-dials-grid,
+body.mode-calm .evidence-grid,
+body.mode-calm .footer-summary {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+body.mode-calm .toc-dials-aside,
+body.mode-calm .evidence-aside {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  color: #344256;
+  background: #eef7f4;
+  border: 1px solid #c7ddd8;
+  border-radius: 1rem;
+}
+
+body.mode-calm .evidence-biblio-list,
+body.mode-calm .research-map {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body.mode-calm .evidence-legend,
+body.mode-calm .motion-safety-proof {
+  align-items: stretch;
+}
+
+body.mode-calm .manifesto-list,
+body.mode-calm .motion-safety-list,
+body.mode-calm .toc-dial ul,
+body.mode-calm .evidence-biblio-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+body.mode-calm .manifesto-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+body.mode-calm .manifesto-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--calm-line);
+}
+
+body.mode-calm .manifesto-item:last-child { border-bottom: 0; }
+
+body.mode-calm .list-bullet {
+  color: var(--calm-accent);
+  margin-right: 0.35rem;
+}
+
+body.mode-calm .footer-outro,
+body.mode-calm .footer-lede,
+body.mode-calm .footer-summary,
+body.mode-calm .motion-safety-note,
+body.mode-calm .evidence-biblio {
+  margin-top: 1rem;
+}
+
+body.mode-calm .evidence-docs,
+body.mode-calm .motion-safety-copy {
+  max-width: 72ch;
+}
+
+body.mode-calm .motion-proof-divider {
+  color: var(--calm-muted);
+  align-self: center;
+}
+
+
+body.mode-calm *,
+body.mode-calm *::before,
+body.mode-calm *::after {
+  text-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+body.mode-calm .hero,
+body.mode-calm .card,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer {
+  background-image: none !important;
+  background-blend-mode: normal !important;
+}
+
+body.mode-calm .eyebrow {
+  width: fit-content;
+  margin: 0;
+  padding: 0.38rem 0.65rem;
+  color: var(--calm-accent);
+  background: #e7f1ef;
+  border: 1px solid #c7ddd8;
+  border-radius: 999px;
+}
+
+body.mode-calm .title-chunk {
+  display: inline;
+  color: inherit;
+  letter-spacing: inherit;
+  text-shadow: none !important;
+}
+
+body.mode-calm .cards,
+body.mode-calm .card-layer-top,
+body.mode-calm .card-layer-under,
+body.mode-calm .card-layer-middle,
+body.mode-calm .evidence-note-g {
+  margin: 0;
+  transform: none !important;
+}
+
+body.mode-calm .gestalt-trap::before,
+body.mode-calm .toc-dials::before,
+body.mode-calm .toc-dials::after,
+body.mode-calm .evidence::before,
+body.mode-calm .evidence-biblio::before,
+body.mode-calm .footer::before,
+body.mode-calm .footer::after {
+  display: none !important;
+}
+
+body.mode-calm .gestalt-kicker {
+  position: static;
+  display: block;
+  margin: 0 0 0.1rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  transform: none !important;
+}
+
+body.mode-calm .acid,
+body.mode-calm .bruise,
+body.mode-calm .chalk {
+  background: #ffffff !important;
+}
+
+body.mode-calm .card p,
+body.mode-calm .evidence-note p,
+body.mode-calm .toc-dial p,
+body.mode-calm .footer-note p {
+  margin: 0;
+}
+
+body.mode-calm .toc-dial-subtitle {
+  color: var(--calm-accent);
+  font-weight: 750;
+}
+
+
+html.mode-calm {
+  background: #f5f7fa !important;
+}
+
+body.mode-calm .mode-switch {
+  position: relative;
+  inset: auto;
+  width: min(980px, calc(100vw - 48px));
+  margin: 1rem auto 0;
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+body.mode-calm .page {
+  margin-top: 1rem;
+}
+
+body.mode-calm .section-menu {
+  position: static;
+  top: auto;
+}
+
+body.mode-calm .section-menu a,
+body.mode-calm .menu-link,
+body.mode-calm .menu-link-a,
+body.mode-calm .menu-link-b,
+body.mode-calm .menu-link-c,
+body.mode-calm .menu-link-d,
+body.mode-calm .menu-link-e,
+body.mode-calm .menu-link-f {
+  color: #26384f !important;
+  background: #f4f7fa !important;
+  border: 1px solid #d9e1ea !important;
+  box-shadow: none !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+body.mode-calm .menu-label,
+body.mode-calm .menu-icon {
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+body.mode-calm .menu-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1.45rem;
+  height: 1.45rem;
+  padding: 0;
+  color: #2b6f68 !important;
+  background: #eaf3f1 !important;
+  border-color: #d2e4e0 !important;
+}
+
+body.mode-calm h1 {
+  max-width: 13ch;
+  font-size: clamp(2.65rem, 7vw, 5.2rem);
+  font-weight: 730;
+  letter-spacing: -0.06em;
+}
+
+@media (max-width: 900px) {
+  body.mode-calm .section-menu ul,
+  body.mode-calm .toc-dials-nav,
+  body.mode-calm .cards,
+  body.mode-calm .toc-dials-grid,
+  body.mode-calm .evidence-grid,
+  body.mode-calm .footer-summary,
+  body.mode-calm .evidence-biblio-list,
+  body.mode-calm .research-map {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 720px) {
   .mode-switch {
     position: static;
@@ -3119,4 +3635,48 @@ body.mode-calm .evidence-legend-item {
   body.mode-calm .page {
     margin-top: 1rem;
   }
+}
+
+/* task_052 final pass: reduce remaining compression in the calm header/nav. */
+body.mode-calm .mode-switch {
+  max-width: none;
+  width: min(1120px, calc(100vw - 48px));
+  padding: 0.9rem 1rem;
+}
+
+body.mode-calm .mode-switch-button {
+  color: #17324d;
+  background: #eef7f4;
+  border: 1px solid #c7ddd8;
+  min-width: 5.8rem;
+  text-transform: none;
+}
+
+body.mode-calm .mode-switch-track {
+  width: 3rem;
+  height: 1.3rem;
+  border: 1px solid #b7cec9;
+}
+
+body.mode-calm .mode-switch-thumb {
+  top: 0.18rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 0;
+}
+
+body.mode-calm .section-menu ul {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+body.mode-calm .section-menu a {
+  justify-content: flex-start;
+}
+
+body.mode-calm .hero {
+  padding-block: clamp(1.8rem, 4vw, 3.6rem);
+}
+
+body.mode-calm h1 {
+  font-size: clamp(2.45rem, 6vw, 4.65rem);
 }
