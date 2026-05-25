@@ -3680,3 +3680,78 @@ body.mode-calm .hero {
 body.mode-calm h1 {
   font-size: clamp(2.45rem, 6vw, 4.65rem);
 }
+
+/* task_052 closure: calm mode keeps every shared component on one quiet rhythm. */
+body.mode-calm {
+  --calm-radius: 1.05rem;
+  --calm-gap: 1rem;
+}
+
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer,
+body.mode-calm .section-menu {
+  border-radius: calc(var(--calm-radius) + 0.35rem);
+}
+
+body.mode-calm .section-menu a,
+body.mode-calm .toc-dials-nav a,
+body.mode-calm .toc-dial-source,
+body.mode-calm .research-map-card,
+body.mode-calm .evidence-docs a,
+body.mode-calm .motion-safety-list a {
+  outline-offset: 3px;
+  text-underline-offset: 0.22em;
+}
+
+body.mode-calm .toc-dials-nav a:hover,
+body.mode-calm .toc-dial-source:hover,
+body.mode-calm .research-map-card:hover,
+body.mode-calm .section-menu a:hover {
+  color: #17324d;
+  background: #ffffff !important;
+  border-color: #b8c8d8 !important;
+  box-shadow: 0 8px 22px rgba(23, 32, 51, 0.06) !important;
+}
+
+body.mode-calm .evidence-biblio,
+body.mode-calm .motion-safety-note,
+body.mode-calm .toc-dials-aside,
+body.mode-calm .evidence-aside {
+  background: #f7faf9;
+}
+
+body.mode-calm .evidence-legend,
+body.mode-calm .motion-safety-proof,
+body.mode-calm .footer-summary,
+body.mode-calm .research-map {
+  gap: var(--calm-gap);
+}
+
+body.mode-calm strong {
+  color: #21324a;
+}
+
+@media (max-width: 900px) {
+  body.mode-calm .section-menu ul,
+  body.mode-calm .toc-dials-nav,
+  body.mode-calm .cards,
+  body.mode-calm .toc-dials-grid,
+  body.mode-calm .evidence-grid,
+  body.mode-calm .footer-summary,
+  body.mode-calm .evidence-biblio-list,
+  body.mode-calm .research-map {
+    grid-template-columns: 1fr;
+  }
+
+  body.mode-calm .mode-switch {
+    width: min(100% - 1.5rem, 720px);
+    grid-template-columns: 1fr;
+  }
+
+  body.mode-calm .page {
+    width: min(100% - 1.5rem, 720px);
+  }
+}
