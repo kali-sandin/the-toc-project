@@ -4136,3 +4136,69 @@ body.mode-calm .manifesto {
   position: relative;
   z-index: 1;
 }
+
+/* task_060 final desktop audit: make the Zen navigation read as one quiet control group. */
+body.mode-calm .section-menu {
+  background: #fbfcfd !important;
+}
+
+body.mode-calm .menu-kicker,
+body.mode-calm .toc-dials-kicker,
+body.mode-calm .gestalt-kicker,
+body.mode-calm .evidence-kicker,
+body.mode-calm .footer-kicker,
+body.mode-calm .evidence-biblio-kicker,
+body.mode-calm .research-map-kicker,
+body.mode-calm .motion-safety-kicker,
+body.mode-calm .eyebrow {
+  text-transform: none;
+  letter-spacing: 0.035em;
+}
+
+body.mode-calm .section-menu ul {
+  max-width: 820px;
+  margin: 0.75rem auto 0;
+  gap: 0.68rem;
+}
+
+body.mode-calm .section-menu a {
+  min-height: 3.1rem;
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+body.mode-calm .menu-icon {
+  width: 0.52rem;
+  height: 0.52rem;
+  min-width: 0.52rem;
+  min-height: 0.52rem;
+  color: transparent !important;
+  background: #8fb8b1 !important;
+  border: 0 !important;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+body.mode-calm .section-menu a:hover,
+body.mode-calm .section-menu a:focus-visible {
+  transform: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 900px) {
+  body.mode-calm .section-menu ul {
+    max-width: none;
+  }
+}
+
+/* task_060 mobile verification: no hidden glyph width or horizontal page drift in Zen. */
+html.mode-calm,
+body.mode-calm {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body.mode-calm .menu-icon {
+  font-size: 0;
+  line-height: 0;
+}
