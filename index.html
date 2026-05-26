@@ -4,9 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The TOC Project</title>
+  <script>
+    (() => {
+      try {
+        if (localStorage.getItem('the-toc-project-mode') === 'calm') {
+          document.documentElement.classList.add('mode-calm');
+        }
+      } catch { /* sin storage: TOC por defecto, sin romper carga */ }
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <script>
+    if (document.documentElement.classList.contains('mode-calm')) {
+      document.body.classList.add('mode-calm');
+    }
+  </script>
 
   <aside class="mode-switch" aria-labelledby="mode-switch-title">
     <div>
