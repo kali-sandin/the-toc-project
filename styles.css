@@ -3621,7 +3621,7 @@ body.mode-calm h1 {
   body.mode-calm .footer-summary,
   body.mode-calm .evidence-biblio-list,
   body.mode-calm .research-map {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3630,6 +3630,35 @@ body.mode-calm h1 {
     position: static;
     grid-template-columns: 1fr;
     margin: 0.8rem 0.8rem 0;
+  }
+
+  body.mode-calm .mode-switch,
+  body.mode-calm .page {
+    width: calc(100vw - 1rem);
+    max-width: none;
+  }
+
+  body.mode-calm .section-menu ul {
+    grid-template-columns: 1fr;
+  }
+
+  body.mode-calm .hero,
+  body.mode-calm .manifesto,
+  body.mode-calm .toc-dials,
+  body.mode-calm .evidence,
+  body.mode-calm .footer {
+    padding: 1.15rem;
+  }
+
+  body.mode-calm .motion-safety-proof {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+  }
+
+  body.mode-calm .motion-proof-state,
+  body.mode-calm .motion-proof-divider {
+    text-align: center;
   }
 
   body.mode-calm .page {
@@ -3746,12 +3775,364 @@ body.mode-calm strong {
     grid-template-columns: 1fr;
   }
 
-  body.mode-calm .mode-switch {
-    width: min(100% - 1.5rem, 720px);
-    grid-template-columns: 1fr;
+  body.mode-calm .mode-switch,
+  body.mode-calm .page {
+    width: calc(100vw - 1.5rem);
+    max-width: 720px;
   }
 
+  body.mode-calm .mode-switch {
+    grid-template-columns: 1fr;
+    margin-inline: auto;
+  }
+
+  body.mode-calm .mode-switch-button {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  body.mode-calm .section-menu {
+    padding: 0.9rem;
+  }
+
+  body.mode-calm .section-menu ul {
+    gap: 0.75rem;
+  }
+}
+
+/* task_060 — total Zen review: remove residual TOC tension instead of merely muting it. */
+body.mode-calm,
+body.mode-calm * ,
+body.mode-calm *::before,
+body.mode-calm *::after {
+  transform: none !important;
+}
+
+body.mode-calm {
+  --calm-ink: #172033;
+  --calm-muted: #4f6073;
+  --calm-soft: #f3f7fa;
+  --calm-line: #d7e0ea;
+  --calm-card: #ffffff;
+  --calm-shadow: 0 10px 28px rgba(23, 32, 51, 0.055);
+  --calm-shadow-hover: 0 12px 30px rgba(23, 32, 51, 0.075);
+}
+
+body.mode-calm .mode-switch,
+body.mode-calm .page {
+  width: min(1080px, calc(100vw - 48px));
+}
+
+body.mode-calm .mode-switch {
+  align-items: stretch;
+  border-radius: 1.25rem;
+  box-shadow: var(--calm-shadow);
+}
+
+body.mode-calm .mode-switch-button {
+  align-self: center;
+  justify-self: end;
+}
+
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer,
+body.mode-calm .section-menu,
+body.mode-calm .card,
+body.mode-calm .evidence-note,
+body.mode-calm .evidence-biblio,
+body.mode-calm .motion-safety-note,
+body.mode-calm .footer-note,
+body.mode-calm .toc-dial,
+body.mode-calm .research-map-card,
+body.mode-calm .evidence-biblio-item,
+body.mode-calm .evidence-legend-item {
+  background: var(--calm-card) !important;
+  border-color: var(--calm-line) !important;
+  box-shadow: var(--calm-shadow) !important;
+}
+
+body.mode-calm .hero {
+  align-items: start;
+  padding-block: clamp(2rem, 4vw, 3.25rem);
+}
+
+body.mode-calm h1 {
+  max-width: none;
+  font-size: clamp(2.35rem, 5.6vw, 4.35rem);
+  line-height: 1.06;
+  letter-spacing: -0.045em;
+}
+
+body.mode-calm .title-chunk,
+body.mode-calm .kern-wide,
+body.mode-calm .kern-squeeze,
+body.mode-calm .chunk-tight,
+body.mode-calm .chunk-wide,
+body.mode-calm .chunk-weird,
+body.mode-calm .list-kern {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+}
+
+body.mode-calm .cards {
+  align-items: stretch;
+}
+
+body.mode-calm .card,
+body.mode-calm .toc-dial,
+body.mode-calm .evidence-note,
+body.mode-calm .footer-note {
+  grid-template-rows: auto auto 1fr;
+  min-height: 100%;
+}
+
+body.mode-calm .card-title,
+body.mode-calm .toc-dial h3,
+body.mode-calm .evidence-note h3,
+body.mode-calm .footer-note h3 {
+  min-height: 2.8em;
+  display: flex;
+  align-items: flex-start;
+}
+
+body.mode-calm .manifesto-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+body.mode-calm .manifesto-item {
+  display: grid;
+  grid-template-columns: 1.4rem minmax(0, 1fr);
+  gap: 0.6rem;
+  align-items: start;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #dbe4ed;
+}
+
+body.mode-calm .manifesto-item:last-child {
+  border-bottom: 0;
+}
+
+body.mode-calm .list-bullet {
+  margin: 0;
+  text-align: center;
+}
+
+body.mode-calm .toc-dials-kicker,
+body.mode-calm .gestalt-kicker,
+body.mode-calm .menu-kicker,
+body.mode-calm .evidence-kicker,
+body.mode-calm .footer-kicker,
+body.mode-calm .evidence-biblio-kicker,
+body.mode-calm .research-map-kicker,
+body.mode-calm .motion-safety-kicker,
+body.mode-calm .eyebrow {
+  width: fit-content;
+  margin-bottom: 0.75rem;
+  padding: 0.34rem 0.62rem;
+  color: var(--calm-accent);
+  background: #eaf3f1;
+  border: 1px solid #d2e4e0;
+  border-radius: 999px;
+}
+
+body.mode-calm .section-menu a:hover,
+body.mode-calm .toc-dials-nav a:hover,
+body.mode-calm .toc-dial-source:hover,
+body.mode-calm .research-map-card:hover,
+body.mode-calm .evidence-docs a:hover,
+body.mode-calm .motion-safety-list a:hover {
+  color: #17324d !important;
+  background: #ffffff !important;
+  border-color: #b8c8d8 !important;
+  box-shadow: var(--calm-shadow-hover) !important;
+  text-decoration: underline;
+}
+
+body.mode-calm .toc-dials-aside,
+body.mode-calm .evidence-aside,
+body.mode-calm .motion-safety-note,
+body.mode-calm .evidence-biblio {
+  background: #f8fbfa !important;
+}
+
+body.mode-calm .evidence-number,
+body.mode-calm .toc-dial-pin,
+body.mode-calm .footer-note-tag,
+body.mode-calm .legend-icon,
+body.mode-calm .motion-safety-chip {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  line-height: 1;
+}
+
+body.mode-calm::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body.mode-calm::-webkit-scrollbar-track {
+  background: #edf2f6;
+}
+
+body.mode-calm::-webkit-scrollbar-thumb {
+  background: #b8c8d8;
+  border: 3px solid #edf2f6;
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) {
+  body.mode-calm .mode-switch,
   body.mode-calm .page {
     width: min(100% - 1.5rem, 720px);
   }
+
+  body.mode-calm .mode-switch-button {
+    justify-self: start;
+  }
+
+  body.mode-calm h1 {
+    font-size: clamp(2.2rem, 12vw, 3.75rem);
+  }
+
+  body.mode-calm .card-title,
+  body.mode-calm .toc-dial h3,
+  body.mode-calm .evidence-note h3,
+  body.mode-calm .footer-note h3 {
+    min-height: 0;
+  }
+}
+
+/* task_060 verification pass: remove the last spacing stress spotted in the Zen screenshot. */
+body.mode-calm .page {
+  gap: 1.35rem;
+}
+
+body.mode-calm .cards,
+body.mode-calm .section-menu ul,
+body.mode-calm .toc-dials-nav,
+body.mode-calm .toc-dials-grid,
+body.mode-calm .evidence-grid,
+body.mode-calm .footer-summary,
+body.mode-calm .evidence-biblio-list,
+body.mode-calm .research-map {
+  gap: 1.1rem;
+}
+
+body.mode-calm .manifesto {
+  display: block;
+}
+
+body.mode-calm .manifesto-list {
+  width: 100%;
+  max-width: 72ch;
+}
+
+body.mode-calm h1 {
+  font-size: clamp(2.25rem, 5vw, 3.95rem);
+}
+
+body.mode-calm .cards + .manifesto,
+body.mode-calm .manifesto + .toc-dials,
+body.mode-calm .toc-dials + .evidence,
+body.mode-calm .evidence + .footer {
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 720px) {
+  body.mode-calm .section-menu ul,
+  body.mode-calm .cards,
+  body.mode-calm .toc-dials-nav,
+  body.mode-calm .toc-dials-grid,
+  body.mode-calm .evidence-grid,
+  body.mode-calm .footer-summary,
+  body.mode-calm .evidence-biblio-list,
+  body.mode-calm .research-map {
+    gap: 0.9rem;
+  }
+}
+
+/* task_060 mobile containment: Zen must not create sideways anxiety. */
+body.mode-calm,
+body.mode-calm * {
+  box-sizing: border-box;
+}
+
+body.mode-calm {
+  overflow-x: clip;
+}
+
+body.mode-calm p,
+body.mode-calm li,
+body.mode-calm a,
+body.mode-calm h1,
+body.mode-calm h2,
+body.mode-calm h3 {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 720px) {
+  body.mode-calm .mode-switch,
+  body.mode-calm .page {
+    width: calc(100vw - 1rem);
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.mode-calm .mode-switch {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  body.mode-calm .hero,
+  body.mode-calm .manifesto,
+  body.mode-calm .toc-dials,
+  body.mode-calm .evidence,
+  body.mode-calm .footer,
+  body.mode-calm .section-menu,
+  body.mode-calm .card,
+  body.mode-calm .evidence-note,
+  body.mode-calm .toc-dial,
+  body.mode-calm .footer-note {
+    padding: 1rem;
+  }
+
+  body.mode-calm h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+    letter-spacing: -0.025em;
+  }
+
+  body.mode-calm .title-chunk {
+    display: inline;
+  }
+}
+
+/* task_060 overlap fix: neutralize TOC card layer offsets in Zen explicitly. */
+body.mode-calm .card-layer,
+body.mode-calm .card-layer-top,
+body.mode-calm .card-layer-under,
+body.mode-calm .card-layer-middle,
+body.mode-calm .card-pair,
+body.mode-calm .card-pair-a,
+body.mode-calm .card-pair-b,
+body.mode-calm .card-pair-c {
+  margin: 0 !important;
+  position: relative;
+  z-index: auto;
+}
+
+body.mode-calm .cards {
+  margin: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+
+body.mode-calm .manifesto {
+  position: relative;
+  z-index: 1;
 }
