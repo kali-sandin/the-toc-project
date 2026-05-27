@@ -11,6 +11,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 3. [`interaction_memory_research.md`](interaction_memory_research.md) — interacción, reconocimiento, memoria, iconos ambiguos y movimiento como captura de atención.
 4. [`motion_safety_research.md`](motion_safety_research.md) — guardarraíles para microanimaciones incómodas sin romper accesibilidad.
 5. [`friction_memory_research.md`](friction_memory_research.md) — carga cognitiva, pico/cierre memorable y orden de foco seguro.
+6. [`ocd_language_ethics.md`](ocd_language_ethics.md) — nota responsable para separar el TOC clínico de la incomodidad visual inducida.
 
 ## Mapa de decisiones por tipo de cambio
 
@@ -33,6 +34,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Movimiento seguro | `motion_safety_research.md` | delays locales, hover/focus tardío, fallback `prefers-reduced-motion` |
 | Fricción memorable | `friction_memory_research.md` | pico TOC, cierre útil, falsos protagonistas y orden de foco intacto |
 | Bibliografía visible | `toc_patterns.md` + `motion_safety_research.md` + `friction_memory_research.md` | enlaces externos en `#evidence` con microcopy breve y layout torcido |
+| Lenguaje sobre TOC | `ocd_language_ethics.md` | nota clínica breve, enlace externo serio y copy que no diga “todos somos un poco TOC” |
 
 ## Criterio editorial
 
@@ -56,11 +58,12 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - Nielsen Norman Group — Minimize Cognitive Load to Maximize Usability: https://www.nngroup.com/articles/minimize-cognitive-load/
 - Laws of UX — Peak-End Rule: https://lawsofux.com/peak-end-rule/
 - W3C/WCAG 2.2 — Focus Order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html
+- International OCD Foundation — About OCD: https://iocdf.org/about-ocd/
 
 ## Estado de implementación
 
 - `#toc-dials` ya convierte las cuatro perillas TOC en una pieza visible y navegable, con anclas internas y enlaces al visor Markdown existente.
-- `#evidence` ya muestra explicación real, bibliografía visible, leyenda de iconos ambiguos y nota de movimiento reducido.
+- `#evidence` ya muestra explicación real, bibliografía visible, leyenda de iconos ambiguos, nota de movimiento reducido y nota responsable sobre TOC clínico vs. incomodidad visual.
 - La web principal enlaza esta guía y cada documento temático desde el bloque `#evidence`.
 - `friction_memory_research.md` deja preparada la siguiente capa: pico TOC, cierre memorable y checklist de foco seguro.
 - Las microanimaciones deben seguir documentadas en `motion_safety_research.md` antes de ampliarse.

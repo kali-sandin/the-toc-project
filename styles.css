@@ -2065,6 +2065,7 @@ h1 {
 .evidence-note-e { transform: translate(1.45rem, -0.2rem) rotate(-1.9deg); }
 .evidence-note-f { transform: translate(-1.25rem, 0.95rem) rotate(1.4deg); }
 .evidence-note-g { transform: translate(0.5rem, -0.5rem) rotate(2.2deg); }
+.evidence-biblio-item-h { transform: rotate(-1.9deg) translate(0.18rem, 0.18rem); }
 
 .evidence-number {
   position: absolute;
@@ -2221,6 +2222,7 @@ h1 {
 .research-map-card-b { transform: rotate(1.8deg) translate(-0.16rem, -0.08rem); background: rgba(189, 255, 0, 0.45); }
 .research-map-card-c { transform: rotate(-0.7deg) translate(0.08rem, 0.34rem); background: rgba(255, 43, 181, 0.24); }
 .research-map-card-d { transform: rotate(2.1deg) translateX(-0.2rem); background: rgba(0, 220, 255, 0.26); }
+.research-map-card-e { grid-column: 2 / span 2; transform: rotate(-1deg) translate(0.2rem, 0.12rem); background: rgba(255, 255, 255, 0.66); }
 
 .research-map {
   display: grid;
@@ -2268,6 +2270,67 @@ h1 {
 .research-map-card-b { transform: rotate(1.8deg) translate(-0.16rem, -0.08rem); background: rgba(189, 255, 0, 0.45); }
 .research-map-card-c { transform: rotate(-0.7deg) translate(0.08rem, 0.34rem); background: rgba(255, 43, 181, 0.24); }
 .research-map-card-d { transform: rotate(2.1deg) translateX(-0.2rem); background: rgba(0, 220, 255, 0.26); }
+.research-map-card-e { grid-column: 2 / span 2; transform: rotate(-1deg) translate(0.2rem, 0.12rem); background: rgba(255, 255, 255, 0.66); }
+
+
+.ocd-language-note {
+  position: relative;
+  max-width: 83%;
+  margin: 0.1rem 0 1.15rem 2.2rem;
+  padding: 0.9rem 1rem 1rem 1.15rem;
+  border: 4px solid #111;
+  background: linear-gradient(96deg, rgba(255, 255, 255, 0.82), rgba(255, 248, 180, 0.9) 52%, rgba(0, 183, 255, 0.22));
+  box-shadow: 9px -6px 0 rgba(255, 43, 181, 0.28);
+  transform: rotate(1.1deg) translateX(-0.25rem);
+}
+
+.ocd-language-note::after {
+  content: "no es diagnóstico";
+  position: absolute;
+  right: -0.85rem;
+  top: -0.82rem;
+  padding: 0.18rem 0.48rem;
+  border: 2px dashed #111;
+  background: #8bff00;
+  font: 900 0.66rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  transform: rotate(8deg);
+}
+
+.ocd-language-kicker {
+  margin: 0 0 0.22rem;
+  font: 900 0.68rem/1 "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+  transform: translateX(0.55rem) rotate(-1.4deg);
+}
+
+.ocd-language-note h3 {
+  margin: 0 0 0.48rem;
+  font: 900 1.1rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.ocd-language-note p {
+  margin: 0.45rem 0;
+  font-family: Verdana, sans-serif;
+}
+
+.ocd-language-note a {
+  color: #111;
+  text-decoration-thickness: 0.18rem;
+  text-underline-offset: 0.13rem;
+}
+
+.ocd-language-link {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.28rem 0.48rem;
+  border: 2px solid #111;
+  background: rgba(255, 43, 181, 0.2);
+  font: 900 0.78rem/1 "Courier New", monospace;
+  transform: rotate(-1.6deg) translateX(0.35rem);
+}
 
 .evidence-docs {
   max-width: 94%;
@@ -2723,12 +2786,17 @@ h1 {
   .evidence-biblio-item-e,
   .evidence-biblio-item-f,
   .evidence-biblio-item-g,
+  .evidence-biblio-item-h,
+  .ocd-language-note,
+  .ocd-language-kicker,
+  .ocd-language-link,
   .research-map,
   .research-map-kicker,
   .research-map-card-a,
   .research-map-card-b,
   .research-map-card-c,
-  .research-map-card-d {
+  .research-map-card-d,
+  .research-map-card-e {
     transform: rotate(0deg);
   }
 
@@ -2936,8 +3004,10 @@ body.mode-calm [class*="temporal-mischief"],
 body.mode-calm .card,
 body.mode-calm .evidence-note,
 body.mode-calm .evidence-biblio,
+body.mode-calm .ocd-language-note,
 body.mode-calm .research-map,
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .footer-note,
 body.mode-calm .footer-kicker {
   transform: none !important;
@@ -2951,6 +3021,7 @@ body.mode-calm .footer,
 body.mode-calm .card,
 body.mode-calm .evidence-note,
 body.mode-calm .evidence-biblio,
+body.mode-calm .ocd-language-note,
 body.mode-calm .motion-safety-note,
 body.mode-calm .footer-note {
   color: #1f2933;
@@ -3099,6 +3170,7 @@ body.mode-calm .motion-safety-proof {
 }
 
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .toc-dial,
 body.mode-calm .evidence-legend-item {
@@ -3179,10 +3251,12 @@ body.mode-calm .footer,
 body.mode-calm .card,
 body.mode-calm .evidence-note,
 body.mode-calm .evidence-biblio,
+body.mode-calm .ocd-language-note,
 body.mode-calm .motion-safety-note,
 body.mode-calm .footer-note,
 body.mode-calm .toc-dial,
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .evidence-legend-item {
   color: var(--calm-ink);
@@ -3298,6 +3372,7 @@ body.mode-calm .section-menu a,
 body.mode-calm .toc-dials-nav a,
 body.mode-calm .toc-dial-source,
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-docs a,
 body.mode-calm .motion-safety-list a {
   color: var(--calm-accent-strong);
@@ -3371,6 +3446,7 @@ body.mode-calm .evidence-note,
 body.mode-calm .footer-note,
 body.mode-calm .toc-dial,
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .evidence-legend-item {
   padding: 1.15rem;
@@ -3729,6 +3805,7 @@ body.mode-calm .section-menu a,
 body.mode-calm .toc-dials-nav a,
 body.mode-calm .toc-dial-source,
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-docs a,
 body.mode-calm .motion-safety-list a {
   outline-offset: 3px;
@@ -3843,10 +3920,12 @@ body.mode-calm .section-menu,
 body.mode-calm .card,
 body.mode-calm .evidence-note,
 body.mode-calm .evidence-biblio,
+body.mode-calm .ocd-language-note,
 body.mode-calm .motion-safety-note,
 body.mode-calm .footer-note,
 body.mode-calm .toc-dial,
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .evidence-legend-item {
   background: var(--calm-card) !important;
@@ -4308,6 +4387,7 @@ body.mode-calm .toc-dial,
 body.mode-calm .evidence-note,
 body.mode-calm .footer-note,
 body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .evidence-legend-item {
   display: block !important;

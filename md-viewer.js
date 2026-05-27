@@ -28,6 +28,11 @@ const DOCS = {
     path: 'research/friction_memory_research.md',
     title: 'Fricción memorable',
     subtitle: 'Pico, cierre, carga y foco sin sabotaje operativo.',
+  },
+  'ocd_language_ethics.md': {
+    path: 'research/ocd_language_ethics.md',
+    title: 'Lenguaje responsable',
+    subtitle: 'Separar incomodidad visual de TOC clínico sin aguar el experimento.',
   }
 };
 
