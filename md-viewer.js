@@ -38,6 +38,11 @@ const DOCS = {
     path: 'research/attention_scanning_research.md',
     title: 'Atención selectiva y escaneo',
     subtitle: 'Escaneo web, change blindness y carriles visuales que casi ayudan.',
+  },
+  'microcontent_blindness_research.md': {
+    path: 'research/microcontent_blindness_research.md',
+    title: 'Microcopy escaneable y ceguera a banners',
+    subtitle: 'Primeras palabras útiles, fuentes disfrazadas de banner y señales esquivables.',
   }
 };
 

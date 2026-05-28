@@ -2066,9 +2066,12 @@ h1 {
 .evidence-note-f { transform: translate(-1.25rem, 0.95rem) rotate(1.4deg); }
 .evidence-note-g { transform: translate(0.5rem, -0.5rem) rotate(2.2deg); }
 .evidence-note-h { transform: translate(1.15rem, 0.35rem) rotate(-2.4deg); }
+.evidence-note-i { transform: translate(-0.8rem, 0.75rem) rotate(1.9deg); }
 .evidence-biblio-item-h { transform: rotate(-1.9deg) translate(0.18rem, 0.18rem); }
 .evidence-biblio-item-i { transform: rotate(1.3deg) translate(-0.28rem, -0.08rem); }
 .evidence-biblio-item-j { transform: rotate(-0.6deg) translate(0.42rem, 0.2rem); }
+.evidence-biblio-item-k { transform: rotate(2.2deg) translate(-0.45rem, 0.05rem); background: rgba(255, 181, 0, 0.5); }
+.evidence-biblio-item-l { transform: rotate(-1.7deg) translate(0.3rem, -0.1rem); background: rgba(189, 255, 0, 0.4); }
 
 .evidence-number {
   position: absolute;
@@ -2227,6 +2230,7 @@ h1 {
 .research-map-card-d { transform: rotate(2.1deg) translateX(-0.2rem); background: rgba(0, 220, 255, 0.26); }
 .research-map-card-e { grid-column: 2 / span 2; transform: rotate(-1deg) translate(0.2rem, 0.12rem); background: rgba(255, 255, 255, 0.66); }
 .research-map-card-f { grid-column: 1 / span 2; transform: rotate(1.4deg) translate(-0.12rem, 0.26rem); background: rgba(255, 122, 0, 0.24); }
+.research-map-card-g { grid-column: 3 / span 2; transform: rotate(-1.8deg) translate(0.18rem, -0.12rem); background: rgba(255, 255, 255, 0.74); border-style: dashed; }
 
 .research-map {
   display: grid;
@@ -2276,6 +2280,7 @@ h1 {
 .research-map-card-d { transform: rotate(2.1deg) translateX(-0.2rem); background: rgba(0, 220, 255, 0.26); }
 .research-map-card-e { grid-column: 2 / span 2; transform: rotate(-1deg) translate(0.2rem, 0.12rem); background: rgba(255, 255, 255, 0.66); }
 .research-map-card-f { grid-column: 1 / span 2; transform: rotate(1.4deg) translate(-0.12rem, 0.26rem); background: rgba(255, 122, 0, 0.24); }
+.research-map-card-g { grid-column: 3 / span 2; transform: rotate(-1.8deg) translate(0.18rem, -0.12rem); background: rgba(255, 255, 255, 0.74); border-style: dashed; }
 
 
 .ocd-language-note {
@@ -2794,6 +2799,8 @@ h1 {
   .evidence-biblio-item-h,
   .evidence-biblio-item-i,
   .evidence-biblio-item-j,
+  .evidence-biblio-item-k,
+  .evidence-biblio-item-l,
   .ocd-language-note,
   .ocd-language-kicker,
   .ocd-language-link,
@@ -2804,7 +2811,8 @@ h1 {
   .research-map-card-c,
   .research-map-card-d,
   .research-map-card-e,
-  .research-map-card-f {
+  .research-map-card-f,
+  .research-map-card-g {
     grid-column: auto;
     transform: rotate(0deg);
   }
