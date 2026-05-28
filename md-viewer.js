@@ -33,6 +33,11 @@ const DOCS = {
     path: 'research/ocd_language_ethics.md',
     title: 'Lenguaje responsable',
     subtitle: 'Separar incomodidad visual de TOC clínico sin aguar el experimento.',
+  },
+  'attention_scanning_research.md': {
+    path: 'research/attention_scanning_research.md',
+    title: 'Atención selectiva y escaneo',
+    subtitle: 'Escaneo web, change blindness y carriles visuales que casi ayudan.',
   }
 };
 

@@ -12,6 +12,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 4. [`motion_safety_research.md`](motion_safety_research.md) — guardarraíles para microanimaciones incómodas sin romper accesibilidad.
 5. [`friction_memory_research.md`](friction_memory_research.md) — carga cognitiva, pico/cierre memorable y orden de foco seguro.
 6. [`ocd_language_ethics.md`](ocd_language_ethics.md) — nota responsable para separar el TOC clínico de la incomodidad visual inducida.
+7. [`attention_scanning_research.md`](attention_scanning_research.md) — escaneo web, atención selectiva y change blindness aplicados al carril visual.
 
 ## Mapa de decisiones por tipo de cambio
 
@@ -21,6 +22,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Iconos, labels, menú o microcopy | `interaction_memory_research.md` | texto descriptivo; nunca icono como único significado |
 | Hover, focus, delays, stickers animados | `motion_safety_research.md` | `prefers-reduced-motion`, ausencia de flashes y objetivos clicables estables |
 | Evidence, bibliografía, pico TOC o footer | `friction_memory_research.md` | cierre explicativo, contraste y orden DOM/focus coherente |
+| Carril de lectura, señales laterales o cambios visibles | `attention_scanning_research.md` | no esconder información crítica ni mover objetivos clicables |
 | Switch normal/TOC o modo comparativo futuro | todos, empezando por esta guía | separar estilo de contenido; no duplicar research disperso |
 
 ## Mapa rápido por tema
@@ -35,6 +37,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Fricción memorable | `friction_memory_research.md` | pico TOC, cierre útil, falsos protagonistas y orden de foco intacto |
 | Bibliografía visible | `toc_patterns.md` + `motion_safety_research.md` + `friction_memory_research.md` | enlaces externos en `#evidence` con microcopy breve y layout torcido |
 | Lenguaje sobre TOC | `ocd_language_ethics.md` | nota clínica breve, enlace externo serio y copy que no diga “todos somos un poco TOC” |
+| Atención selectiva | `attention_scanning_research.md` | carril + traición lateral, señales que obligan a revalidar sin ocultar cambios |
 
 ## Criterio editorial
 
@@ -59,6 +62,8 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - Laws of UX — Peak-End Rule: https://lawsofux.com/peak-end-rule/
 - W3C/WCAG 2.2 — Focus Order: https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html
 - International OCD Foundation — About OCD: https://iocdf.org/about-ocd/
+- Nielsen Norman Group — F-Shaped Pattern of Reading on the Web: https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/
+- Nielsen Norman Group — Change Blindness in UX: https://www.nngroup.com/articles/change-blindness-definition/
 
 ## Estado de implementación
 
@@ -66,6 +71,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - `#evidence` ya muestra explicación real, bibliografía visible, leyenda de iconos ambiguos, nota de movimiento reducido y nota responsable sobre TOC clínico vs. incomodidad visual.
 - La web principal enlaza esta guía y cada documento temático desde el bloque `#evidence`.
 - `friction_memory_research.md` deja preparada la siguiente capa: pico TOC, cierre memorable y checklist de foco seguro.
+- `attention_scanning_research.md` añade patrón “carril + traición lateral” y ya tiene tarjeta visible en `#evidence`.
 - Las microanimaciones deben seguir documentadas en `motion_safety_research.md` antes de ampliarse.
 - Las próximas mejoras deberían priorizar claridad documental: menos ocurrencia suelta, más patrón reutilizable.
 
