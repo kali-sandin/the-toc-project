@@ -14,6 +14,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 6. [`ocd_language_ethics.md`](ocd_language_ethics.md) — nota responsable para separar el TOC clínico de la incomodidad visual inducida.
 7. [`attention_scanning_research.md`](attention_scanning_research.md) — escaneo web, atención selectiva y change blindness aplicados al carril visual.
 8. [`microcontent_blindness_research.md`](microcontent_blindness_research.md) — primeras palabras, banner blindness y fuentes legítimas con envoltorio sospechoso.
+9. [`error_recovery_research.md`](error_recovery_research.md) — slips, mensajes de error y recuperación visible cuando la fricción casi induce fallo.
 
 ## Mapa de decisiones por tipo de cambio
 
@@ -25,6 +26,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Evidence, bibliografía, pico TOC o footer | `friction_memory_research.md` | cierre explicativo, contraste y orden DOM/focus coherente |
 | Carril de lectura, señales laterales o cambios visibles | `attention_scanning_research.md` | no esconder información crítica ni mover objetivos clicables |
 | Enlaces, bibliografía, CTAs falsos o cajas tipo banner | `microcontent_blindness_research.md` | primer par de palabras claro; calma sin disfraz promocional |
+| Señales de error, casi-slips, iconos de alerta o rutas de salida | `error_recovery_research.md` | reparación cercana; nunca trampas funcionales reales |
 | Switch normal/TOC o modo comparativo futuro | todos, empezando por esta guía | separar estilo de contenido; no duplicar research disperso |
 
 ## Mapa rápido por tema
@@ -41,6 +43,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Lenguaje sobre TOC | `ocd_language_ethics.md` | nota clínica breve, enlace externo serio y copy que no diga “todos somos un poco TOC” |
 | Atención selectiva | `attention_scanning_research.md` | carril + traición lateral, señales que obligan a revalidar sin ocultar cambios |
 | Microcopy escaneable | `microcontent_blindness_research.md` | fuentes que empiezan claras, envoltorios sospechosos y banner blindness controlada |
+| Recuperación de errores | `error_recovery_research.md` | casi-slip + reparación inmediata, diagnóstico cerca del punto de fricción |
 
 ## Criterio editorial
 
@@ -69,6 +72,8 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - Nielsen Norman Group — Change Blindness in UX: https://www.nngroup.com/articles/change-blindness-definition/
 - Nielsen Norman Group — Banner Blindness Revisited: https://www.nngroup.com/articles/banner-blindness-old-and-new-findings/
 - Nielsen Norman Group — First 2 Words: A Signal for the Scanning Eye: https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/
+- Nielsen Norman Group — Preventing User Errors: Avoiding Unconscious Slips: https://www.nngroup.com/articles/slips/
+- Nielsen Norman Group — Error-Message Guidelines: https://www.nngroup.com/articles/error-message-guidelines/
 
 ## Estado de implementación
 
@@ -78,6 +83,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - `friction_memory_research.md` deja preparada la siguiente capa: pico TOC, cierre memorable y checklist de foco seguro.
 - `attention_scanning_research.md` añade patrón “carril + traición lateral” y ya tiene tarjeta visible en `#evidence`.
 - `microcontent_blindness_research.md` añade patrón “enlace claro, envoltorio sospechoso” y ya tiene tarjeta/fuentes visibles.
+- `error_recovery_research.md` añade patrón “casi-slip + reparación inmediata” y ya tiene tarjeta/fuentes visibles.
 - Las microanimaciones deben seguir documentadas en `motion_safety_research.md` antes de ampliarse.
 - Las próximas mejoras deberían priorizar claridad documental: menos ocurrencia suelta, más patrón reutilizable.
 

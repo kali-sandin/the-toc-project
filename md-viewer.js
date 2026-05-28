@@ -43,6 +43,11 @@ const DOCS = {
     path: 'research/microcontent_blindness_research.md',
     title: 'Microcopy escaneable y ceguera a banners',
     subtitle: 'Primeras palabras útiles, fuentes disfrazadas de banner y señales esquivables.',
+  },
+  'error_recovery_research.md': {
+    path: 'research/error_recovery_research.md',
+    title: 'Errores, slips y recuperación',
+    subtitle: 'Casi errores visuales con diagnóstico, contexto y salida útil.',
   }
 };
 
