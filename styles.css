@@ -4540,3 +4540,68 @@ body.mode-calm .mode-switch-thumb {
     grid-template-columns: 1fr;
   }
 }
+
+/* task_060 review closure: Zen sections must stop inheriting TOC width drama. */
+html.mode-calm body .mode-switch,
+html.mode-calm body .page,
+html.mode-calm body .section-menu,
+html.mode-calm body .hero,
+html.mode-calm body .manifesto,
+html.mode-calm body .toc-dials,
+html.mode-calm body .evidence,
+html.mode-calm body .footer,
+body.mode-calm .mode-switch,
+body.mode-calm .page,
+body.mode-calm .section-menu,
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer {
+  box-sizing: border-box !important;
+  width: min(1080px, calc(100vw - 48px)) !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  justify-self: center !important;
+}
+
+html.mode-calm body .page,
+body.mode-calm .page {
+  justify-items: stretch !important;
+}
+
+html.mode-calm body .section-menu,
+html.mode-calm body .hero,
+html.mode-calm body .manifesto,
+html.mode-calm body .toc-dials,
+html.mode-calm body .evidence,
+html.mode-calm body .footer,
+body.mode-calm .section-menu,
+body.mode-calm .hero,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .evidence,
+body.mode-calm .footer {
+  justify-self: stretch !important;
+}
+
+@media (max-width: 720px) {
+  html.mode-calm body .mode-switch,
+  html.mode-calm body .page,
+  html.mode-calm body .section-menu,
+  html.mode-calm body .hero,
+  html.mode-calm body .manifesto,
+  html.mode-calm body .toc-dials,
+  html.mode-calm body .evidence,
+  html.mode-calm body .footer,
+  body.mode-calm .mode-switch,
+  body.mode-calm .page,
+  body.mode-calm .section-menu,
+  body.mode-calm .hero,
+  body.mode-calm .manifesto,
+  body.mode-calm .toc-dials,
+  body.mode-calm .evidence,
+  body.mode-calm .footer {
+    width: min(100% - 1.25rem, 720px) !important;
+  }
+}
