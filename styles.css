@@ -2069,6 +2069,7 @@ h1 {
 .evidence-note-i { transform: translate(-0.8rem, 0.75rem) rotate(1.9deg); }
 .evidence-note-j { transform: translate(0.65rem, 1.05rem) rotate(-1.2deg); }
 .evidence-note-k { transform: translate(-1.1rem, 0.25rem) rotate(2.5deg); }
+.evidence-note-l { transform: translate(1.35rem, -0.15rem) rotate(-2.7deg); background: linear-gradient(96deg, rgba(255,255,255,0.76), rgba(255,238,0,0.42)); }
 .evidence-biblio-item-h { transform: rotate(-1.9deg) translate(0.18rem, 0.18rem); }
 .evidence-biblio-item-i { transform: rotate(1.3deg) translate(-0.28rem, -0.08rem); }
 .evidence-biblio-item-j { transform: rotate(-0.6deg) translate(0.42rem, 0.2rem); }
@@ -2078,6 +2079,9 @@ h1 {
 .evidence-biblio-item-n { transform: rotate(-2.1deg) translate(0.44rem, -0.06rem); background: rgba(0, 220, 255, 0.28); }
 .evidence-biblio-item-o { transform: rotate(1.8deg) translate(-0.28rem, 0.16rem); background: rgba(255, 238, 0, 0.42); }
 .evidence-biblio-item-p { transform: rotate(-1.3deg) translate(0.36rem, -0.12rem); background: rgba(12, 245, 116, 0.26); }
+.evidence-biblio-item-q { transform: rotate(2.4deg) translate(-0.2rem, 0.14rem); background: rgba(255, 140, 0, 0.25); }
+.evidence-biblio-item-r { transform: rotate(-2deg) translate(0.26rem, 0.08rem); background: rgba(158, 122, 255, 0.22); }
+.evidence-biblio-item-s { transform: rotate(1deg) translate(-0.34rem, -0.1rem); background: rgba(255, 255, 255, 0.78); border-style: dashed; }
 
 .evidence-number {
   position: absolute;
@@ -2102,6 +2106,45 @@ h1 {
   margin: 0;
   font-family: Verdana, sans-serif;
 }
+
+.wait-strip {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.18rem;
+  margin: 0.9rem 0.15rem 0;
+  padding: 0.42rem 0.35rem;
+  border: 2px solid #111;
+  background: linear-gradient(90deg, #bdff00 0 19%, #ffdf28 19% 47%, #ff7a00 47% 74%, #ff2bb5 74% 100%);
+  box-shadow: 4px -3px 0 rgba(0, 0, 0, 0.16);
+  transform: skewX(-4deg) translateX(-0.2rem);
+}
+
+.wait-strip::after {
+  content: "no carga nada / parece que sí";
+  position: absolute;
+  right: -0.45rem;
+  bottom: -0.72rem;
+  padding: 0.08rem 0.28rem;
+  border: 2px solid #111;
+  background: #fff;
+  font: 900 0.52rem/1 "Arial Black", sans-serif;
+  transform: rotate(4deg);
+}
+
+.wait-mark {
+  display: inline-block;
+  padding: 0.16rem 0.2rem;
+  border: 2px solid #111;
+  background: rgba(255, 255, 255, 0.82);
+  font: 900 0.64rem/1 "Courier New", monospace;
+  text-align: center;
+}
+
+.wait-mark-a { transform: translateY(0.18rem) rotate(-3deg); }
+.wait-mark-b { transform: translate(-0.12rem, -0.08rem) rotate(2deg); }
+.wait-mark-c { transform: translate(0.2rem, 0.12rem) rotate(-1deg); }
+.wait-mark-d { transform: translateY(-0.16rem) rotate(3deg); }
 
 .evidence-biblio {
   position: relative;
@@ -2239,6 +2282,7 @@ h1 {
 .research-map-card-g { grid-column: 3 / span 2; transform: rotate(-1.8deg) translate(0.18rem, -0.12rem); background: rgba(255, 255, 255, 0.74); border-style: dashed; }
 .research-map-card-h { grid-column: 2 / span 2; transform: rotate(0.9deg) translate(-0.08rem, 0.18rem); background: rgba(255, 83, 83, 0.22); border-style: double; }
 .research-map-card-i { grid-column: 1 / span 4; transform: rotate(-0.6deg) translate(0.12rem, 0.22rem); background: rgba(12, 245, 116, 0.24); border-style: dashed solid double dashed; }
+.research-map-card-j { grid-column: 2 / span 3; transform: rotate(1.2deg) translate(-0.18rem, -0.04rem); background: rgba(255, 140, 0, 0.22); border-style: solid dashed dashed double; }
 
 .research-map {
   display: grid;
@@ -2291,6 +2335,7 @@ h1 {
 .research-map-card-g { grid-column: 3 / span 2; transform: rotate(-1.8deg) translate(0.18rem, -0.12rem); background: rgba(255, 255, 255, 0.74); border-style: dashed; }
 .research-map-card-h { grid-column: 2 / span 2; transform: rotate(0.9deg) translate(-0.08rem, 0.18rem); background: rgba(255, 83, 83, 0.22); border-style: double; }
 .research-map-card-i { grid-column: 1 / span 4; transform: rotate(-0.6deg) translate(0.12rem, 0.22rem); background: rgba(12, 245, 116, 0.24); border-style: dashed solid double dashed; }
+.research-map-card-j { grid-column: 2 / span 3; transform: rotate(1.2deg) translate(-0.18rem, -0.04rem); background: rgba(255, 140, 0, 0.22); border-style: solid dashed dashed double; }
 
 
 .ocd-language-note {
@@ -2815,6 +2860,9 @@ h1 {
   .evidence-biblio-item-n,
   .evidence-biblio-item-o,
   .evidence-biblio-item-p,
+  .evidence-biblio-item-q,
+  .evidence-biblio-item-r,
+  .evidence-biblio-item-s,
   .ocd-language-note,
   .ocd-language-kicker,
   .ocd-language-link,
@@ -2828,9 +2876,18 @@ h1 {
   .research-map-card-f,
   .research-map-card-g,
   .research-map-card-h,
-  .research-map-card-i {
+  .research-map-card-i,
+  .research-map-card-j {
     grid-column: auto;
     transform: rotate(0deg);
+  }
+
+  .wait-strip,
+  .wait-mark-a,
+  .wait-mark-b,
+  .wait-mark-c,
+  .wait-mark-d {
+    transform: none;
   }
 
   .motion-safety-note {

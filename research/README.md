@@ -16,6 +16,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 8. [`microcontent_blindness_research.md`](microcontent_blindness_research.md) — primeras palabras, banner blindness y fuentes legítimas con envoltorio sospechoso.
 9. [`error_recovery_research.md`](error_recovery_research.md) — slips, mensajes de error y recuperación visible cuando la fricción casi induce fallo.
 10. [`information_scent_research.md`](information_scent_research.md) — information foraging, olor informativo, coste percibido y señuelos honestos.
+11. [`perceived_wait_research.md`](perceived_wait_research.md) — límites de respuesta, indicadores de progreso e incertidumbre temporal.
 
 ## Mapa de decisiones por tipo de cambio
 
@@ -29,6 +30,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Enlaces, bibliografía, CTAs falsos o cajas tipo banner | `microcontent_blindness_research.md` | primer par de palabras claro; calma sin disfraz promocional |
 | Señales de error, casi-slips, iconos de alerta o rutas de salida | `error_recovery_research.md` | reparación cercana; nunca trampas funcionales reales |
 | Enlaces con promesa dudosa, tarjetas tipo señuelo o rutas a documentos largos | `information_scent_research.md` | etiqueta frontal clara, destino estable y coste visual que no esconda el valor |
+| Indicadores de progreso, tiempos, loaders falsos o espera visual | `perceived_wait_research.md` | no retrasar carga real, no fingir estado del sistema, no usar loops persistentes |
 | Switch normal/TOC o modo comparativo futuro | todos, empezando por esta guía | separar estilo de contenido; no duplicar research disperso |
 
 ## Mapa rápido por tema
@@ -47,6 +49,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Microcopy escaneable | `microcontent_blindness_research.md` | fuentes que empiezan claras, envoltorios sospechosos y banner blindness controlada |
 | Recuperación de errores | `error_recovery_research.md` | casi-slip + reparación inmediata, diagnóstico cerca del punto de fricción |
 | Information scent | `information_scent_research.md` | señuelo honesto: fuente clara, promesa útil y contenedor incómodo |
+| Espera percibida | `perceived_wait_research.md` | progreso sospechoso: marcas temporales reales, barra estática y calma lineal |
 
 ## Criterio editorial
 
@@ -80,6 +83,9 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - Nielsen Norman Group — Information Scent: https://www.nngroup.com/articles/information-scent/
 - Nielsen Norman Group — Information Foraging: https://www.nngroup.com/articles/information-foraging/
 - Nielsen Norman Group — Progressive Disclosure: https://www.nngroup.com/articles/progressive-disclosure/
+- Nielsen Norman Group — Response Times: The 3 Important Limits: https://www.nngroup.com/articles/response-times-3-important-limits/
+- Nielsen Norman Group — Progress Indicators Make a Slow System Less Insufferable: https://www.nngroup.com/articles/progress-indicators/
+- Laws of UX — Doherty Threshold: https://lawsofux.com/doherty-threshold/
 
 ## Estado de implementación
 
@@ -91,6 +97,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - `microcontent_blindness_research.md` añade patrón “enlace claro, envoltorio sospechoso” y ya tiene tarjeta/fuentes visibles.
 - `error_recovery_research.md` añade patrón “casi-slip + reparación inmediata” y ya tiene tarjeta/fuentes visibles.
 - `information_scent_research.md` añade patrón “señuelo honesto” y ya tiene tarjeta/fuentes visibles en `#evidence`.
+- `perceived_wait_research.md` añade patrón “progreso sospechoso” con tarjeta/cinta estática y fuentes visibles en `#evidence`.
 - Las microanimaciones deben seguir documentadas en `motion_safety_research.md` antes de ampliarse.
 - Las próximas mejoras deberían priorizar claridad documental: menos ocurrencia suelta, más patrón reutilizable.
 

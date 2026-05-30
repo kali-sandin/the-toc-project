@@ -53,6 +53,11 @@ const DOCS = {
     path: 'research/information_scent_research.md',
     title: 'Information scent y foraging',
     subtitle: 'Olor informativo, coste percibido y señuelos honestos.',
+  },
+  'perceived_wait_research.md': {
+    path: 'research/perceived_wait_research.md',
+    title: 'Espera percibida y progreso',
+    subtitle: 'Límites de respuesta, feedback y progreso sospechoso.',
   }
 };
 
