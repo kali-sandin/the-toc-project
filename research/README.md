@@ -15,6 +15,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 7. [`attention_scanning_research.md`](attention_scanning_research.md) — escaneo web, atención selectiva y change blindness aplicados al carril visual.
 8. [`microcontent_blindness_research.md`](microcontent_blindness_research.md) — primeras palabras, banner blindness y fuentes legítimas con envoltorio sospechoso.
 9. [`error_recovery_research.md`](error_recovery_research.md) — slips, mensajes de error y recuperación visible cuando la fricción casi induce fallo.
+10. [`information_scent_research.md`](information_scent_research.md) — information foraging, olor informativo, coste percibido y señuelos honestos.
 
 ## Mapa de decisiones por tipo de cambio
 
@@ -27,6 +28,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Carril de lectura, señales laterales o cambios visibles | `attention_scanning_research.md` | no esconder información crítica ni mover objetivos clicables |
 | Enlaces, bibliografía, CTAs falsos o cajas tipo banner | `microcontent_blindness_research.md` | primer par de palabras claro; calma sin disfraz promocional |
 | Señales de error, casi-slips, iconos de alerta o rutas de salida | `error_recovery_research.md` | reparación cercana; nunca trampas funcionales reales |
+| Enlaces con promesa dudosa, tarjetas tipo señuelo o rutas a documentos largos | `information_scent_research.md` | etiqueta frontal clara, destino estable y coste visual que no esconda el valor |
 | Switch normal/TOC o modo comparativo futuro | todos, empezando por esta guía | separar estilo de contenido; no duplicar research disperso |
 
 ## Mapa rápido por tema
@@ -44,6 +46,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Atención selectiva | `attention_scanning_research.md` | carril + traición lateral, señales que obligan a revalidar sin ocultar cambios |
 | Microcopy escaneable | `microcontent_blindness_research.md` | fuentes que empiezan claras, envoltorios sospechosos y banner blindness controlada |
 | Recuperación de errores | `error_recovery_research.md` | casi-slip + reparación inmediata, diagnóstico cerca del punto de fricción |
+| Information scent | `information_scent_research.md` | señuelo honesto: fuente clara, promesa útil y contenedor incómodo |
 
 ## Criterio editorial
 
@@ -74,6 +77,9 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - Nielsen Norman Group — First 2 Words: A Signal for the Scanning Eye: https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/
 - Nielsen Norman Group — Preventing User Errors: Avoiding Unconscious Slips: https://www.nngroup.com/articles/slips/
 - Nielsen Norman Group — Error-Message Guidelines: https://www.nngroup.com/articles/error-message-guidelines/
+- Nielsen Norman Group — Information Scent: https://www.nngroup.com/articles/information-scent/
+- Nielsen Norman Group — Information Foraging: https://www.nngroup.com/articles/information-foraging/
+- Nielsen Norman Group — Progressive Disclosure: https://www.nngroup.com/articles/progressive-disclosure/
 
 ## Estado de implementación
 
@@ -84,6 +90,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - `attention_scanning_research.md` añade patrón “carril + traición lateral” y ya tiene tarjeta visible en `#evidence`.
 - `microcontent_blindness_research.md` añade patrón “enlace claro, envoltorio sospechoso” y ya tiene tarjeta/fuentes visibles.
 - `error_recovery_research.md` añade patrón “casi-slip + reparación inmediata” y ya tiene tarjeta/fuentes visibles.
+- `information_scent_research.md` añade patrón “señuelo honesto” y ya tiene tarjeta/fuentes visibles en `#evidence`.
 - Las microanimaciones deben seguir documentadas en `motion_safety_research.md` antes de ampliarse.
 - Las próximas mejoras deberían priorizar claridad documental: menos ocurrencia suelta, más patrón reutilizable.
 

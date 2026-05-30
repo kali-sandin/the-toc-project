@@ -48,6 +48,11 @@ const DOCS = {
     path: 'research/error_recovery_research.md',
     title: 'Errores, slips y recuperación',
     subtitle: 'Casi errores visuales con diagnóstico, contexto y salida útil.',
+  },
+  'information_scent_research.md': {
+    path: 'research/information_scent_research.md',
+    title: 'Information scent y foraging',
+    subtitle: 'Olor informativo, coste percibido y señuelos honestos.',
   }
 };
 
