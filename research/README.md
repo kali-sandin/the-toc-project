@@ -50,6 +50,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Recuperación de errores | `error_recovery_research.md` | casi-slip + reparación inmediata, diagnóstico cerca del punto de fricción |
 | Information scent | `information_scent_research.md` | señuelo honesto: fuente clara, promesa útil y contenedor incómodo |
 | Espera percibida | `perceived_wait_research.md` | progreso sospechoso: marcas temporales reales, barra estática y calma lineal |
+| Fluidez perceptiva | `processing_fluency_research.md` | desfluidez localizada con texto, contraste y modo calma seguros |
 
 ## Criterio editorial
 
