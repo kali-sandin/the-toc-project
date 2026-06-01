@@ -58,6 +58,16 @@ const DOCS = {
     path: 'research/perceived_wait_research.md',
     title: 'Espera percibida y progreso',
     subtitle: 'Límites de respuesta, feedback y progreso sospechoso.',
+  },
+  'processing_fluency_research.md': {
+    path: 'research/processing_fluency_research.md',
+    title: 'Fluidez perceptiva',
+    subtitle: 'Legibilidad, confianza y desfluidez localizada con contraste seguro.',
+  },
+  'progressive_disclosure_research.md': {
+    path: 'research/progressive_disclosure_research.md',
+    title: 'Revelación progresiva',
+    subtitle: 'Detalle aplazado, carga cognitiva y deuda visible sin esconder lo crítico.',
   }
 };
 

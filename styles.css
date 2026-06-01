@@ -2071,6 +2071,7 @@ h1 {
 .evidence-note-k { transform: translate(-1.1rem, 0.25rem) rotate(2.5deg); }
 .evidence-note-l { transform: translate(1.35rem, -0.15rem) rotate(-2.7deg); background: linear-gradient(96deg, rgba(255,255,255,0.76), rgba(255,238,0,0.42)); }
 .evidence-note-m { transform: translate(-0.65rem, 0.82rem) rotate(1.6deg); background: linear-gradient(101deg, rgba(255,255,255,0.8), rgba(206,255,250,0.52), rgba(255,214,241,0.48)); }
+.evidence-note-n { transform: translate(1.1rem, -0.3rem) rotate(-1.8deg); background: linear-gradient(104deg, rgba(255,255,255,0.82), rgba(255,238,0,0.32), rgba(185,255,127,0.34)); }
 .evidence-biblio-item-h { transform: rotate(-1.9deg) translate(0.18rem, 0.18rem); }
 .evidence-biblio-item-i { transform: rotate(1.3deg) translate(-0.28rem, -0.08rem); }
 .evidence-biblio-item-j { transform: rotate(-0.6deg) translate(0.42rem, 0.2rem); }
@@ -2085,6 +2086,7 @@ h1 {
 .evidence-biblio-item-s { transform: rotate(1deg) translate(-0.34rem, -0.1rem); background: rgba(255, 255, 255, 0.78); border-style: dashed; }
 .evidence-biblio-item-t { transform: rotate(-1.6deg) translate(0.32rem, 0.2rem); background: rgba(132, 255, 214, 0.3); }
 .evidence-biblio-item-u { transform: rotate(2.1deg) translate(-0.22rem, -0.14rem); background: rgba(255, 196, 87, 0.33); }
+.evidence-biblio-item-v { transform: rotate(-2.4deg) translate(0.42rem, 0.08rem); background: rgba(189, 255, 0, 0.33); border-style: dashed; }
 
 .evidence-number {
   position: absolute;
@@ -2108,6 +2110,17 @@ h1 {
 .evidence-note p {
   margin: 0;
   font-family: Verdana, sans-serif;
+}
+
+.deferred-detail {
+  display: inline-block;
+  margin: 0.72rem 0 0 1.1rem;
+  padding: 0.28rem 0.5rem;
+  border: 2px dashed #111;
+  background: #fff8b8;
+  font: 900 0.68rem/1.15 "Courier New", monospace;
+  transform: translateX(0.65rem) rotate(3.5deg);
+  box-shadow: -3px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
 .wait-strip {
@@ -2866,6 +2879,9 @@ h1 {
   .evidence-biblio-item-q,
   .evidence-biblio-item-r,
   .evidence-biblio-item-s,
+  .evidence-biblio-item-t,
+  .evidence-biblio-item-u,
+  .evidence-biblio-item-v,
   .ocd-language-note,
   .ocd-language-kicker,
   .ocd-language-link,
@@ -2880,7 +2896,10 @@ h1 {
   .research-map-card-g,
   .research-map-card-h,
   .research-map-card-i,
-  .research-map-card-j {
+  .research-map-card-j,
+  .research-map-card-k,
+  .research-map-card-l,
+  .deferred-detail {
     grid-column: auto;
     transform: rotate(0deg);
   }
@@ -3266,7 +3285,8 @@ body.mode-calm .research-map-card,
 body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .toc-dial,
-body.mode-calm .evidence-legend-item {
+body.mode-calm .evidence-legend-item,
+body.mode-calm .deferred-detail {
   color: #1f2933;
   background: #f8fafc;
   border: 1px solid #d7dde7;
@@ -3351,7 +3371,8 @@ body.mode-calm .toc-dial,
 body.mode-calm .research-map-card,
 body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
-body.mode-calm .evidence-legend-item {
+body.mode-calm .evidence-legend-item,
+body.mode-calm .deferred-detail {
   color: var(--calm-ink);
   background: var(--calm-card);
   border: 1px solid var(--calm-line);
@@ -3541,7 +3562,8 @@ body.mode-calm .toc-dial,
 body.mode-calm .research-map-card,
 body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
-body.mode-calm .evidence-legend-item {
+body.mode-calm .evidence-legend-item,
+body.mode-calm .deferred-detail {
   padding: 1.15rem;
   display: grid;
   gap: 0.55rem;
@@ -4020,7 +4042,8 @@ body.mode-calm .toc-dial,
 body.mode-calm .research-map-card,
 body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
-body.mode-calm .evidence-legend-item {
+body.mode-calm .evidence-legend-item,
+body.mode-calm .deferred-detail {
   background: var(--calm-card) !important;
   border-color: var(--calm-line) !important;
   box-shadow: var(--calm-shadow) !important;
@@ -4482,7 +4505,8 @@ body.mode-calm .footer-note,
 body.mode-calm .research-map-card,
 body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
-body.mode-calm .evidence-legend-item {
+body.mode-calm .evidence-legend-item,
+body.mode-calm .deferred-detail {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
@@ -4634,6 +4658,21 @@ body.mode-calm .wait-mark {
   box-shadow: none !important;
   font: 750 0.86rem/1 Inter, ui-sans-serif, system-ui, sans-serif;
   text-align: center;
+  transform: none !important;
+}
+
+/* task_022 — progressive disclosure debt becomes plain detail in calm mode. */
+html.mode-calm body .deferred-detail,
+body.mode-calm .deferred-detail {
+  display: block;
+  margin: 0.75rem 0 0;
+  padding: 0.65rem 0.75rem;
+  color: var(--calm-ink, #172033);
+  background: #f8fafc !important;
+  border: 1px solid var(--calm-line, #d7dde7) !important;
+  border-radius: 0.75rem;
+  box-shadow: none !important;
+  font: 700 0.9rem/1.35 Inter, ui-sans-serif, system-ui, sans-serif;
   transform: none !important;
 }
 
