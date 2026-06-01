@@ -19,6 +19,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 11. [`perceived_wait_research.md`](perceived_wait_research.md) — límites de respuesta, indicadores de progreso e incertidumbre temporal.
 12. [`processing_fluency_research.md`](processing_fluency_research.md) — legibilidad, fluidez perceptiva y confianza visual.
 13. [`progressive_disclosure_research.md`](progressive_disclosure_research.md) — revelación progresiva, deuda visible y detalle aplazado.
+14. [`choice_overload_research.md`](choice_overload_research.md) — sobrecarga de elección, Hick y rutas competidoras.
 
 ## Mapa de decisiones por tipo de cambio
 
@@ -34,6 +35,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Enlaces con promesa dudosa, tarjetas tipo señuelo o rutas a documentos largos | `information_scent_research.md` | etiqueta frontal clara, destino estable y coste visual que no esconda el valor |
 | Indicadores de progreso, tiempos, loaders falsos o espera visual | `perceived_wait_research.md` | no retrasar carga real, no fingir estado del sistema, no usar loops persistentes |
 | Detalles secundarios, disclosure, paneles o notas aplazadas | `progressive_disclosure_research.md` + `information_scent_research.md` | no esconder información crítica; móvil/calma deben ver el detalle sin hover obligatorio |
+| Menús, mapas, listas de opciones o rutas competidoras | `choice_overload_research.md` + `information_scent_research.md` | una ruta recomendada visible; no añadir pasos falsos ni opciones sin destino |
 | Switch normal/TOC o modo comparativo futuro | todos, empezando por esta guía | separar estilo de contenido; no duplicar research disperso |
 
 ## Mapa rápido por tema
@@ -55,6 +57,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Espera percibida | `perceived_wait_research.md` | progreso sospechoso: marcas temporales reales, barra estática y calma lineal |
 | Fluidez perceptiva | `processing_fluency_research.md` | desfluidez localizada con texto, contraste y modo calma seguros |
 | Revelación progresiva | `progressive_disclosure_research.md` | detalle aplazado con deuda visible, nunca información crítica escondida |
+| Sobrecarga de elección | `choice_overload_research.md` | varias rutas plausibles con recomendación visible y calma jerarquizada |
 
 ## Criterio editorial
 
@@ -88,6 +91,8 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - Nielsen Norman Group — Information Scent: https://www.nngroup.com/articles/information-scent/
 - Nielsen Norman Group — Information Foraging: https://www.nngroup.com/articles/information-foraging/
 - Nielsen Norman Group — Progressive Disclosure: https://www.nngroup.com/articles/progressive-disclosure/
+- Nielsen Norman Group — Simplicity Wins over Abundance of Choice: https://www.nngroup.com/articles/simplicity-vs-choice/
+- Laws of UX — Hick’s Law: https://lawsofux.com/hicks-law/
 - Nielsen Norman Group — Response Times: The 3 Important Limits: https://www.nngroup.com/articles/response-times-3-important-limits/
 - Nielsen Norman Group — Progress Indicators Make a Slow System Less Insufferable: https://www.nngroup.com/articles/progress-indicators/
 - Laws of UX — Doherty Threshold: https://lawsofux.com/doherty-threshold/
@@ -106,6 +111,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - `perceived_wait_research.md` añade patrón “progreso sospechoso” con tarjeta/cinta estática y fuentes visibles en `#evidence`.
 - `processing_fluency_research.md` añade patrón “desfluidez localizada” con tarjeta/fuentes visibles en `#evidence`.
 - `progressive_disclosure_research.md` añade patrón “detalle aplazado con deuda visible” con tarjeta/fuente visible en `#evidence`.
+- `choice_overload_research.md` añade patrón “rutas competidoras con recomendación honesta” con tarjeta/fuentes visibles en `#evidence`.
 - Las microanimaciones deben seguir documentadas en `motion_safety_research.md` antes de ampliarse.
 - Las próximas mejoras deberían priorizar claridad documental: menos ocurrencia suelta, más patrón reutilizable.
 
