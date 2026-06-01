@@ -4080,6 +4080,7 @@ body.mode-calm .card,
 body.mode-calm .toc-dial,
 body.mode-calm .evidence-note,
 body.mode-calm .footer-note {
+  display: grid;
   grid-template-rows: auto auto 1fr;
   min-height: 100%;
 }
@@ -4507,7 +4508,6 @@ body.mode-calm .ocd-language-link,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .evidence-legend-item,
 body.mode-calm .deferred-detail {
-  display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
   margin: 0 !important;
@@ -4518,6 +4518,29 @@ body.mode-calm .deferred-detail {
   border-radius: 1rem;
   box-shadow: 0 8px 22px rgba(23, 32, 51, 0.045) !important;
   transform: none !important;
+}
+
+html.mode-calm body .research-map-card,
+body.mode-calm .research-map-card,
+html.mode-calm body .evidence-biblio-item,
+body.mode-calm .evidence-biblio-item,
+html.mode-calm body .evidence-legend-item,
+body.mode-calm .evidence-legend-item,
+html.mode-calm body .deferred-detail,
+body.mode-calm .deferred-detail {
+  display: grid !important;
+  gap: 0.45rem;
+}
+
+html.mode-calm body .evidence-note,
+body.mode-calm .evidence-note,
+html.mode-calm body .footer-note,
+body.mode-calm .footer-note,
+html.mode-calm body .card,
+body.mode-calm .card,
+html.mode-calm body .toc-dial,
+body.mode-calm .toc-dial {
+  display: grid !important;
 }
 
 html.mode-calm body a,
@@ -4664,7 +4687,8 @@ body.mode-calm .wait-mark {
 /* task_022 — progressive disclosure debt becomes plain detail in calm mode. */
 html.mode-calm body .deferred-detail,
 body.mode-calm .deferred-detail {
-  display: block;
+  display: grid !important;
+  gap: 0.3rem;
   margin: 0.75rem 0 0;
   padding: 0.65rem 0.75rem;
   color: var(--calm-ink, #172033);
@@ -4673,6 +4697,21 @@ body.mode-calm .deferred-detail {
   border-radius: 0.75rem;
   box-shadow: none !important;
   font: 700 0.9rem/1.35 Inter, ui-sans-serif, system-ui, sans-serif;
+  transform: none !important;
+}
+
+html.mode-calm body .evidence-note-m,
+body.mode-calm .evidence-note-m,
+html.mode-calm body .evidence-note-n,
+body.mode-calm .evidence-note-n {
+  grid-template-rows: auto auto auto 1fr;
+}
+
+html.mode-calm body .research-map-card-k,
+body.mode-calm .research-map-card-k,
+html.mode-calm body .research-map-card-l,
+body.mode-calm .research-map-card-l {
+  grid-column: auto !important;
   transform: none !important;
 }
 
