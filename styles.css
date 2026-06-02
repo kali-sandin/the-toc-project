@@ -4738,10 +4738,17 @@ body.mode-calm .research-map-card-m {
 .choice-trap li {
   display: grid;
   gap: 0.18rem;
+  min-width: 0;
   padding: 0.42rem 0.38rem;
   border: 2px solid #111;
   background: rgba(255, 255, 255, 0.78);
   font: 800 0.68rem/1.1 "Courier New", monospace;
+}
+
+.choice-trap li strong,
+.choice-trap li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .choice-trap li:nth-child(1) { transform: translateY(0.18rem) rotate(-2deg); background: rgba(189, 255, 0, 0.46); }
