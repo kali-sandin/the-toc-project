@@ -54,7 +54,7 @@ Laws of UX explica la peak-end rule: las personas juzgan una experiencia en gran
 
 WCAG 2.2 `Focus Order` recuerda que, si una página se navega secuencialmente y el orden afecta al significado u operación, los componentes deben recibir foco en un orden que preserve significado y operabilidad.
 
-**Lectura TOC:** podemos torcer el layout visual, pero el DOM y el foco deben conservar una narrativa razonable: menú, hero, cards, manifiesto, perillas, evidence y footer.
+**Lectura TOC:** podemos torcer el layout visual, pero el DOM y el foco deben conservar una narrativa razonable: menú, hero, mapa de lectura, cards, manifiesto, diales de caos, evidence y footer.
 
 ### Patrón aplicable
 
@@ -73,7 +73,7 @@ WCAG 2.2 `Focus Order` recuerda que, si una página se navega secuencialmente y 
 
 ## 6. Oportunidades de producto
 
-1. **Pico TOC medido:** un bloque visible que declare “este es el punto más incómodo” y explique qué perillas sube.
+1. **Pico TOC medido:** un bloque visible que declare “este es el punto más incómodo” y explique qué diales sube.
 2. **Footer como cierre de memoria:** convertir el final en resumen real de aprendizaje con una desalineación final deliberada.
 3. **Checklist de foco seguro:** revisar que enlaces/anclas sigan un orden lógico aunque la composición parezca sabotearlo.
 

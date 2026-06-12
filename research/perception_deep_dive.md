@@ -91,9 +91,9 @@ NNGroup documenta que usuarios suelen escanear páginas en patrones como la F: f
 
 **Límite:** mantener encabezados y anchors reconocibles para que el usuario pueda recuperar orientación.
 
-## 6. Modelo operativo: cuatro perillas de incomodidad
+## 6. Modelo operativo: cuatro diales de incomodidad
 
-Para cada intervención nueva, elegir una perilla principal y una secundaria:
+Para cada intervención nueva, elegir un dial principal y uno secundario. Antes lo llamábamos “perilla”, pero “dial” deja más claro que hablamos de un eje ajustable de diseño, no de un control visible para el usuario:
 
 1. **Agrupación:** proximidad, similitud, región común.
 2. **Recorrido:** continuidad, patrón de lectura, scroll rhythm.
@@ -102,7 +102,7 @@ Para cada intervención nueva, elegir una perilla principal y una secundaria:
 
 Una intervención buena debe poder describirse así:
 
-> "Aumento [perilla] mediante [técnica] sin romper [límite]."
+> "Subo el dial de [eje] mediante [técnica] sin romper [límite]."
 
 Ejemplo:
 
@@ -123,7 +123,7 @@ Aplicar separaciones falsas y regiones visuales ambiguas alrededor de `#evidence
 ### Para siguiente turno de Richard
 
 **Matriz de intervención TOC**
-Convertir las cuatro perillas en una tabla visible o documento de decisión: patrón, base perceptiva, efecto esperado, riesgo, dónde aplicarlo.
+Mantener los cuatro diales como tabla visible o documento de decisión: patrón, base perceptiva, efecto esperado, riesgo, dónde aplicarlo. La web debe explicar primero la arquitectura de lectura y después enseñar la incomodidad.
 
 ## 8. Fuentes consultadas
 

@@ -4,7 +4,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 
 ## Índice de lectura recomendado
 
-> Ruta corta para humanos: primero mapa, luego percepción, después interacción, seguridad y memoria. Si vas a tocar UI, lee también la fila temática que encaje con tu tarea.
+> Ruta corta para humanos: primero mapa de lectura de la web, luego mapa de research, después percepción, interacción, seguridad y memoria. Si vas a tocar UI, lee también la fila temática que encaje con tu tarea.
 
 1. [`toc_patterns.md`](toc_patterns.md) — mapa general de patrones visuales, criterios de calidad y fuentes base.
 2. [`perception_deep_dive.md`](perception_deep_dive.md) — explicación de percepción visual: Gestalt, carga cognitiva, chunking y recorrido de lectura.
@@ -100,7 +100,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 
 ## Estado de implementación
 
-- `#toc-dials` ya convierte las cuatro perillas TOC en una pieza visible y navegable, con anclas internas y enlaces al visor Markdown existente.
+- `#toc-dials` ya convierte las antiguas “perillas” en cuatro diales de caos: ejes ajustables y explicados, con anclas internas y enlaces al visor Markdown existente.
 - `#evidence` ya muestra explicación real, bibliografía visible, leyenda de iconos ambiguos, nota de movimiento reducido y nota responsable sobre TOC clínico vs. incomodidad visual.
 - La web principal enlaza esta guía y cada documento temático desde el bloque `#evidence`.
 - `friction_memory_research.md` deja preparada la siguiente capa: pico TOC, cierre memorable y checklist de foco seguro.
