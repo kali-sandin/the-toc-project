@@ -5069,3 +5069,349 @@ body.mode-calm .reading-map-steps li:nth-child(3) {
     grid-template-columns: 1fr;
   }
 }
+
+/* task_060 Richard review: the new structure map must obey Zen, not reintroduce old dust. */
+html.mode-calm body .reading-map,
+body.mode-calm .reading-map {
+  box-sizing: border-box !important;
+  width: min(1080px, calc(100vw - 48px)) !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: clamp(1.35rem, 3vw, 2.5rem) !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  justify-self: stretch !important;
+  color: #172033 !important;
+  background: #ffffff !important;
+  background-image: none !important;
+  border: 1px solid #d7e0ea !important;
+  border-radius: 1.35rem !important;
+  box-shadow: 0 10px 28px rgba(23, 32, 51, 0.055) !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+html.mode-calm body .reading-map-kicker,
+body.mode-calm .reading-map-kicker {
+  width: fit-content;
+  margin: 0 0 0.75rem !important;
+  padding: 0.34rem 0.62rem;
+  color: #2b6f68 !important;
+  background: #eaf3f1 !important;
+  border: 1px solid #d2e4e0 !important;
+  border-radius: 999px;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+  letter-spacing: 0.035em !important;
+  text-transform: none !important;
+}
+
+html.mode-calm body .reading-map h2,
+body.mode-calm .reading-map h2 {
+  max-width: none !important;
+  margin: 0 0 0.65rem !important;
+  color: #172033 !important;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-size: clamp(1.75rem, 3vw, 2.7rem) !important;
+  font-weight: 780 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.035em !important;
+  text-shadow: none !important;
+}
+
+html.mode-calm body .reading-map-intro,
+body.mode-calm .reading-map-intro {
+  max-width: 68ch;
+  margin: 0.85rem 0 0 !important;
+  color: #4f6073 !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  line-height: 1.68 !important;
+}
+
+html.mode-calm body .reading-map-steps,
+body.mode-calm .reading-map-steps {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)) !important;
+  gap: 1rem !important;
+  margin: 1rem 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+html.mode-calm body .reading-map-steps li,
+html.mode-calm body .reading-map-steps li:nth-child(2),
+html.mode-calm body .reading-map-steps li:nth-child(3),
+body.mode-calm .reading-map-steps li,
+body.mode-calm .reading-map-steps li:nth-child(2),
+body.mode-calm .reading-map-steps li:nth-child(3) {
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 1.15rem !important;
+  color: #172033 !important;
+  background: #ffffff !important;
+  border: 1px solid #d7e0ea !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 22px rgba(23, 32, 51, 0.045) !important;
+  transform: none !important;
+}
+
+html.mode-calm body .reading-map-steps strong,
+body.mode-calm .reading-map-steps strong {
+  color: #172033 !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 780 !important;
+  line-height: 1.25 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+}
+
+html.mode-calm body .reading-map-steps span,
+body.mode-calm .reading-map-steps span {
+  color: #4f6073 !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+}
+
+@media (max-width: 720px) {
+  html.mode-calm body .reading-map,
+  body.mode-calm .reading-map {
+    width: min(100% - 1.25rem, 720px) !important;
+    padding: 1rem !important;
+  }
+}
+
+/* task_060 Richard review: keep late evidence panels in normal Zen flow, no ghost whitespace. */
+html.mode-calm body .evidence-note-g,
+html.mode-calm body .ocd-language-note,
+html.mode-calm body .evidence-biblio,
+html.mode-calm body .evidence-legend,
+html.mode-calm body .evidence-aside,
+html.mode-calm body .motion-safety-note,
+body.mode-calm .evidence-note-g,
+body.mode-calm .ocd-language-note,
+body.mode-calm .evidence-biblio,
+body.mode-calm .evidence-legend,
+body.mode-calm .evidence-aside,
+body.mode-calm .motion-safety-note {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin: 1rem 0 0 !important;
+  color: #172033 !important;
+  background: #ffffff !important;
+  border: 1px solid #d7e0ea !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 22px rgba(23, 32, 51, 0.045) !important;
+  transform: none !important;
+  position: relative !important;
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  overflow: visible !important;
+}
+
+html.mode-calm body .evidence-note-g,
+body.mode-calm .evidence-note-g,
+html.mode-calm body .motion-safety-note,
+body.mode-calm .motion-safety-note {
+  display: block !important;
+  grid-template-rows: none !important;
+  padding: 1.15rem !important;
+}
+
+html.mode-calm body .evidence-legend,
+body.mode-calm .evidence-legend,
+html.mode-calm body .motion-safety-proof,
+body.mode-calm .motion-safety-proof,
+html.mode-calm body .motion-safety-list,
+body.mode-calm .motion-safety-list {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)) !important;
+  gap: 0.8rem !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+html.mode-calm body .motion-safety-list li,
+body.mode-calm .motion-safety-list li {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0.35rem !important;
+}
+
+html.mode-calm body .evidence-aside,
+body.mode-calm .evidence-aside {
+  padding: 1rem 1.15rem !important;
+  font-style: normal !important;
+}
+
+/* task_094 — Zen polish: calm mode gets one stable width, quiet links and no TOC hover residue. */
+html.mode-calm body,
+body.mode-calm {
+  background-color: #f5f7fa !important;
+}
+
+html.mode-calm body::before,
+html.mode-calm body::after,
+body.mode-calm::before,
+body.mode-calm::after {
+  display: none !important;
+  content: none !important;
+}
+
+html.mode-calm body .mode-switch,
+html.mode-calm body .page,
+body.mode-calm .mode-switch,
+body.mode-calm .page {
+  width: min(1080px, calc(100vw - 48px)) !important;
+  max-width: 100% !important;
+}
+
+html.mode-calm body .cards,
+body.mode-calm .cards {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  justify-self: stretch !important;
+}
+
+html.mode-calm body .card,
+html.mode-calm body .toc-dial,
+html.mode-calm body .evidence-note,
+html.mode-calm body .footer-note,
+html.mode-calm body .research-map-card,
+html.mode-calm body .evidence-biblio-item,
+html.mode-calm body .evidence-legend-item,
+html.mode-calm body .deferred-detail,
+body.mode-calm .card,
+body.mode-calm .toc-dial,
+body.mode-calm .evidence-note,
+body.mode-calm .footer-note,
+body.mode-calm .research-map-card,
+body.mode-calm .evidence-biblio-item,
+body.mode-calm .evidence-legend-item,
+body.mode-calm .deferred-detail {
+  min-width: 0 !important;
+  overflow-wrap: anywhere;
+}
+
+html.mode-calm body a,
+html.mode-calm body a:visited,
+body.mode-calm a,
+body.mode-calm a:visited {
+  color: #285f76 !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  background-image: none !important;
+  border-bottom: 1px solid rgba(40, 95, 118, 0.32);
+}
+
+html.mode-calm body .section-menu a,
+html.mode-calm body .toc-dials-nav a,
+html.mode-calm body .toc-dial-source,
+html.mode-calm body .research-map-card,
+html.mode-calm body .ocd-language-link,
+body.mode-calm .section-menu a,
+body.mode-calm .toc-dials-nav a,
+body.mode-calm .toc-dial-source,
+body.mode-calm .research-map-card,
+body.mode-calm .ocd-language-link {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+}
+
+html.mode-calm body a:hover,
+html.mode-calm body a:focus-visible,
+body.mode-calm a:hover,
+body.mode-calm a:focus-visible {
+  color: #17324d !important;
+  text-decoration: none !important;
+  border-bottom-color: #17324d;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+html.mode-calm body .section-menu a:hover,
+html.mode-calm body .section-menu a:focus-visible,
+html.mode-calm body .toc-dials-nav a:hover,
+html.mode-calm body .toc-dials-nav a:focus-visible,
+html.mode-calm body .toc-dial-source:hover,
+html.mode-calm body .toc-dial-source:focus-visible,
+html.mode-calm body .research-map-card:hover,
+html.mode-calm body .research-map-card:focus-visible,
+html.mode-calm body .ocd-language-link:hover,
+html.mode-calm body .ocd-language-link:focus-visible,
+body.mode-calm .section-menu a:hover,
+body.mode-calm .section-menu a:focus-visible,
+body.mode-calm .toc-dials-nav a:hover,
+body.mode-calm .toc-dials-nav a:focus-visible,
+body.mode-calm .toc-dial-source:hover,
+body.mode-calm .toc-dial-source:focus-visible,
+body.mode-calm .research-map-card:hover,
+body.mode-calm .research-map-card:focus-visible,
+body.mode-calm .ocd-language-link:hover,
+body.mode-calm .ocd-language-link:focus-visible {
+  background: #eef7f4 !important;
+  border-color: #b8c8d8 !important;
+  box-shadow: 0 8px 22px rgba(23, 32, 51, 0.045) !important;
+}
+
+html.mode-calm body .hero :hover,
+html.mode-calm body .card :hover,
+html.mode-calm body .manifesto :hover,
+html.mode-calm body .toc-dials :hover,
+html.mode-calm body .evidence :hover,
+html.mode-calm body .footer :hover,
+body.mode-calm .hero :hover,
+body.mode-calm .card :hover,
+body.mode-calm .manifesto :hover,
+body.mode-calm .toc-dials :hover,
+body.mode-calm .evidence :hover,
+body.mode-calm .footer :hover {
+  letter-spacing: inherit !important;
+  word-spacing: inherit !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+@media (max-width: 720px) {
+  html.mode-calm body .mode-switch,
+  html.mode-calm body .page,
+  body.mode-calm .mode-switch,
+  body.mode-calm .page {
+    width: min(100% - 1.25rem, 720px) !important;
+  }
+
+  html.mode-calm body .cards,
+  body.mode-calm .cards {
+    grid-template-columns: 1fr !important;
+    gap: 0.9rem !important;
+  }
+}
+
+/* task_094 mobile containment: cards use the same inner Zen rail as every other section. */
+@media (max-width: 720px) {
+  html.mode-calm body .cards,
+  body.mode-calm .cards {
+    width: min(100% - 1.25rem, 720px) !important;
+    justify-self: start !important;
+  }
+}
