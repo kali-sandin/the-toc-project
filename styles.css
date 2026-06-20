@@ -5415,3 +5415,108 @@ body.mode-calm .footer :hover {
     justify-self: start !important;
   }
 }
+
+/* task_060 closeout: final Zen pass, quiet motion and remove decorative residue. */
+html.mode-calm,
+html.mode-calm body,
+body.mode-calm {
+  scroll-behavior: auto !important;
+}
+
+html.mode-calm body *,
+html.mode-calm body *::before,
+html.mode-calm body *::after,
+body.mode-calm *,
+body.mode-calm *::before,
+body.mode-calm *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+html.mode-calm body h1,
+html.mode-calm body h2,
+html.mode-calm body h3,
+html.mode-calm body .title-chunk,
+html.mode-calm body .card-title,
+html.mode-calm body .manifesto-title,
+html.mode-calm body .toc-dials-title,
+html.mode-calm body .footer-title,
+body.mode-calm h1,
+body.mode-calm h2,
+body.mode-calm h3,
+body.mode-calm .title-chunk,
+body.mode-calm .card-title,
+body.mode-calm .manifesto-title,
+body.mode-calm .toc-dials-title,
+body.mode-calm .footer-title {
+  letter-spacing: 0 !important;
+}
+
+html.mode-calm body .mode-switch,
+html.mode-calm body .section-menu,
+html.mode-calm body .hero,
+html.mode-calm body .reading-map,
+html.mode-calm body .card,
+html.mode-calm body .manifesto,
+html.mode-calm body .toc-dials,
+html.mode-calm body .toc-dial,
+html.mode-calm body .evidence,
+html.mode-calm body .evidence-note,
+html.mode-calm body .ocd-language-note,
+html.mode-calm body .evidence-biblio,
+html.mode-calm body .evidence-biblio-item,
+html.mode-calm body .evidence-legend,
+html.mode-calm body .evidence-legend-item,
+html.mode-calm body .evidence-aside,
+html.mode-calm body .motion-safety-note,
+html.mode-calm body .footer,
+html.mode-calm body .footer-note,
+body.mode-calm .mode-switch,
+body.mode-calm .section-menu,
+body.mode-calm .hero,
+body.mode-calm .reading-map,
+body.mode-calm .card,
+body.mode-calm .manifesto,
+body.mode-calm .toc-dials,
+body.mode-calm .toc-dial,
+body.mode-calm .evidence,
+body.mode-calm .evidence-note,
+body.mode-calm .ocd-language-note,
+body.mode-calm .evidence-biblio,
+body.mode-calm .evidence-biblio-item,
+body.mode-calm .evidence-legend,
+body.mode-calm .evidence-legend-item,
+body.mode-calm .evidence-aside,
+body.mode-calm .motion-safety-note,
+body.mode-calm .footer,
+body.mode-calm .footer-note {
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+html.mode-calm body .section-menu a:hover,
+html.mode-calm body .section-menu a:focus-visible,
+html.mode-calm body .toc-dials-nav a:hover,
+html.mode-calm body .toc-dials-nav a:focus-visible,
+html.mode-calm body .toc-dial-source:hover,
+html.mode-calm body .toc-dial-source:focus-visible,
+html.mode-calm body .research-map-card:hover,
+html.mode-calm body .research-map-card:focus-visible,
+html.mode-calm body .ocd-language-link:hover,
+html.mode-calm body .ocd-language-link:focus-visible,
+body.mode-calm .section-menu a:hover,
+body.mode-calm .section-menu a:focus-visible,
+body.mode-calm .toc-dials-nav a:hover,
+body.mode-calm .toc-dials-nav a:focus-visible,
+body.mode-calm .toc-dial-source:hover,
+body.mode-calm .toc-dial-source:focus-visible,
+body.mode-calm .research-map-card:hover,
+body.mode-calm .research-map-card:focus-visible,
+body.mode-calm .ocd-language-link:hover,
+body.mode-calm .ocd-language-link:focus-visible {
+  background: #eef7f4 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
