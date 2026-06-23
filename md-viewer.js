@@ -68,6 +68,16 @@ const DOCS = {
     path: 'research/progressive_disclosure_research.md',
     title: 'Revelación progresiva',
     subtitle: 'Detalle aplazado, carga cognitiva y deuda visible sin esconder lo crítico.',
+  },
+  'choice_overload_research.md': {
+    path: 'research/choice_overload_research.md',
+    title: 'Sobrecarga de elección',
+    subtitle: 'Rutas competidoras con una recomendación honesta todavía visible.',
+  },
+  'visual_crowding_research.md': {
+    path: 'research/visual_crowding_research.md',
+    title: 'Crowding visual',
+    subtitle: 'Clutter periférico, objetivos flanqueados y picor sin ocultar la fuente.',
   }
 };
 

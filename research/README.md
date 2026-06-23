@@ -20,6 +20,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 12. [`processing_fluency_research.md`](processing_fluency_research.md) — legibilidad, fluidez perceptiva y confianza visual.
 13. [`progressive_disclosure_research.md`](progressive_disclosure_research.md) — revelación progresiva, deuda visible y detalle aplazado.
 14. [`choice_overload_research.md`](choice_overload_research.md) — sobrecarga de elección, Hick y rutas competidoras.
+15. [`visual_crowding_research.md`](visual_crowding_research.md) — crowding visual, clutter periférico y objetivos rodeados por vecinos molestos.
 
 ## Mapa de decisiones por tipo de cambio
 
@@ -36,6 +37,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Indicadores de progreso, tiempos, loaders falsos o espera visual | `perceived_wait_research.md` | no retrasar carga real, no fingir estado del sistema, no usar loops persistentes |
 | Detalles secundarios, disclosure, paneles o notas aplazadas | `progressive_disclosure_research.md` + `information_scent_research.md` | no esconder información crítica; móvil/calma deben ver el detalle sin hover obligatorio |
 | Menús, mapas, listas de opciones o rutas competidoras | `choice_overload_research.md` + `information_scent_research.md` | una ruta recomendada visible; no añadir pasos falsos ni opciones sin destino |
+| Badges, fuentes rodeadas, etiquetas comprimidas o ruido junto al texto | `visual_crowding_research.md` + `processing_fluency_research.md` | el objetivo debe seguir reconocible; no convertir texto periférico en lectura obligatoria |
 | Switch normal/TOC o modo comparativo futuro | todos, empezando por esta guía | separar estilo de contenido; no duplicar research disperso |
 
 ## Mapa rápido por tema
@@ -58,6 +60,7 @@ Esta carpeta es la biblioteca enlazable de la web. Su función no es acumular no
 | Fluidez perceptiva | `processing_fluency_research.md` | desfluidez localizada con texto, contraste y modo calma seguros |
 | Revelación progresiva | `progressive_disclosure_research.md` | detalle aplazado con deuda visible, nunca información crítica escondida |
 | Sobrecarga de elección | `choice_overload_research.md` | varias rutas plausibles con recomendación visible y calma jerarquizada |
+| Crowding visual | `visual_crowding_research.md` | objetivos claros flanqueados por vecinos molestos, con calma lineal y sin texto crítico comprimido |
 
 ## Criterio editorial
 
@@ -96,7 +99,8 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - Nielsen Norman Group — Response Times: The 3 Important Limits: https://www.nngroup.com/articles/response-times-3-important-limits/
 - Nielsen Norman Group — Progress Indicators Make a Slow System Less Insufferable: https://www.nngroup.com/articles/progress-indicators/
 - Laws of UX — Doherty Threshold: https://lawsofux.com/doherty-threshold/
-- Nielsen Norman Group — Progressive Disclosure: https://www.nngroup.com/articles/progressive-disclosure/
+- PMC — Visual Crowding: a fundamental limit on conscious perception and object recognition: https://pmc.ncbi.nlm.nih.gov/articles/PMC3070834/
+- PMC — Blinded by the load: attention, awareness and the role of perceptual load: https://pmc.ncbi.nlm.nih.gov/articles/PMC3965161/
 
 ## Estado de implementación
 
@@ -112,6 +116,7 @@ Si un hallazgo no puede convertirse en UI, tarea o decisión de diseño, probabl
 - `processing_fluency_research.md` añade patrón “desfluidez localizada” con tarjeta/fuentes visibles en `#evidence`.
 - `progressive_disclosure_research.md` añade patrón “detalle aplazado con deuda visible” con tarjeta/fuente visible en `#evidence`.
 - `choice_overload_research.md` añade patrón “rutas competidoras con recomendación honesta” con tarjeta/fuentes visibles en `#evidence`.
+- `visual_crowding_research.md` añade patrón “objetivo claro rodeado por vecinos molestos” con tarjeta, demo estática y fuentes visibles en `#evidence`.
 - Las microanimaciones deben seguir documentadas en `motion_safety_research.md` antes de ampliarse.
 - Las próximas mejoras deberían priorizar claridad documental: menos ocurrencia suelta, más patrón reutilizable.
 
