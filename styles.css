@@ -2311,6 +2311,92 @@ h1 {
 .crowding-demo span:nth-child(3) { transform: rotate(-3deg) translate(-0.14rem, 0.2rem); }
 .crowding-demo span:nth-child(4) { grid-column: 1 / -1; transform: rotate(1.5deg) translateX(0.35rem); background: rgba(255, 43, 181, 0.22); }
 
+.clinical-signs {
+  position: relative;
+  max-width: min(92%, 47rem);
+  margin: 1.2rem 0 1.7rem 2.7rem;
+  padding: 0.84rem 1.1rem 0.95rem 0.9rem;
+  border: 4px double #111;
+  background:
+    linear-gradient(91deg, rgba(255, 255, 255, 0.88), rgba(255, 238, 0, 0.58) 38%, rgba(255, 43, 181, 0.26) 39% 45%, rgba(206, 255, 250, 0.84) 45%);
+  box-shadow: 9px -6px 0 rgba(0, 0, 0, 0.18), -5px 7px 0 rgba(255, 43, 181, 0.28);
+  transform: rotate(1.6deg) translateX(-0.45rem);
+}
+
+.clinical-signs::before {
+  content: "no es checklist de postureo";
+  position: absolute;
+  top: -0.9rem;
+  right: 1.4rem;
+  padding: 0.14rem 0.42rem;
+  border: 2px solid #111;
+  background: #8bff00;
+  font: 900 0.62rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  transform: rotate(-5deg);
+}
+
+.clinical-signs-kicker {
+  margin: 0 0 0.18rem 1.2rem;
+  font: 900 0.64rem/1 "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.16rem;
+  color: #111;
+  transform: translateX(-0.8rem) rotate(-1.4deg);
+}
+
+.clinical-signs h3 {
+  margin: 0 0 0.65rem;
+  font: 900 1.18rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.clinical-signs-list {
+  display: grid;
+  grid-template-columns: 1fr 1.08fr 0.95fr;
+  gap: 0.36rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clinical-signs-list li {
+  min-width: 0;
+  padding: 0.48rem 0.52rem 0.56rem;
+  border: 2px solid #111;
+  background: rgba(255, 255, 255, 0.76);
+  font: 0.82rem/1.25 Verdana, sans-serif;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.13);
+}
+
+.clinical-signs-list li:nth-child(1) { transform: rotate(-1.8deg) translateY(0.16rem); }
+.clinical-signs-list li:nth-child(2) { transform: rotate(1.2deg) translate(-0.16rem, -0.08rem); background: rgba(255, 255, 255, 0.86); }
+.clinical-signs-list li:nth-child(3) { transform: rotate(-0.7deg) translateY(0.22rem); background: rgba(255, 248, 184, 0.82); }
+
+.clinical-signs-list strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  font: 900 0.82rem/1.05 "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.clinical-signs-source {
+  max-width: 35rem;
+  margin: 0.7rem 0 0 1.1rem;
+  padding: 0.34rem 0.46rem;
+  border: 2px dashed #111;
+  background: rgba(255, 255, 255, 0.82);
+  font: 900 0.72rem/1.22 "Courier New", monospace;
+  transform: rotate(-1.4deg);
+}
+
+.clinical-signs-source a {
+  color: #111;
+  text-decoration-thickness: 0.18rem;
+  text-underline-offset: 0.12rem;
+}
+
 .evidence-biblio {
   position: relative;
   max-width: 91%;
@@ -3083,6 +3169,23 @@ h1 {
   .evidence-biblio {
     max-width: none;
     margin-left: 0;
+    transform: rotate(0deg);
+  }
+
+  .clinical-signs {
+    max-width: none;
+    margin: 1rem 0 1.35rem;
+    transform: rotate(0deg);
+  }
+
+  .clinical-signs-list {
+    grid-template-columns: 1fr;
+  }
+
+  .clinical-signs-list li:nth-child(1),
+  .clinical-signs-list li:nth-child(2),
+  .clinical-signs-list li:nth-child(3),
+  .clinical-signs-source {
     transform: rotate(0deg);
   }
 
@@ -5380,12 +5483,14 @@ body.mode-calm .reading-map-steps span {
 /* task_060 Richard review: keep late evidence panels in normal Zen flow, no ghost whitespace. */
 html.mode-calm body .evidence-note-g,
 html.mode-calm body .ocd-language-note,
+html.mode-calm body .clinical-signs,
 html.mode-calm body .evidence-biblio,
 html.mode-calm body .evidence-legend,
 html.mode-calm body .evidence-aside,
 html.mode-calm body .motion-safety-note,
 body.mode-calm .evidence-note-g,
 body.mode-calm .ocd-language-note,
+body.mode-calm .clinical-signs,
 body.mode-calm .evidence-biblio,
 body.mode-calm .evidence-legend,
 body.mode-calm .evidence-aside,
@@ -5412,11 +5517,41 @@ body.mode-calm .motion-safety-note {
 
 html.mode-calm body .evidence-note-g,
 body.mode-calm .evidence-note-g,
+html.mode-calm body .clinical-signs,
+body.mode-calm .clinical-signs,
 html.mode-calm body .motion-safety-note,
 body.mode-calm .motion-safety-note {
   display: block !important;
   grid-template-rows: none !important;
   padding: 1.15rem !important;
+}
+
+html.mode-calm body .clinical-signs::before,
+body.mode-calm .clinical-signs::before {
+  display: none !important;
+}
+
+html.mode-calm body .clinical-signs-list,
+body.mode-calm .clinical-signs-list {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)) !important;
+  gap: 0.8rem !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+html.mode-calm body .clinical-signs-list li,
+body.mode-calm .clinical-signs-list li,
+html.mode-calm body .clinical-signs-source,
+body.mode-calm .clinical-signs-source {
+  box-sizing: border-box !important;
+  margin: 0.8rem 0 0 !important;
+  color: #172033 !important;
+  background: #ffffff !important;
+  border: 1px solid #d7e0ea !important;
+  border-radius: 0.75rem !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 html.mode-calm body .evidence-legend,
