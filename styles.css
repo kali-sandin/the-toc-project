@@ -2397,6 +2397,93 @@ h1 {
   text-underline-offset: 0.12rem;
 }
 
+.ocd-myths {
+  position: relative;
+  max-width: min(96%, 51rem);
+  margin: 0.35rem 0 1.75rem 4.1rem;
+  padding: 0.92rem 0.8rem 1rem 1.08rem;
+  border: 3px solid #111;
+  background:
+    linear-gradient(86deg, rgba(255, 43, 181, 0.22), rgba(255, 255, 255, 0.88) 23% 61%, rgba(139, 255, 0, 0.48) 62%),
+    repeating-linear-gradient(177deg, transparent 0 11px, rgba(0, 183, 255, 0.24) 11px 15px);
+  box-shadow: -8px 8px 0 rgba(0, 183, 255, 0.32), 7px -4px 0 rgba(255, 238, 0, 0.46);
+  transform: rotate(-1.2deg) translateX(0.6rem);
+}
+
+.ocd-myths::before {
+  content: "mito ≠ sintoma";
+  position: absolute;
+  top: -0.82rem;
+  left: 2.9rem;
+  padding: 0.12rem 0.36rem;
+  border: 2px solid #111;
+  background: #ffef00;
+  font: 900 0.62rem/1 "Courier New", monospace;
+  text-transform: uppercase;
+  transform: rotate(4.4deg);
+}
+
+.ocd-myths-kicker {
+  margin: 0 0 0.14rem 0.7rem;
+  font: 900 0.64rem/1 "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.11rem;
+  transform: translateX(-0.55rem) rotate(1.7deg);
+}
+
+.ocd-myths h3 {
+  margin: 0 0 0.72rem;
+  font: 900 1.2rem/1.02 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04rem;
+}
+
+.ocd-myths-list {
+  display: grid;
+  grid-template-columns: 1.03fr 0.92fr 1.08fr;
+  gap: 0.42rem;
+  margin: 0;
+}
+
+.ocd-myths-pair {
+  min-width: 0;
+  padding: 0.52rem 0.55rem 0.62rem;
+  border: 2px solid #111;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.ocd-myths-pair-a { transform: rotate(1.4deg) translateY(0.12rem); }
+.ocd-myths-pair-b { transform: rotate(-1.8deg) translate(-0.2rem, -0.06rem); background: rgba(206, 255, 250, 0.86); }
+.ocd-myths-pair-c { transform: rotate(0.8deg) translateY(0.2rem); background: rgba(255, 248, 184, 0.86); }
+
+.ocd-myths dt {
+  margin: 0 0 0.28rem;
+  font: 900 0.79rem/1.08 "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.ocd-myths dd {
+  margin: 0;
+  font: 0.82rem/1.26 Verdana, sans-serif;
+}
+
+.ocd-myths-source {
+  max-width: 38rem;
+  margin: 0.78rem 0.35rem 0 0.9rem;
+  padding: 0.34rem 0.46rem;
+  border: 2px dashed #111;
+  background: rgba(255, 255, 255, 0.86);
+  font: 900 0.72rem/1.22 "Courier New", monospace;
+  transform: rotate(1.3deg);
+}
+
+.ocd-myths-source a {
+  color: #111;
+  text-decoration-thickness: 0.18rem;
+  text-underline-offset: 0.12rem;
+}
+
 .evidence-biblio {
   position: relative;
   max-width: 91%;
@@ -3178,14 +3265,29 @@ h1 {
     transform: rotate(0deg);
   }
 
+  .ocd-myths {
+    max-width: none;
+    margin: 1rem 0 1.35rem;
+    transform: rotate(0deg);
+  }
+
   .clinical-signs-list {
     grid-template-columns: 1fr;
+  }
+
+  .ocd-myths-list {
+    grid-template-columns: 1fr;
+    gap: 0.54rem;
   }
 
   .clinical-signs-list li:nth-child(1),
   .clinical-signs-list li:nth-child(2),
   .clinical-signs-list li:nth-child(3),
-  .clinical-signs-source {
+  .clinical-signs-source,
+  .ocd-myths-pair-a,
+  .ocd-myths-pair-b,
+  .ocd-myths-pair-c,
+  .ocd-myths-source {
     transform: rotate(0deg);
   }
 
@@ -5484,6 +5586,7 @@ body.mode-calm .reading-map-steps span {
 html.mode-calm body .evidence-note-g,
 html.mode-calm body .ocd-language-note,
 html.mode-calm body .clinical-signs,
+html.mode-calm body .ocd-myths,
 html.mode-calm body .evidence-biblio,
 html.mode-calm body .evidence-legend,
 html.mode-calm body .evidence-aside,
@@ -5491,6 +5594,7 @@ html.mode-calm body .motion-safety-note,
 body.mode-calm .evidence-note-g,
 body.mode-calm .ocd-language-note,
 body.mode-calm .clinical-signs,
+body.mode-calm .ocd-myths,
 body.mode-calm .evidence-biblio,
 body.mode-calm .evidence-legend,
 body.mode-calm .evidence-aside,
@@ -5519,6 +5623,8 @@ html.mode-calm body .evidence-note-g,
 body.mode-calm .evidence-note-g,
 html.mode-calm body .clinical-signs,
 body.mode-calm .clinical-signs,
+html.mode-calm body .ocd-myths,
+body.mode-calm .ocd-myths,
 html.mode-calm body .motion-safety-note,
 body.mode-calm .motion-safety-note {
   display: block !important;
@@ -5527,12 +5633,16 @@ body.mode-calm .motion-safety-note {
 }
 
 html.mode-calm body .clinical-signs::before,
-body.mode-calm .clinical-signs::before {
+body.mode-calm .clinical-signs::before,
+html.mode-calm body .ocd-myths::before,
+body.mode-calm .ocd-myths::before {
   display: none !important;
 }
 
 html.mode-calm body .clinical-signs-list,
-body.mode-calm .clinical-signs-list {
+body.mode-calm .clinical-signs-list,
+html.mode-calm body .ocd-myths-list,
+body.mode-calm .ocd-myths-list {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)) !important;
   gap: 0.8rem !important;
@@ -5543,7 +5653,11 @@ body.mode-calm .clinical-signs-list {
 html.mode-calm body .clinical-signs-list li,
 body.mode-calm .clinical-signs-list li,
 html.mode-calm body .clinical-signs-source,
-body.mode-calm .clinical-signs-source {
+body.mode-calm .clinical-signs-source,
+html.mode-calm body .ocd-myths-pair,
+body.mode-calm .ocd-myths-pair,
+html.mode-calm body .ocd-myths-source,
+body.mode-calm .ocd-myths-source {
   box-sizing: border-box !important;
   margin: 0.8rem 0 0 !important;
   color: #172033 !important;
