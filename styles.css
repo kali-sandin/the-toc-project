@@ -2397,6 +2397,93 @@ h1 {
   text-underline-offset: 0.12rem;
 }
 
+.ocd-help-signs {
+  position: relative;
+  max-width: min(94%, 52rem);
+  margin: 0.2rem 0 1.85rem 5.4rem;
+  padding: 0.9rem 0.95rem 1rem 1.18rem;
+  border: 5px solid #111;
+  background:
+    linear-gradient(102deg, rgba(206, 255, 250, 0.9), rgba(255, 255, 255, 0.92) 28% 57%, rgba(255, 122, 0, 0.36) 58%),
+    repeating-linear-gradient(3deg, transparent 0 15px, rgba(255, 43, 181, 0.2) 15px 19px);
+  box-shadow: -10px 8px 0 rgba(255, 43, 181, 0.34), 6px -7px 0 rgba(139, 255, 0, 0.4);
+  transform: rotate(-1.7deg) translateX(-0.9rem);
+}
+
+.ocd-help-signs::before {
+  content: "no esperes a que encaje bonito";
+  position: absolute;
+  top: -0.95rem;
+  left: 1.7rem;
+  padding: 0.14rem 0.44rem;
+  border: 2px solid #111;
+  background: #ffef00;
+  font: 900 0.62rem/1 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  transform: rotate(5deg);
+}
+
+.ocd-help-signs-kicker {
+  margin: 0 0 0.16rem 1.8rem;
+  font: 900 0.64rem/1 "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.14rem;
+  color: #111;
+  transform: translateX(-1.05rem) rotate(1.5deg);
+}
+
+.ocd-help-signs h3 {
+  margin: 0 0 0.72rem;
+  font: 900 1.22rem/1.02 "Arial Black", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+}
+
+.ocd-help-signs-list {
+  display: grid;
+  grid-template-columns: 0.93fr 1.12fr 1fr;
+  gap: 0.42rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ocd-help-signs-list li {
+  min-width: 0;
+  padding: 0.56rem 0.58rem 0.64rem;
+  border: 2px solid #111;
+  background: rgba(255, 255, 255, 0.84);
+  font: 0.82rem/1.25 Verdana, sans-serif;
+  box-shadow: 4px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+.ocd-help-signs-list li:nth-child(1) { transform: rotate(1.4deg) translateY(0.18rem); background: rgba(255, 248, 184, 0.9); }
+.ocd-help-signs-list li:nth-child(2) { transform: rotate(-1.9deg) translate(-0.18rem, -0.08rem); }
+.ocd-help-signs-list li:nth-child(3) { transform: rotate(0.8deg) translateY(0.28rem); background: rgba(206, 255, 250, 0.9); }
+
+.ocd-help-signs-list strong {
+  display: block;
+  margin-bottom: 0.16rem;
+  font: 900 0.82rem/1.05 "Arial Black", sans-serif;
+  text-transform: uppercase;
+}
+
+.ocd-help-signs-source {
+  max-width: 40rem;
+  margin: 0.82rem 0 0 0.65rem;
+  padding: 0.34rem 0.46rem;
+  border: 2px dashed #111;
+  background: rgba(255, 255, 255, 0.88);
+  font: 900 0.72rem/1.22 "Courier New", monospace;
+  transform: rotate(1.2deg);
+}
+
+.ocd-help-signs-source a {
+  color: #111;
+  text-decoration-thickness: 0.18rem;
+  text-underline-offset: 0.12rem;
+}
+
 .ocd-myths {
   position: relative;
   max-width: min(96%, 51rem);
@@ -3365,6 +3452,12 @@ h1 {
     transform: rotate(0deg);
   }
 
+  .ocd-help-signs {
+    max-width: none;
+    margin: 1rem 0 1.35rem;
+    transform: rotate(0deg);
+  }
+
   .ocd-myths {
     max-width: none;
     margin: 1rem 0 1.35rem;
@@ -3381,6 +3474,11 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .ocd-help-signs-list {
+    grid-template-columns: 1fr;
+    gap: 0.54rem;
+  }
+
   .ocd-myths-list {
     grid-template-columns: 1fr;
     gap: 0.54rem;
@@ -3395,6 +3493,10 @@ h1 {
   .clinical-signs-list li:nth-child(2),
   .clinical-signs-list li:nth-child(3),
   .clinical-signs-source,
+  .ocd-help-signs-list li:nth-child(1),
+  .ocd-help-signs-list li:nth-child(2),
+  .ocd-help-signs-list li:nth-child(3),
+  .ocd-help-signs-source,
   .ocd-myths-pair-a,
   .ocd-myths-pair-b,
   .ocd-myths-pair-c,
@@ -5864,6 +5966,8 @@ html.mode-calm body .research-map-card,
 html.mode-calm body .evidence-biblio-item,
 html.mode-calm body .evidence-legend-item,
 html.mode-calm body .deferred-detail,
+html.mode-calm body .ocd-help-signs,
+html.mode-calm body .ocd-help-signs-list li,
 body.mode-calm .card,
 body.mode-calm .toc-dial,
 body.mode-calm .evidence-note,
@@ -5871,7 +5975,9 @@ body.mode-calm .footer-note,
 body.mode-calm .research-map-card,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .evidence-legend-item,
-body.mode-calm .deferred-detail {
+body.mode-calm .deferred-detail,
+body.mode-calm .ocd-help-signs,
+body.mode-calm .ocd-help-signs-list li {
   min-width: 0 !important;
   overflow-wrap: anywhere;
 }
@@ -6028,6 +6134,10 @@ html.mode-calm body .toc-dial,
 html.mode-calm body .evidence,
 html.mode-calm body .evidence-note,
 html.mode-calm body .ocd-language-note,
+html.mode-calm body .clinical-signs,
+html.mode-calm body .ocd-help-signs,
+html.mode-calm body .ocd-myths,
+html.mode-calm body .ocd-cycle,
 html.mode-calm body .evidence-biblio,
 html.mode-calm body .evidence-biblio-item,
 html.mode-calm body .evidence-legend,
@@ -6047,6 +6157,10 @@ body.mode-calm .toc-dial,
 body.mode-calm .evidence,
 body.mode-calm .evidence-note,
 body.mode-calm .ocd-language-note,
+body.mode-calm .clinical-signs,
+body.mode-calm .ocd-help-signs,
+body.mode-calm .ocd-myths,
+body.mode-calm .ocd-cycle,
 body.mode-calm .evidence-biblio,
 body.mode-calm .evidence-biblio-item,
 body.mode-calm .evidence-legend,
